@@ -1,6 +1,5 @@
 import React from 'react';
-import heroImg from '../../assets/Hero.png'; // Best practice for assets
-
+import heroImg from '../../assets/Hero.png';
 const Hero = () => {
   return (
     // Change min-h-screen to min-h-[calc(100vh-5rem)] (5rem = 80px = h-20)

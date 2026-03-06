@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
+import TibosLogo from '../assets/tibos logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
           
           {/* Logo Section */}
           <div className="shrink-0 flex items-center">
-            <img src="src/assets/tibos logo.png" alt="Tibos Logo" className='w-32' />
+            <img src={TibosLogo} alt="Tibos Logo" className='w-32' />
           </div>
 
           {/* Desktop Menu */}
