@@ -1,9 +1,13 @@
 import Hero from "../HomePage/Hero"
+import About from "../HomePage/About"
+
 const Home = () => {
   return (
     <div>
-        <div>
+        <div >
             <Hero/>
+            <About/>
+
 
                
          
