@@ -9,7 +9,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev === 0 ? 1 : 0));
-    }, 5000); // 5s is usually better for reading time
+    }, 3000); // 5s is usually better for reading time
 
     return () => clearInterval(timer);
   }, []);
