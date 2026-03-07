@@ -1,30 +1,35 @@
 import React from 'react';
-import MotionButton from '../Common/MotionButton';
+
 import { ArrowBigLeft, ArrowBigRight, ArrowDownRightFromSquare, ArrowRight, CircleArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const Card = ({ NameOfButton, Onclick, CardImg, CardImgName, Title, Description }) => {
+const Card = ({ CardImg, CardImgName, Title, Description , Path }) => {
   return (
-    <div className="max-w-xs rounded-4xl backdrob-blur-sm shadow-lg p-8 flex flex-col items-center text-center transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105 cursor-pointer">
- 
-      {/* Icon Container */}
-      <div className="w-24 h-24 mb-6">
-        <img 
-          src={CardImg} 
-          alt={CardImgName} 
-          className="w-full h-full object-contain"
-        />
-      </div>
+    <div className="max-w-xs rounded-2xl backdrop-blur-md shadow-xl p-5 flex flex-col items-center text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+  
+  {/* Icon Container - Scaled down */}
+  <div className="w-16 h-16 mb-4">
+    <img 
+      src={CardImg} 
+      alt={CardImgName} 
+      className="w-full h-full object-contain"
+    />
+  </div>
 
-      {/* Text Content */}
-      <h3 className="text-blue-500 font-bold text-xl tracking-wider mb-4 uppercase">
-        {Title }
-      </h3>
-      
-      <p className="text-gray-500 leading-relaxed text-base mb-8">
-        {Description }
-      </p>
-      <ArrowRight className='inline-block w-7 h-7 hover:text-blue-600 ' />
-    </div>
+  {/* Text Content */}
+  <h3 className="text-blue-600 font-bold text-lg tracking-wide mb-2 uppercase">
+    {Title}
+  </h3>
+  
+  <p className="text-gray-500 leading-snug text-sm mb-6">
+    {Description}
+  </p>
+
+  <Link to={Path}>
+    <ArrowRight className="inline-block w-6 h-6 text-gray-400 hover:text-blue-600 transition-colors" />
+  </Link>
+  
+</div>
   );
 };
 
