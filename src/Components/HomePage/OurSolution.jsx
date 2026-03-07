@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../OurSolution/Card'
-import Conn from '../../Assets/Connectivity.png'
+import Conn from '../../assets/Connectivity.png'
 import { p } from 'motion/react-client'
 
 const ItermList =[
