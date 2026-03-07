@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // 1. Import motion
 import AboutImg from "../../assets/AboutUs.png";
+import MotionButton from '../Common/MotionButton';
 
 const About = () => {
   return (
@@ -29,16 +30,7 @@ const About = () => {
           understanding of markets.
         </p>
 
-        <motion.button 
-          whileHover={{ scale: 1.05 }}       // Subtle grow on hover
-          whileTap={{ scale: 0.95 }}        // Subtle shrink on click
-          className="group flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-600 to-blue-400 text-white font-semibold rounded-full shadow-lg hover:shadow-blue-200 transition-all duration-300"
-        >
-          Learn more
-          <span className="text-xl group-hover:translate-x-1 transition-transform">
-            »
-          </span>
-        </motion.button>
+      <MotionButton B_Name="Learn more" ActionToClick={() => alert('Learn more clicked!')} />
       </motion.div>
 
       {/* Right Image Side */}

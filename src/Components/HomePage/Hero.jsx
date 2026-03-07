@@ -16,7 +16,7 @@ const Hero = () => {
 
   // Shared Button Component for DRY code
   const ActionButton = ({ text }) => (
-    <button className="px-8 py-3 bg-blue-600 text-white border-2 border-blue-600 rounded-2xl font-semibold transition-all hover:bg-transparent hover:text-blue-600 hover:shadow-xl active:scale-95 mt-6 lg:mt-8">
+    <button className="px-8 py-3 bg-blue-600 text-white  rounded-2xl font-semibold transition-all hover:bg-transparent hover:text-blue-600 hover:shadow-xl active:scale-95 mt-6 lg:mt-8">
       {text}
     </button>
   );
@@ -25,10 +25,10 @@ const Hero = () => {
     <section className="bg-blue-50 min-h-screen pt-24 lg:pt-32 w-full flex flex-col justify-between overflow-hidden">
       
       
-      {/* Slide Wrapper */}
+    
       <div className="relative grow flex items-center justify-center px-6">
         
-        {/* Slide 1 */}
+
         <div className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out ${index === 0 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10 pointer-events-none'}`}>
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-32 max-w-7xl">
             <div className="max-w-md text-center lg:text-left">
@@ -43,7 +43,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Slide 2 */}
         <div className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out ${index === 1 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10 pointer-events-none'}`}>
           <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-32 max-w-7xl">
             <img src={Ms365} alt="Microsoft 365" className="w-full max-w-sm lg:max-w-lg object-contain" />
@@ -60,7 +59,7 @@ const Hero = () => {
 
       </div>
 
-      {/* Pagination Indicators */}
+
       <div className="flex justify-center gap-3 mb-12 z-10">
         {[0, 1].map((i) => (
           <button
