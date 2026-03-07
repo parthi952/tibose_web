@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // 1. Import motion
-import OurService from "../../assets/Our Solution.png";
+import OurService from "../../assets/OurSolution.png";
 import MotionButton from '../Common/MotionButton';
 
 const Services = () => {
