@@ -4,6 +4,8 @@ import Achievements from "../HomePage/Achievements";
 import Services from "../HomePage/Services";
 import OurSolution from "../HomePage/OurSolution";
 
+
+
 const Home = () => {
   return (
     <div>
@@ -13,6 +15,7 @@ const Home = () => {
             <Achievements/>
             <Services/>
             <OurSolution/>
+            
 
 
                
