@@ -7,10 +7,6 @@ import TestimonialSlider from "../HomePage/TestimonialSlider";
 import OurPartners from "../HomePage/OurPartners";
 import IndustriesSection from "../HomePage/IndustriesSection";
 
-
-
-
-
 const Home = () => {
   return (
     <div>
@@ -23,12 +19,7 @@ const Home = () => {
             <TestimonialSlider/>
             <OurPartners/>
             <IndustriesSection/>
-
             
-
-
-               
-         
         </div>
     </div>
   )
