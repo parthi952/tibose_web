@@ -6,11 +6,16 @@ import OurSolution from "../HomePage/OurSolution";
 import TestimonialSlider from "../HomePage/TestimonialSlider";
 import OurPartners from "../HomePage/OurPartners";
 import IndustriesSection from "../HomePage/IndustriesSection";
+import OurBlogs from "../HomePage/OurBlogs";
+import ContactForm from "../HomePage/ContactUs";
+import { Aurora } from "../Common/Aurora";
 
 const Home = () => {
   return (
     <div>
+      
         <div >
+          
             <Hero/>
             <About/>
             <Achievements/>
@@ -19,7 +24,10 @@ const Home = () => {
             <TestimonialSlider/>
             <OurPartners/>
             <IndustriesSection/>
-            
+            <OurBlogs/>
+            <ContactForm/>
+
+
         </div>
     </div>
   )

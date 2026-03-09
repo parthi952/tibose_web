@@ -34,10 +34,10 @@ const TestimonialSlider = () => {
 
   return (
     
-    <div className="bg-slate-50 py-16 px-4 flex flex-col items-center justify-center min-h-screen">
+    <div className="bg-slate-50 flex flex-col items-center py-16 ">
       
     
-      <h2 className="text-4xl font-bold tracking-widest text-blue-600 mb-8 uppercase text-center">
+      <h2 className="text-4xl font-bold tracking-widest text-blue-600 mb-10 uppercase text-center">
         Our Testimonials
       </h2>
       
