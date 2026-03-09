@@ -67,7 +67,7 @@ const duplicatedList = [...industryList, ...industryList];
 
       <div className="flex ">
         {/* Use the 'animate-scroll' class we just defined above */}
-        <div className="flex flex-nowrap gap-8 animate-scroll">
+        <div className="flex flex-nowrap animate-scroll">
           {duplicatedList.map((item, index) => (
             <div key={index} className="flex-none w-75"> 
               <IndustryCard {...item} />

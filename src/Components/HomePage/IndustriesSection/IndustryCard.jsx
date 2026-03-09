@@ -32,7 +32,7 @@ const IndustryCard = ({ icon, image, title }) => (
     
     {/* Title Area */}
     <div className="mt-auto mb-8 px-4 w-full">
-      <h3 className="text-sm font-black text-gray-900 text-center uppercase tracking-wider leading-tight">
+      <h3 className="text-md font-semibold text-gray-900 text-center uppercase tracking-wider leading-tight">
         {title}
       </h3>
     </div>
