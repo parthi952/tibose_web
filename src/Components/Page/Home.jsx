@@ -8,7 +8,7 @@ import OurPartners from "../HomePage/OurPartners";
 import IndustriesSection from "../HomePage/IndustriesSection";
 import OurBlogs from "../HomePage/OurBlogs";
 import ContactForm from "../HomePage/ContactUs";
-import { Aurora } from "../Common/Aurora";
+
 
 const Home = () => {
   return (
