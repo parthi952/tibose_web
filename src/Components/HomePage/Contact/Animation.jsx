@@ -24,9 +24,10 @@ export const Animation = () => {
           <div className="absolute w-88 h-88 border border-gray-400 rounded-full"></div>
 
           {/* Floating Icons */}
-          <div className="absolute -top-4 -right-4 w-10 h-10 bg-blue-500/80 rounded-xl shadow-lg animate-bounce duration-2000"></div>
-          <div className="absolute -bottom-8 -left-4 w-12 h-12 bg-orange-400/80 rounded-xl shadow-lg animate-pulse"></div>
-          <div className="absolute -bottom-0/4 left-3/4 w-8 h-8 bg-green-500 rounded-lg rotate-45 animate-spin"></div>
+          <div className="absolute -top-4 -right-4 w-10 h-10 bg-green-400 rounded-xl shadow-lg animate-bounce duration-2000"></div>
+          <div className="absolute -bottom-8 -left-4 w-12 h-12 bg-blue-400/80 rounded-xl shadow-lg animate-pulse"></div>
+          <div className="absolute -bottom-0/4 left-3/4 w-8 h-8 bg-red-500 rounded-lg rotate-45 animate-spin"></div>
+          <div className="absolute -top-0/3 left-1/4 w-5 h-5 bg-yellow-500 rounded-lg  animate-ping"></div>
         </div>
       </div>
     </div>
