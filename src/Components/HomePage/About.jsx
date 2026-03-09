@@ -15,11 +15,11 @@ const About = () => {
         viewport={{ once: true }}            // Only animate once
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h4 className="text-blue-600 font-bold uppercase tracking-wider text-5xl">
+        <h4 className="text-blue-600 font-bold uppercase tracking-wider text-4xl">
           About Us
         </h4>
         
-        <h2 className="text-4xl md:text-3xl font-bold text-slate-900 leading-tight">
+        <h2 className="text-3xl md:text-3xl font-bold text-slate-900 leading-tight">
           We assure you of our utmost satisfaction guarantee for the work we deliver.
         </h2>
         

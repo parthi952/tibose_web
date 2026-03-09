@@ -3,6 +3,11 @@ import About from "../HomePage/About"
 import Achievements from "../HomePage/Achievements";
 import Services from "../HomePage/Services";
 import OurSolution from "../HomePage/OurSolution";
+import TestimonialSlider from "../HomePage/TestimonialSlider";
+import OurPartners from "../HomePage/OurPartners";
+import IndustriesSection from "../HomePage/IndustriesSection";
+
+
 
 
 
@@ -15,6 +20,10 @@ const Home = () => {
             <Achievements/>
             <Services/>
             <OurSolution/>
+            <TestimonialSlider/>
+            <OurPartners/>
+            <IndustriesSection/>
+
             
 
 

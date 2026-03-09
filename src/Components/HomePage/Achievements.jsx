@@ -34,7 +34,7 @@ const Achievements = () => {
           </div>
           <div>
             <h2 className="text-blue-600 text-xl font-bold leading-tight">Achievements</h2>
-            <p className="text-blue-500 text-sm">Tibos solution</p>
+            <p className="text-blue-600 text-sm">Tibos solution</p>
           </div>
         </div>
 

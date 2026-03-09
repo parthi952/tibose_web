@@ -1,6 +1,10 @@
 import React from 'react'
 import Card from '../OurSolution/Card'
 import Conn from '../../Assets/Connectivity.png'
+import cyber from "../../assets/cybersecurity.png"
+import HS from "../../assets/HardwareSolution.png"
+import SC from "../../assets/SmartCommunication.png"
+import BPO from "../../assets/BPO.png"
 import FiberOpticBackground from '../OurSolution/FiberOpticBackground';
 
 
@@ -13,28 +17,28 @@ const ItermList = [
     Path: "/connectivity"
   },
   {
-    CardImg: Conn,
+    CardImg: cyber,
     CardImgName: "CYBERSECURITY",
     Title: "CYBERSECURITY",
     Description: "Advanced security solutions protecting critical data, sensitive networks, digital platforms, and essential business assets.",
     Path: "/cybersecurity"
   },
   {
-    CardImg: Conn,
+    CardImg: HS,
     CardImgName: "HARDWARE SOLUTION",
     Title: "HARDWARE SOLUTION",
     Description: "High-performance hardware systems delivering reliable speed, smooth operations, and efficient daily business performance.",
     Path: "/hardware-solution"
   },
   {
-    CardImg: Conn,
+    CardImg: SC,
     CardImgName: "SMART COMMUNICATION",
     Title: "SMART COMMUNICATION",
     Description: "Cloud-based communication tools improving team engagement, workplace collaboration, and daily operational efficiency.",
     Path: "/smart-communication"
   },
   {
-    CardImg: Conn,
+    CardImg: BPO,
     CardImgName: "BUSINESS PROCESS OUTSOURCING",
     Title: "BUSINESS PROCESS OUTSOURCING",
     Description: "End-to-end outsourcing services enhancing productivity, reducing overall costs, and optimizing essential business workflows.",

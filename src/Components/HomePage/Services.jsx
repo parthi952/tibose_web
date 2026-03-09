@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // 1. Import motion
-import OurService from "../../assets/Our Solution.png";
+import OurService from "../../assets/OurSolution.png";
 import MotionButton from '../Common/MotionButton';
 
 const Services = () => {
@@ -54,7 +54,7 @@ const Services = () => {
           variants={fadeInUp}
           className="w-full md:w-1/2 flex flex-col justify-center space-y-12"
         >
-          <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+          <h3 className="text-3xl md:text-3xl font-extrabold text-gray-900 leading-tight">
             Business Data and <span className="text-blue-600">Voice Services</span>
           </h3>
           
