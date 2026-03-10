@@ -80,7 +80,7 @@ const usefulLinks = [
           <div className="flex gap-4">
             <a href="#" className="bg-blue-600 p-2 rounded-full text-white hover:opacity-80"><Facebook size={20} fill="currentColor" /></a>
             <a href="#" className="bg-black p-2 rounded-full text-white hover:opacity-80"><Twitter size={20} fill="currentColor" /></a>
-            <a href="#" className="bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 p-2 rounded-full text-white hover:opacity-80"><Instagram size={20} /></a>
+            <a href="#" className="bg-linear-to-tr from-yellow-500 via-pink-500 to-purple-600 p-2 rounded-full text-white hover:opacity-80"><Instagram size={20} /></a>
             <a href="#" className="bg-blue-700 p-2 rounded-full text-white hover:opacity-80"><Linkedin size={20} fill="currentColor" /></a>
           </div>
         </div>
