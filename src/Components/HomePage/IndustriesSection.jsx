@@ -1,19 +1,20 @@
-
+import Img from "../../Constents"
 import IndustryCard from './IndustriesSection/IndustryCard';
-import Automotive from "../../assets/Industries/Automotive.png";
-import CMT from "../../assets/Industries/CMT.png";
-import EnergyUtilities from "../../assets/Industries/EnergyUtilities.png";
-import FinancialService from "../../assets/Industries/FinancialService.png";
-import Healthcare from "../../assets/Industries/Healthcare.png";
-import Insurance from "../../assets/Industries/Insurance.png";
-import LifeSciences from "../../assets/Industries/LifeSciences.png";
-import Manufacturing from "../../assets/Industries/Manufacturing.png";
-import ProfessionalServices from "../../assets/Industries/ProfessionalServices.png";
-import RetailDistribution from "../../assets/Industries/RetailDistribution.png";
-import TransportationLogistics from "../../assets/Industries/TransportationLogistics.png";
-import TravelHospitality from "../../assets/Industries/TH.png";
 
-// Ensure all icons are imported to prevent crashes
+const Automotive = Img.HomePage.Industry.Automotive;
+const CMT = Img.HomePage.Industry.CMT;
+const EnergyUtilities = Img.HomePage.Industry.EnergyUtilities;
+const FinancialService = Img.HomePage.Industry.FinancialService;
+const Healthcare = Img.HomePage.Industry.Healthcare;
+const Insurance = Img.HomePage.Industry.Insurance;
+const LifeSciences = Img.HomePage.Industry.LifeSciences;
+const Manufacturing = Img.HomePage.Industry.Manufacturing;
+const ProfessionalServices = Img.HomePage.Industry.ProfessionalServices;
+const RetailDistribution = Img.HomePage.Industry.RetailDistribution;
+const TransportationLogistics = Img.HomePage.Industry.TransportationLogistics;
+const TravelHospitality = Img.HomePage.Industry.TravelHospitality;
+
+
 import { 
   ShieldCheck, Beaker, MonitorPlay, Settings, Zap, 
   ShoppingBag, Car, Landmark, Stethoscope, Briefcase, 

@@ -1,12 +1,14 @@
-import React from 'react'
-import Card from '../OurSolution/Card'
-import Conn from '../../Assets/Connectivity.png'
-import cyber from "../../assets/cybersecurity.png"
-import HS from "../../assets/HardwareSolution.png"
-import SC from "../../assets/SmartCommunication.png"
-import BPO from "../../assets/BPO.png"
-import FiberOpticBackground from '../OurSolution/FiberOpticBackground';
 
+import Card from '../OurSolution/Card'
+import FiberOpticBackground from '../OurSolution/FiberOpticBackground';
+import Img from "../../Constents"
+
+
+const SC = Img.HomePage.OurSolution.SC;
+const BPO = Img.HomePage.OurSolution.BPO;
+const HS = Img.HomePage.OurSolution.HS;
+const cyber = Img.HomePage.OurSolution.cyber;
+const Conn = Img.HomePage.OurSolution.Conn;
 
 const ItermList = [
   {
@@ -47,6 +49,8 @@ const ItermList = [
 ]
 
 const OurSolution = () => {
+
+
   return (
     <div className="relative w-full rounded-xl shadow-lg overflow-hidden">
        <FiberOpticBackground/>

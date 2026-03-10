@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // 1. Import motion
-import OurService from "../../assets/OurSolution.png";
+// import OurService from "../../assets/OurSolution.png";
+
 import MotionButton from '../Common/MotionButton';
+import Img from "../../Constents"
+
+const OurService = Img.HomePage.OurService;
 
 const Services = () => {
   // Animation Variants for cleaner code

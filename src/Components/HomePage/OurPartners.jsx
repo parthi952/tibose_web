@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
-import Airtel from "../../assets/OurPatners/airtel.png";
-import Ola from "../../assets/OurPatners/ola.png";
-import Microsoft from "../../assets/OurPatners/microsoft.png";
-import Omega from "../../assets/OurPatners/omega.png";
-import Swiggy from "../../assets/OurPatners/swiggy.png";
-import TC from "../../assets/OurPatners/TC.png";
-import TT from "../../assets/OurPatners/TATA_Tele.png";
+import Img from "../../Constents"
+
+
+const Airtel = Img.HomePage.OurPartners.Airtel;
+const Ola = Img.HomePage.OurPartners.Ola;
+const Microsoft = Img.HomePage.OurPartners.Microsoft;
+const Omega = Img.HomePage.OurPartners.Omega;
+const Swiggy = Img.HomePage.OurPartners.Swiggy;
+const TC = Img.HomePage.OurPartners.TC;
+const TT = Img.HomePage.OurPartners.TT;
 
 
 
 
-// ... your imports and logo array ...
 
 const OurPartners = () => {
   const logos = [

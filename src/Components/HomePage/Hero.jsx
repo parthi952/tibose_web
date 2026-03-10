@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import heroImg from '../../assets/Hero.png';
-import Ms365 from '../../assets/Ms365.png';
+
+const HeroImg="https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TibosSite_static_assert/Hero.png"
+const Ms365="https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TibosSite_static_assert/Ms365.png"
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -39,7 +40,7 @@ const Hero = () => {
               <p className="text-gray-600 text-lg mt-4">We make technology accessible!</p>
               <ActionButton text="Reach us" />
             </div>
-            <img src={heroImg} alt="Hero" className="w-full max-w-sm lg:max-w-lg object-contain drop-shadow-2xl" />
+            <img src={HeroImg} alt="Hero" className="w-full max-w-sm lg:max-w-lg object-contain drop-shadow-2xl" />
           </div>
         </div>
 

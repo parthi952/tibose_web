@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import TibosLogo from '../assets/tiboslogo.png'
+import IMG from "../Constents"
 
+const TibosLogo = IMG.HomePage.TibosLogo;
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

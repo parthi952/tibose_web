@@ -1,10 +1,13 @@
 import React from "react";
 import BlogCard from "./OurBlogs/BlogCard";
-import ConnectivityImg from "../../assets/OurBlog/connectivity.png";
-import SecurityImg from "../../assets/OurBlog/security.png";
+// import ConnectivityImg from "../../assets/OurBlog/connectivity.png";
+// import SecurityImg from "../../assets/OurBlog/security.png";
 import { img } from "motion/react-client";
 import { motion } from "framer-motion";
-// import BusinessImg from "../../assets/business.jpg";
+import Img from "../../Constents";
+
+const ConnectivityImg = Img.HomePage.Connectivity;
+const SecurityImg = Img.HomePage.Cybersecurity;
 
 const OurBlogs = () => {
   const blogs = [

@@ -1,7 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // 1. Import motion
-import AboutImg from "../../assets/AboutUs.png";
+import { motion } from 'framer-motion'; 
+import Img from "../../Constents"
 import MotionButton from '../Common/MotionButton';
+
+const AboutImg = Img.HomePage.AboutImg;
+
 
 const About = () => {
   return (
