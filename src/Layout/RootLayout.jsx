@@ -1,6 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "../Components/Navbar";
+import Navbar from "./Navbar";
+import TibosFooter from "./TibosFooter";
+
 
 export default function RootLayout() {
   return (
@@ -9,6 +11,7 @@ export default function RootLayout() {
       <main className="flex-1">
         <Outlet /> {/* This renders the current route's component */}
       </main>
+      <TibosFooter/>
     </div>
   );
 }
