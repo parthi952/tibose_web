@@ -29,7 +29,7 @@ const OurPartners = () => {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="py-5 bg-blue-100 overflow-hidden">
+    <section className="py-5 bg-white-100 overflow-hidden">
       <div className="">
         <h2 className="text-center text-4xl md:text-4xl font-bold text-blue-600">
           Our Partners

@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: 'Our Solution', path: '/our-solution', hasDropdown: true },
     { name: 'Industries', path: '/industries', hasDropdown: false },
     { name: 'Resources', path: '/resources', hasDropdown: false },
-    { name: 'About Us', path: '/about', hasDropdown: true },
+    { name: 'About Us', path: 'About', hasDropdown: true },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a
                 key={link.name}
-                href={link.href}
+                href={link.path}
                 className="flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {link.name}

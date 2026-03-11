@@ -1,6 +1,6 @@
 
-import Card from '../OurSolution/Card'
-import FiberOpticBackground from '../OurSolution/FiberOpticBackground';
+import Card from './OurSolution/Card'
+import FiberOpticBackground from './OurSolution/FiberOpticBackground';
 import Img from "../../Constents"
 
 
