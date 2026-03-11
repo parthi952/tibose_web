@@ -20,17 +20,26 @@ const Navbar = () => {
   const ListOfContant = {
     "/about": [
       { Cont: "Company Culture", path: "/company-culture" },
-      { Cont: "Our Team", path: "/team" },
+      { Cont: "Career", path: "/team" },
     ],
 
     "/microsoft-solution": [
-      { Cont: "Azure", path: "/azure" },
-      { Cont: "Microsoft 365", path: "/microsoft365" },
+      { Cont: "Microsoft 365 For Business", path: "/business" },
+      { Cont: "Microsoft 365 For Enterprise", path: "/enterprise" },
+      { Cont: "Microsoft 365 For Copilot", path: "/copilot" },
+      { Cont: "Microsoft Teams", path: "/teams" },
+      { Cont: "Microsoft Security", path: "/security" },
+      { Cont: "Microsoft Azure", path: "/azure" },
+      { Cont: "Microsoft Dynamics 356", path: "/dynamics" },
+      { Cont: "Microsoft Surface devices", path: "/surface" },
     ],
 
     "/our-solution": [
-      { Cont: "Cloud Services", path: "/cloud" },
+      { Cont: "Connectivity", path: "/cloud" },
       { Cont: "Cyber Security", path: "/cyber-security" },
+      { Cont: "Smart Communication", path: "/cyber-security" },
+      { Cont: "Business Process Unit", path: "/cyber-security" },
+      { Cont: "Hardware Solution", path: "/cyber-security" },
     ]
   };
 
@@ -62,13 +71,13 @@ const Navbar = () => {
 
                 {/* Dropdown */}
                 {link.hasDropdown && ListOfContant[link.path] && (
-                  <div className="absolute left-0 mt-3 hidden  group-hover:block bg-white shadow-lg rounded-md w-48">
+                   <div className="absolute left-0 mt-7 hidden group-hover:block bg-white shadow-lg rounded-md w-50 before:absolute before:-top-7 before:left-0 before:w-full before:h-7 before:content-['']">
 
                     {ListOfContant[link.path].map((item) => (
                       <a
                         key={item.Cont}
                         href={item.path}
-                        className="block px-4 py-2 text-sm font-poppins text-gray-700 hover:bg-blue-50"
+                        className="block px-4 py-2 font-poppins text-sm text-gray-700 hover:text-blue-600 hover:bg-blue-50"
                       >
                         {item.Cont}
                       </a>

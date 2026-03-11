@@ -62,7 +62,7 @@ const ContactForm = () => {
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-full bg-blue-600 text-white font-bold text-lg hover:bg-white hover:text-blue-600 hover:-translate-y-0.5 active:scale-95 transition-all shadow-3xl"
+                  className="w-full py-4 rounded-full bg-blue-600 hover:border border-blue-600  text-white font-bold text-lg hover:bg-blue-50 hover:text-blue-600 hover:-translate-y-0.5 active:scale-95 transition-all shadow-3xl"
                 >
                   Send message
                 </button>

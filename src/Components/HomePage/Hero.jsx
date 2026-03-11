@@ -34,11 +34,10 @@ const Hero = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-32 max-w-7xl">
             <div className="max-w-md text-center lg:text-left">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
-                Professional <br /> Technology <br />
-                <span className="text-blue-600">Assistance.</span>
+                Microsoft 365 Solutions for Businesses  <br />
               </h1>
-              <p className="text-gray-600 text-lg mt-4">We make technology accessible!</p>
-              <ActionButton text="Reach us" />
+              <p className="text-gray-600 text-lg mt-4">Microsoft 365 & Modern Workplace Solutions for Businesses.</p>
+              <ActionButton text="Contact Our Experts" />
             </div>
             <img src={HeroImg} alt="Hero" className="w-full max-w-sm lg:max-w-lg object-contain drop-shadow-2xl" />
           </div>
@@ -49,11 +48,11 @@ const Hero = () => {
             <img src={Ms365} alt="Microsoft 365" className="w-full max-w-sm lg:max-w-lg object-contain" />
             <div className="text-center lg:text-left">
               <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                <span className="text-blue-600">Microsoft 365</span> <br />
+                <span>Microsoft 365 for Business – Authorized Microsoft Partner in Chennai</span> <br />
                 for business
               </h1>
-              <p className="text-gray-600 mt-4 max-w-sm">Boost productivity with the world's most recognized cloud tools.</p>
-              <ActionButton text="Learn more" />
+              <p className="text-gray-600 mt-4 max-w-sm">Helping businesses deploy Microsoft 365, Azure cloud services, enterprise connectivity and cybersecurity solutions across India..</p>
+              <ActionButton text="Contact Our Experts" />
             </div>
           </div>
         </div>

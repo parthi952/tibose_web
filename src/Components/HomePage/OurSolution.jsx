@@ -59,9 +59,12 @@ const OurSolution = () => {
         <div 
           className="absolute  bg-linear-to-r from-blue-200 to-blue-300 inset-0 pointer-events-none opacity-30"
         />
-        
       
-        <div className="relative z-10 p-10">
+        <h2 className="text-center m-5 text-4xl md:text-4xl font-bold text-blue-600">
+          Our Solutions
+        </h2>
+      
+        <div className="relative z-10 p-5">
           <div className="flex flex-row space-x-8 overflow-x-auto py-10 px-6 scrollbar-hide">
             {ItermList.map((item, index) => (
               <Card 

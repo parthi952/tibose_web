@@ -4,6 +4,7 @@ import RootLayout from "./Layout/RootLayout";
 // import AboutSection from "./Components/Page/AboutSection"
 import AboutSection2 from "./Components/Page/AboutSection2";
 import AboutSection from "./Components/Page/AboutSection";
+import path from "path";
 
 
 export const router = createBrowserRouter([
@@ -17,14 +18,15 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "About",
+        path: "/company-culture",
         element :<AboutSection/>
 
       },
       {
-        path: "career",
+        path: "/team",
         element:<AboutSection2/>
       }
+
     ],
   },
 ]);

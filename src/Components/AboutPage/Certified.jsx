@@ -1,9 +1,9 @@
-const Certified = () => {
-  return (
-    <div>
-        <h1>deepak</h1>
-    </div>
-  )
-}
+// const Certified = () => {
+//   return (
+//     <div>
+//         <img src="AB.png" alt="" />
+//     </div>
+//   )
+// }
 
-export default Certified;
+// export default Certified;
