@@ -43,6 +43,7 @@ const Img = {
     }
 },
 AboutPage : {
+    Abcc:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/ABCC.png",
     Microsoft:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft.png",
     ABCareer:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/AB.png",
     Whychoose:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/whychoose.png",
@@ -54,6 +55,11 @@ AboutPage : {
         Colloboration:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/We are icons/Collabaration.png",
         People:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/We are icons/People.png",
         Pride:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/We are icons/Pride.png"
+    }
+},
+Microsoft_Solution:{
+    Bussiness:{
+        MBH:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/365bussines.png"
     }
 }
 }

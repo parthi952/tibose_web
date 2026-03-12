@@ -16,13 +16,13 @@ const Certified = () => {
         className="w-96 rounded-xl"
         initial={{ x: -200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.6}}
       />
       
      <motion.div
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.6 }}
       >
         <h2 className="text-3xl font-bold text-gray-900">
           TIBOS – The Certified Microsoft Security Services Partner

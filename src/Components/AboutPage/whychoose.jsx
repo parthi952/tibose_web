@@ -62,7 +62,7 @@ export default function WhyChoose() {
               return (
                 <div
                   key={index}
-                  className={`bg-[#EDEDED] shadow-xl transition-all duration-300 ${
+                  className={`bg-white shadow-xl transition-all duration-300 ${
                     active ? "rounded-3xl p-6" : "rounded-full px-8 py-5"
                   }`}
                 >

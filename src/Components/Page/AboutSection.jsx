@@ -1,11 +1,16 @@
 import About from "../HomePage/About"
 import Achievements from "../HomePage/Achievements";
 import OurPartners from "../HomePage/OurPartners";
+import IMG from "../../Constents";
 
+const Abcc=IMG.AboutPage.Abcc
 const AboutSection = () => {
   return (
     <div>
-      <img src="image 18.png" alt="" className="pt-20" />
+      <img src={Abcc}
+       alt="" 
+       className="pt-20" 
+       />
         <About/>
         <Achievements/>
         <OurPartners/>

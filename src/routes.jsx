@@ -5,6 +5,7 @@ import RootLayout from "./Layout/RootLayout";
 import AboutSection2 from "./Components/Page/AboutSection2";
 import AboutSection from "./Components/Page/AboutSection";
 import path from "path";
+import Business from "./Components/Page/Business";
 
 
 export const router = createBrowserRouter([
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
       {
         path: "/team",
         element:<AboutSection2/>
+      },
+      {
+        path: "/business",
+        element: <Business/>
       }
 
     ],
