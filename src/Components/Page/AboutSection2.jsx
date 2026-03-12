@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import IMG from "../../Constents"
+
+const Mirosoft= IMG.AboutPage.Microsoft
 const AboutSection2 = () => {
   return (
     <div>
@@ -7,7 +10,7 @@ const AboutSection2 = () => {
 
     
        <motion.img
-        src="/Microsoft.png"
+        src={Mirosoft}
         alt="Microsoft"
         className="w-96 rounded-xl"
         initial={{ x: -200, opacity: 0 }}

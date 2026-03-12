@@ -41,6 +41,9 @@ const Img = {
         TransportationLogistics:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TibosSite_static_assert/Industries/TransportationLogistics.png",
         TravelHospitality:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TibosSite_static_assert/Industries/TH.png"
     }
+},
+AboutPage : {
+    Microsoft:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft.png"
 }
 }
 
