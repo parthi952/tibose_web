@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-const HeroImg="https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TibosSite_static_assert/Hero.png"
-const Ms365="https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TibosSite_static_assert/Ms365.png"
+const HeroImg="https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Home_page/Hero.png"
+const Ms365="https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Home_page/Herom.png"
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
