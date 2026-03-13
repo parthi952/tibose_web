@@ -6,6 +6,11 @@ import AboutSection2 from "./Components/Page/AboutSection2";
 import AboutSection from "./Components/Page/AboutSection";
 import path from "path";
 import Business from "./Components/Page/Business";
+import Enterprise from "./Components/Page/Enterprise";
+import Copilot from "./Components/Page/Copilot";
+import Teams from "./Components/Page/Teams";
+import Security from "./Components/Page/Security";
+import Azure from "./Components/Page/Azure";
 
 
 export const router = createBrowserRouter([
@@ -30,6 +35,26 @@ export const router = createBrowserRouter([
       {
         path: "/business",
         element: <Business/>
+      },
+      {
+        path:"/enterprise",
+        element:<Enterprise/>
+      },
+      {
+        path:"/copilot",
+        element:<Copilot/>
+      },
+      {
+        path:"/teams",
+        element:<Teams/>
+      },
+      {
+        path:"/security",
+        element:<Security/>
+      },
+      {
+        path:"/azure",
+        element:<Azure/>
       }
 
     ],

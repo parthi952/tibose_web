@@ -60,6 +60,52 @@ AboutPage : {
 Microsoft_Solution:{
     Bussiness:{
         MBH:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/365bussines.png"
+    },
+    Sericeslogo:{
+        Word:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Word.png",
+        Excel:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/excel.png",
+        PPT:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/PPt.png",
+        OneNote:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/One note.png",
+        Outlook:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Outlook.png",
+        Teams:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Teams.png",
+        OneDrive:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Onedrive.png",
+        SharePoint:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/SharePoint.png",
+        Exchange:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Exchange.png",
+        Clip:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Clip.png",
+        Loop:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Loop.png",
+        Tool:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Tool.png",
+        EntraId:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/entra id.png",
+        Intune:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Intune.png",
+        Defender:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Defender.png",
+        Eye:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Eye.png",
+        Windows:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Windows 11.png",
+        Sentinel:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Bussiness/Serices_logo/Sentinel.png"
+    },
+    
+    Enterprise:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Enterprise/Enterprise banner.png",
+    
+    Copilot:{
+        CB:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Copilot/CopilotBanner.png",
+        AIimage:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Copilot/AIimage.png",
+        FAQ:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_365_Copilot/FAQ.png"
+    },
+    Teams:{
+        TBanner:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Teams/Teams.png",
+        Teamsrec:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Teams/teamsrecor.png"
+    },
+    Security:{
+        Secureban:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Security/SecureBan.png",
+        Securepartner:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Security/Securepartner.png"
+    },
+    Azure:{
+        Azureban:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Azure/AzureBanner.png",
+        Productivity:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Azure/Productivity.png",
+        Scalable:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Azure/Scalable.png",
+        Secure:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Azure/Secure.png",
+        Trusted:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Azure/Trusted.png",
+        Hybrid:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Azure/Hybrid.png",
+        Intelligent:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Azure/Intelligent.png",
+        AzureIaas:"https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Microsoft_Solution/Microsoft_Azure/AzureIaas.png"
     }
 }
 }

@@ -1,7 +1,3 @@
-
-import Img from "../../../Constents";
-
-const MBH=Img.Microsoft_Solution.Bussiness.MBH
 import {
   Users,
   BarChart3,
@@ -47,7 +43,6 @@ const features = [
 const Boost = () => {
   return (
     <div>
-        <img src={MBH} alt="Microsoft 365" className="pt-20" />
          <div className="w-full">
 
       {/* Top Header Section */}

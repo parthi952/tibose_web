@@ -69,7 +69,7 @@ const ValuesSection = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={cardVariants}
-            className="bg-blue-50 rounded-2xl p-10 text-center hover:shadow-lg transition"
+            className="bg-blue-50 rounded-2xl p-10 text-center hover:scale-105 duration-300  transition"
           >
             <img
               src={item.icon}
