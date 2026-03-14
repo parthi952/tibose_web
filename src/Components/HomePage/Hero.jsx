@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import Img from '../../Constents';
 
-const HeroImg="https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Home_page/Hero.png"
-const Ms365="https://tiboscrmstorage.blob.core.windows.net/tibos-crm-static-assets/TIBOS_web/Home_page/Herom.png"
-
+const Heroimg=Img.HomePage.HeroImg;
+const M356=Img.HomePage.Ms365;
 const Hero = () => {
   const [index, setIndex] = useState(0);
 
@@ -39,13 +39,13 @@ const Hero = () => {
               <p className="text-gray-600 text-lg mt-4">Microsoft 365 & Modern Workplace Solutions for Businesses.</p>
               <ActionButton text="Contact Our Experts" />
             </div>
-            <img src={HeroImg} alt="Hero" className="w-full max-w-sm lg:max-w-lg object-contain drop-shadow-2xl" />
+            <img src={Heroimg} alt="Hero" className="w-full max-w-sm lg:max-w-lg object-contain drop-shadow-2xl" />
           </div>
         </div>
 
         <div className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out ${index === 1 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10 pointer-events-none'}`}>
           <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-32 max-w-7xl">
-            <img src={Ms365} alt="Microsoft 365" className="w-full max-w-sm lg:max-w-lg object-contain" />
+            <img src={M356} alt="Microsoft 365" className="w-full max-w-sm lg:max-w-lg object-contain" />
             <div className="text-center lg:text-left">
               <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
                 <span>Microsoft 365 for Business – Authorized Microsoft Partner in Chennai</span> <br />

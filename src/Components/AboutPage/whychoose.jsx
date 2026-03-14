@@ -102,11 +102,12 @@ export default function WhyChoose() {
 
         <div className="flex justify-end">
 
-          <img
+         <a href=""><img
             src={Building}
             alt="building"
             className="rounded-3xl w-[500px] h-[700px] object-cover shadow-lg"
           />
+          </a> 
 
         </div>
 

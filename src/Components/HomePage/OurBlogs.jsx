@@ -8,6 +8,7 @@ import Img from "../../Constents";
 
 const ConnectivityImg = Img.HomePage.Connectivity;
 const SecurityImg = Img.HomePage.Cybersecurity;
+const Business_Communi= Img.HomePage.Business_communication;
 
 const OurBlogs = () => {
   const blogs = [
@@ -26,7 +27,7 @@ const OurBlogs = () => {
     {
         title: "The Future of Business Communication Technology",
         description:"Reliable connectivity drives productivity, improves collaboration, and strengthens every aspect of business communication.",
-        imageUrl: ConnectivityImg,
+        imageUrl: Business_Communi,
         reverse: false
     }
   ];

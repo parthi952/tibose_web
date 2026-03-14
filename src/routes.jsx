@@ -11,6 +11,8 @@ import Copilot from "./Components/Page/Copilot";
 import Teams from "./Components/Page/Teams";
 import Security from "./Components/Page/Security";
 import Azure from "./Components/Page/Azure";
+import Dynamics from "./Components/Page/Dynamics";
+import Surface from "./Components/Page/Surface";
 
 
 export const router = createBrowserRouter([
@@ -55,7 +57,17 @@ export const router = createBrowserRouter([
       {
         path:"/azure",
         element:<Azure/>
+      },
+      {
+        path:"/dynamics",
+        element:<Dynamics/>
+      },
+      {
+         path:"/surface",
+         element:<Surface/>
+
       }
+     
 
     ],
   },
