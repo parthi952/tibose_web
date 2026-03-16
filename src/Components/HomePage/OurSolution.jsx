@@ -1,8 +1,6 @@
-
 import Card from './OurSolution/Card'
 import FiberOpticBackground from './OurSolution/FiberOpticBackground';
 import Img from "../../Constents"
-
 
 const SC = Img.HomePage.OurSolution.SC;
 const BPO = Img.HomePage.OurSolution.BPO;
@@ -50,35 +48,38 @@ const ItermList = [
 
 const OurSolution = () => {
 
-
   return (
     <div className="relative w-full rounded-xl shadow-lg overflow-hidden">
-       <FiberOpticBackground/>
 
-    
-        <div 
-          className="absolute  bg-linear-to-r from-blue-200 to-blue-300 inset-0 pointer-events-none opacity-30"
-        />
-      
-        <h2 className="text-center m-5 text-4xl md:text-4xl font-bold text-blue-600">
-          Our Solutions
-        </h2>
-      
-        <div className="relative z-10 p-5">
-          <div className="flex flex-row space-x-8 overflow-x-auto py-10 px-6 scrollbar-hide">
-            {ItermList.map((item, index) => (
-              <Card 
-                key={index}
-                CardImg={item.CardImg}
-                CardImgName={item.CardImgName}
-                Title={item.Title}
-                Description={item.Description}
-                Path={item.Path}
-              />
-            ))}
-          </div>
-         
+      <FiberOpticBackground/>
+
+      <div 
+        className="absolute inset-0 bg-gradient-to-r from-blue-200 to-blue-300 pointer-events-none opacity-30"
+      />
+
+      <h2 className="text-center my-6 text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">
+        Our Solutions
+      </h2>
+
+      <div className="relative z-10 px-3 sm:px-5 md:px-6">
+
+        <div className="flex flex-row gap-6 sm:gap-8 overflow-x-auto py-8 sm:py-10 scrollbar-hide">
+
+          {ItermList.map((item, index) => (
+            <Card 
+              key={index}
+              CardImg={item.CardImg}
+              CardImgName={item.CardImgName}
+              Title={item.Title}
+              Description={item.Description}
+              Path={item.Path}
+            />
+          ))}
+
         </div>
+
+      </div>
+
     </div>
   );
 };

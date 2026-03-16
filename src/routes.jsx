@@ -14,6 +14,10 @@ import Azure from "./Components/Page/Azure";
 import Dynamics from "./Components/Page/Dynamics";
 import Surface from "./Components/Page/Surface";
 import Contactpage from "./Components/Page/Contactpage";
+import Industries from "./Components/Page/Industries";
+import Connectivity from "./Components/Page/Connectivity";
+import CyberSecurity from "./Components/Page/CyberSecurity";
+
 
 
 export const router = createBrowserRouter([
@@ -71,6 +75,18 @@ export const router = createBrowserRouter([
       {
         path:"/Contact",
         element:<Contactpage/>
+      },
+      {
+        path:"/industries",
+        element:<Industries/>
+      },
+      {
+        path:"/cloud",
+        element:<Connectivity/>
+      },
+      {
+        path:"/cyber-security",
+        element:<CyberSecurity/>
       }
      
 

@@ -129,6 +129,15 @@ Microsoft_Solution:{
 Contac_Us:{
     Contactbanner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Contact_us/Contact Us.png",
     Navigate:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Contact_us/Navigate.png"
+},
+Industries:{
+    Industriesban:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Industries/industriesbanner.png"
+},
+Our_Solution:{
+    Connectivity:{
+        Connectivitybannerr:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/Connectivity/Professional Connectivity Banner 4.png"
+    },
+    Cyber_Security:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/Cyber_Security/Cyber Banner.png"
 }
 }
 

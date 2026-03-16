@@ -8,11 +8,10 @@ const Contacttypes = () => {
  
 
   return (
-    <div className="w-full py-16 px-6">
+    <div className=" bg-violet-950 mb-10 w-full py-16 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
-
-    <DotLottieReact
-      src="https://lottie.host/0fa59aa7-76d1-46fc-85a9-f0c5a1355664/zufDEOns5l.lottie"
+  <DotLottieReact 
+      src="https://lottie.host/7cc705b6-80a8-4304-95ae-69170b1226a0/zgakNUtVrL.lottie"
       loop
       autoplay
     />

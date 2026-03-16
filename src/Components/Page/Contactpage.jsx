@@ -1,3 +1,4 @@
+import Conmap from '../Contact Us/Conmap'
 import ContactBanner from '../Contact Us/ContactBanner'
 import Contacttypes from '../Contact Us/Contacttypes'
 import ContactUs from '../HomePage/ContactUs'
@@ -8,6 +9,7 @@ const Contactpage = () => {
         <ContactBanner/>
         <ContactUs/>
         <Contacttypes/>
+        <Conmap/>
     </div>
   )
 }
