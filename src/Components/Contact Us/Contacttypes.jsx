@@ -1,23 +1,21 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import Img from "../../Constents";
+// import Img from "../../Constents";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
- const MapImage = Img.Contac_Us.Navigate
+//  const MapImage = Img.Contac_Us.Navigate
 const Contacttypes = () => {
  
 
   return (
-    <div className="w-full bg-[#1e73c9] py-16 px-6">
+    <div className="w-full py-16 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
 
-        <div className="flex justify-center">
-          <img
-            src={MapImage}
-            alt="location"
-            className="w-[420px]"
-          />
-        </div>
-
+    <DotLottieReact
+      src="https://lottie.host/0fa59aa7-76d1-46fc-85a9-f0c5a1355664/zufDEOns5l.lottie"
+      loop
+      autoplay
+    />
         {/* Right Content */}
         <div className="bg-gray-200 rounded-3xl p-10 space-y-8">
 
