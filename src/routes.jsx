@@ -4,7 +4,7 @@ import RootLayout from "./Layout/RootLayout";
 // import AboutSection from "./Components/Page/AboutSection"
 import AboutSection2 from "./Components/Page/AboutSection2";
 import AboutSection from "./Components/Page/AboutSection";
-import path from "path";
+
 import Business from "./Components/Page/Business";
 import Enterprise from "./Components/Page/Enterprise";
 import Copilot from "./Components/Page/Copilot";
