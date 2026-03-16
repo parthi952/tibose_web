@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import IMG from "../Constents";
+import { useNavigate } from 'react-router-dom';
 
 const TibosLogo = IMG.HomePage.TibosLogo;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navigate=useNavigate()
 
   const navLinks = [
     { name: 'Home', path: '/', hasDropdown: false },
@@ -90,7 +93,7 @@ const Navbar = () => {
             ))}
 
             {/* Contact Button */}
-            <button className="bg-[#007bff] text-white px-6 cursor-pointer font-poppins py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-md">
+            <button onClick={()=> navigate('/Contact')} className="bg-[#007bff] text-white px-6 cursor-pointer font-poppins py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-md">
               Contact Us
             </button>
           </div>

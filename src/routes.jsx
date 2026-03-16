@@ -13,6 +13,7 @@ import Security from "./Components/Page/Security";
 import Azure from "./Components/Page/Azure";
 import Dynamics from "./Components/Page/Dynamics";
 import Surface from "./Components/Page/Surface";
+import Contactpage from "./Components/Page/Contactpage";
 
 
 export const router = createBrowserRouter([
@@ -66,6 +67,10 @@ export const router = createBrowserRouter([
          path:"/surface",
          element:<Surface/>
 
+      },
+      {
+        path:"/Contact",
+        element:<Contactpage/>
       }
      
 

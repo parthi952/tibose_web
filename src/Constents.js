@@ -125,6 +125,10 @@ Microsoft_Solution:{
         Accessories6:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Microsoft_Solutions/Surface/Surface_Products/Headphones.png"
 
     }
+},
+Contac_Us:{
+    Contactbanner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Contact_us/Contact Us.png",
+    Navigate:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Contact_us/Navigate.png"
 }
 }
 
