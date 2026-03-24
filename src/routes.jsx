@@ -17,6 +17,7 @@ import Contactpage from "./Components/Page/Contactpage";
 import Industries from "./Components/Page/Industries";
 import Connectivity from "./Components/Page/Connectivity";
 import CyberSecurity from "./Components/Page/CyberSecurity";
+import SmartCommunication from "./Components/Page/SmartCommunication";
 
 
 
@@ -87,6 +88,10 @@ export const router = createBrowserRouter([
       {
         path:"/cyber-security",
         element:<CyberSecurity/>
+      },
+      {
+        path:"/smart-communication",
+        element:<SmartCommunication/>
       }
      
 
