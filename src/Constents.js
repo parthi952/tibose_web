@@ -137,7 +137,10 @@ Our_Solution:{
     Connectivity:{
         Connectivitybannerr:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/Connectivity/Professional Connectivity Banner 4.png"
     },
-    Cyber_Security:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/Cyber_Security/Cyber Banner.png"
+    Cyber_Security:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/Cyber_Security/Cyber Banner.png",
+    SmartBanner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/smartcommunication/Samartbanner.png",
+    BPOBanners:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/BPO/BPObanner.png",
+    Hardwarebanner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/Hardware/Hardware Banner .png"
 }
 }
 

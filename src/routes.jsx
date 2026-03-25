@@ -18,6 +18,9 @@ import Industries from "./Components/Page/Industries";
 import Connectivity from "./Components/Page/Connectivity";
 import CyberSecurity from "./Components/Page/CyberSecurity";
 import SmartCommunication from "./Components/Page/SmartCommunication";
+import Bpo from "./Components/Page/Bpo";
+import HardwareSolution from "./Components/Page/HardwareSolution";
+
 
 
 
@@ -92,8 +95,16 @@ export const router = createBrowserRouter([
       {
         path:"/smart-communication",
         element:<SmartCommunication/>
+      },
+      {
+        path:"/bpu",
+        element:<Bpo/>
+      },
+      {
+        path:"/hardware",
+        element:<HardwareSolution/>
       }
-     
+
 
     ],
   },
