@@ -2,6 +2,8 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import TibosFooter from "./TibosFooter";
+import TopScroll from "./TopScroll";
+import ScrollToTopOnRouteChange from "./ScrollToTopOnRouteChange";
 
 
 export default function RootLayout() {
@@ -12,6 +14,8 @@ export default function RootLayout() {
         <Outlet /> {/* This renders the current route's component */}
       </main>
       <TibosFooter/>
+      <TopScroll/>
+      <ScrollToTopOnRouteChange/>
     </div>
   );
 }

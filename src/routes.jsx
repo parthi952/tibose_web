@@ -20,6 +20,7 @@ import CyberSecurity from "./Components/Page/CyberSecurity";
 import SmartCommunication from "./Components/Page/SmartCommunication";
 import Bpo from "./Components/Page/Bpo";
 import HardwareSolution from "./Components/Page/HardwareSolution";
+import Resouces from "./Components/Page/Resouces";
 
 
 
@@ -103,6 +104,10 @@ export const router = createBrowserRouter([
       {
         path:"/hardware",
         element:<HardwareSolution/>
+      },
+      {
+        path:"/resources",
+        element:<Resouces/>
       }
 
 
