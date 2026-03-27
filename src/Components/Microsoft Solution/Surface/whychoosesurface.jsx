@@ -18,29 +18,29 @@ const card = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.9,
-      ease: [0.22, 1, 0.36, 1]
+      duration: 0.7,
+      ease: "easeOut"
     }
   }
 };
 
 const Whychoosesurface = () => {
   return (
-    <div className="mb-20">
+    <section className="mb-16 md:mb-20 px-4 sm:px-6 lg:px-8">
 
       {/* Heading */}
       <motion.div
-        className="text-center mb-14"
+        className="text-center mb-10 md:mb-14 max-w-2xl mx-auto"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl font-bold mb-3">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3">
           Why Choose TIBOS for Microsoft Surface Products?
         </h2>
 
-        <p className="text-gray-500 max-w-xl mx-auto">
+        <p className="text-gray-500 text-sm sm:text-base md:text-lg">
           Genuine devices, expert support, and tailored Surface solutions designed
           to empower your business productivity.
         </p>
@@ -48,7 +48,14 @@ const Whychoosesurface = () => {
 
       {/* Cards */}
       <motion.div
-        className="grid grid-cols-4 gap-8 px-16"
+        className="
+          grid 
+          grid-cols-1 
+          sm:grid-cols-2 
+          lg:grid-cols-4 
+          gap-5 sm:gap-6 md:gap-8 
+          max-w-7xl mx-auto
+        "
         variants={container}
         initial="hidden"
         whileInView="show"
@@ -58,17 +65,18 @@ const Whychoosesurface = () => {
         {/* Card 1 */}
         <motion.div
           variants={card}
-          className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition duration-300"
+          whileHover={{ y: -8, scale: 1.03 }}
+          className="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
         >
-          <div className="bg-blue-100 text-blue-600 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+          <div className="bg-blue-100 text-blue-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full mb-4">
             <FaCertificate />
           </div>
 
-          <h3 className="text-blue-600 font-semibold mb-2">
+          <h3 className="text-blue-600 font-semibold text-base sm:text-lg mb-2">
             Authorised Seller
           </h3>
 
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-sm sm:text-base">
             Genuine Surface devices with full warranties and official Microsoft support.
           </p>
         </motion.div>
@@ -76,17 +84,18 @@ const Whychoosesurface = () => {
         {/* Card 2 */}
         <motion.div
           variants={card}
-          className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition duration-300"
+          whileHover={{ y: -8, scale: 1.03 }}
+          className="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
         >
-          <div className="bg-blue-100 text-blue-600 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+          <div className="bg-blue-100 text-blue-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full mb-4">
             <FaUserTie />
           </div>
 
-          <h3 className="text-blue-600 font-semibold mb-2">
+          <h3 className="text-blue-600 font-semibold text-base sm:text-lg mb-2">
             Expert Guidance
           </h3>
 
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-sm sm:text-base">
             Personalized recommendations tailored to your business needs and budget.
           </p>
         </motion.div>
@@ -94,17 +103,18 @@ const Whychoosesurface = () => {
         {/* Card 3 */}
         <motion.div
           variants={card}
-          className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition duration-300"
+          whileHover={{ y: -8, scale: 1.03 }}
+          className="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
         >
-          <div className="bg-blue-100 text-blue-600 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+          <div className="bg-blue-100 text-blue-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full mb-4">
             <FaMoneyBillWave />
           </div>
 
-          <h3 className="text-blue-600 font-semibold mb-2">
+          <h3 className="text-blue-600 font-semibold text-base sm:text-lg mb-2">
             Competitive Pricing
           </h3>
 
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-sm sm:text-base">
             Best value pricing with flexible payment options and volume discounts.
           </p>
         </motion.div>
@@ -112,24 +122,25 @@ const Whychoosesurface = () => {
         {/* Card 4 */}
         <motion.div
           variants={card}
-          className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition duration-300"
+          whileHover={{ y: -8, scale: 1.03 }}
+          className="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
         >
-          <div className="bg-blue-100 text-blue-600 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+          <div className="bg-blue-100 text-blue-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full mb-4">
             <FaSlidersH />
           </div>
 
-          <h3 className="text-blue-600 font-semibold mb-2">
+          <h3 className="text-blue-600 font-semibold text-base sm:text-lg mb-2">
             Custom Solutions
           </h3>
 
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-sm sm:text-base">
             Seamless integration with your existing systems for maximum productivity.
           </p>
         </motion.div>
 
       </motion.div>
 
-    </div>
+    </section>
   );
 };
 

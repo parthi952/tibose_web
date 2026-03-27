@@ -1,13 +1,15 @@
 import Certified from "../AboutPage/Certified";
-import Whychoose from "../AboutPage/whychoose";
 import WEare from "../AboutPage/WEare";
 import Growth from "../AboutPage/Growth";
+import WhyChoose from "../AboutPage/Whychoose";
+import Careerbanner from "../AboutPage/Careerbanner";
 
 const AboutSection2 = () => {
   return (
     <div>
+      <Careerbanner/>
       <Certified/>
-      <Whychoose/>
+      <WhyChoose/>
       <Growth/>
       <WEare/>
     </div>
