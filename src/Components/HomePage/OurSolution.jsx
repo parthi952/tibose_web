@@ -62,13 +62,6 @@ const OurSolution = () => {
 
       </h2>
       <div className='text-center font-bold mr-40 ml-40'>
-        <p>
-          TIBOS provides innovative technology solutions to support modern businesses. 
-          From secure network connectivity and advanced cybersecurity to smart communication systems and 
-          enterprise hardware, our solutions help organizations enhance productivity, protect critical data, 
-          and optimize daily operations.
-
-        </p>
       </div>
 
       <div className="relative z-10 px-3 sm:px-5 md:px-6">
