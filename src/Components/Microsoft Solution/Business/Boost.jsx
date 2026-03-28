@@ -50,15 +50,15 @@ const Boost = () => {
         <div className="max-w-7xl mx-auto px-10">
           
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Boost Workforce Productivity with{" "}
+            Boost Business Productivity with Microsoft 365{" "}
             <span className="text-blue-600">Microsoft 365</span>
           </h2>
 
           <p className="text-gray-600 max-w-3xl text-[15px] leading-relaxed">
-            Achieve your business goals more effectively with Microsoft 365.
-            Manage all your essential tools including productivity apps, email,
-            calendars, video meetings, chat, and advanced security, all within
-            a single platform.
+            Microsoft 365 helps businesses improve productivity with cloud-based tools like Outlook, 
+            Teams, Word, Excel, and OneDrive. Organizations can manage email, meetings, collaboration,
+             and security from a single platform.
+
           </p>
 
         </div>

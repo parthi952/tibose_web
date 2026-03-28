@@ -34,13 +34,16 @@ const Certified = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
-            TIBOS – The Certified Microsoft Security Services Partner
+           About TIBOS – Microsoft Cloud, Connectivity & Cybersecurity Solutions
           </h2>
 
           <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0">
-            TIBOS has partnered with Microsoft to offer security services
-            consisting of Azure Sentinel, Azure Information Protection, and
-            Microsoft Defender Advanced Threat Protection.
+           TIBOS is a Microsoft security solutions partner helping organizations strengthen their 
+           cybersecurity posture using Microsoft technologies such as Azure Sentinel, Microsoft Defender, 
+           and Azure Information Protection. 
+          </p>
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0">
+            Our experts design, implement, and manage security solutions that protect enterprise infrastructure, data, and users from evolving cyber threats.( 
           </p>
         </motion.div>
 

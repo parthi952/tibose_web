@@ -8,7 +8,7 @@ const CBanner=Img.Microsoft_Solution.Copilot.CB
 const Copilot = () => {
   return (
     <div>
-        <img src={CBanner} alt="Copilot banner" className="mt-20"/>
+        <img src={CBanner} alt="Microsoft 365 Copilot AI productivity tools for enterprise businesses" className="mt-20"/>
         <AIrisk/>
         <Empowering/>
         <Whychoosecopilot/>

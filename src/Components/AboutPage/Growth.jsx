@@ -15,18 +15,14 @@ const Growth = () => {
       >
      <section className=" py-16 px-6">
       
-      {/* Top Title */}
-      <h2 className="text-center text-blue-600 font-bold text-3xl mb-10">
-        Where Vision Meets Execution
-      </h2>
 
       {/* Main Container */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
         {/* Left Content */}
         <div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Our Growth Story
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            Our Growth and Technology Vision
           </h3>
 
           <p className="text-gray-600 leading-relaxed mb-6">
@@ -68,7 +64,7 @@ const Growth = () => {
         <div className=" p-6 items-center">
           <img
             src={growth}
-            alt="Growth Illustration"
+            alt="Business growth through digital transformation"
             className="rounded-lg transition-transform duration-500 hover:scale-105"
             // className="rounded-lg"
           />

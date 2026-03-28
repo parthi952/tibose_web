@@ -55,11 +55,11 @@ const ConnectivityServices = () => {
 
         {/* Top Title */}
         <p className="text-blue-600 font-semibold">
-          Seamless, Scalable, and Secure
+         Enterprise Data & Internet Connectivity Services
         </p>
 
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-1">
-          Our Connectivity Services
+          Seamless, Scalable, and Secure Business Connectivity
         </h2>
 
         {/* Blue Banner */}

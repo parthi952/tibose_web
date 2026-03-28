@@ -8,7 +8,7 @@ const Achievements = () => {
     {
       id: 1,
       icon: <Users className="w-10 h-10 text-blue-600" />,
-      value: 901,
+      value: 900,
       suffix: "+",
       label: "Happy clients",
     },
@@ -22,7 +22,7 @@ const Achievements = () => {
     {
       id: 3,
       icon: <ShieldCheck className="w-10 h-10 text-blue-600" />,
-      value: 100,
+      value: 99.9,
       suffix: "%",
       label: "Uptime Guarantee",
     },

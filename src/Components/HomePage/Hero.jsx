@@ -16,7 +16,7 @@ const Hero = () => {
   }, []);
 
   const ActionButton = ({ text }) => (
-    <button className="px-5 sm:px-6 py-2.5 bg-blue-600 text-white rounded-xl font-semibold transition-all hover:bg-transparent hover:text-blue-600 hover:shadow-xl border border-blue-600 active:scale-95 mt-4">
+    <button className="px-5 sm:px-6 py-2.5 cursor-pointer bg-blue-600 text-white rounded-xl font-semibold transition-all hover:bg-transparent hover:text-blue-600 hover:shadow-xl border border-blue-600 active:scale-95 mt-4">
       {text}
     </button>
   );
@@ -87,7 +87,7 @@ const Hero = () => {
                 enterprise connectivity and cybersecurity solutions across India.
               </p>
 
-              <ActionButton text="Contact Our Experts" />
+              <ActionButton  text="Contact Our Experts" />
             </div>
 
           </div>

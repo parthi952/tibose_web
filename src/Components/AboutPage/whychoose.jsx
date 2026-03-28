@@ -47,10 +47,9 @@ export default function WhyChoose() {
           </h2>
 
           <p className="text-gray-600 mb-10 max-w-lg leading-relaxed">
-            For over nine years, TIBOS has been a trusted name in IT excellence—
-            empowering businesses with innovative, reliable, and scalable
-            technology solutions. Here's what makes TIBOS the preferred partner
-            across industries:
+            Over nine years of experience delivering Microsoft cloud, cybersecurity,
+             and enterprise connectivity solutions for businesses across multiple industries.
+
           </p>
 
           <div className="space-y-6">
@@ -104,7 +103,7 @@ export default function WhyChoose() {
 
          <a href=""><img
             src={Building}
-            alt="building"
+            alt="Enterprise business technology solutions infrastructure"
             className="rounded-3xl w-[500px] h-[700px] object-cover shadow-lg"
           />
           </a> 

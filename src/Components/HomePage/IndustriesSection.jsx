@@ -62,7 +62,7 @@ const duplicatedList = [...industryList, ...industryList];
 
       <div className="max-w-7xl mx-auto  mb-8 px-4">
         <h2 className="text-4xl font-bold text-blue-600 text-center mb-16 uppercase tracking-widest">
-          Our Industries
+          Industry Insights
         </h2>
       </div>
 

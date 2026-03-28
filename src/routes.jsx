@@ -108,6 +108,26 @@ export const router = createBrowserRouter([
       {
         path:"/resources",
         element:<Resouces/>
+      },
+      {
+        path:"/connectivity",
+        element:<Connectivity/>
+      },
+      {
+        path:"/cybersecurity",
+        element:<CyberSecurity/>
+      },
+      {
+       path:"/hardware-solution",
+       element:<HardwareSolution/>
+      },
+      {
+        path:"/smart-communication",
+        element:<SmartCommunication/>
+      },
+      {
+        path:"/business-process-outsourcing",
+        element:<Bpo/>
       }
 
 

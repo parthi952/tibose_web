@@ -11,7 +11,7 @@ const FiberOpticBackground = () => {
 // Pinks, Oranges, and Indigo
 
   return (
-    <svg width="100%" height="100%" viewBox="0 0 4000 1000" style={{ position: "absolute", top: 0, left: 0, overflow: "hidden" }}>
+    <svg width="100%" height="100%" viewBox="0 0 4000 1000" style={{ position: "absolute", top: 45, left: 0, overflow: "hidden" }}>
       {Array.from({ length: waveCount }).map((_, i) => {
         const color = colors[i % colors.length];
         

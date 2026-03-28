@@ -13,20 +13,20 @@ const Business_Communi= Img.HomePage.Business_communication;
 const OurBlogs = () => {
   const blogs = [
     {
-      title: "How Smart Connectivity Transforms Modern Business",
+      title: "How Enterprise Connectivity Improves Business Productivity",
       description: "Reliable connectivity drives productivity, improves collaboration, and strengthens every aspect of business communication.",
       imageUrl: ConnectivityImg,
       reverse: false // Image on right (Image 1 style)
     },
     {
-      title: "Why Cybersecurity Matters More Than Ever Today",
-      description: "Strong cybersecurity protects business data, prevents threats, and ensures uninterrupted operations with confidence.",
+      title: "Why Cybersecurity Is Critical for Modern Businesses",
+      description: "Cybersecurity protects businesses from data breaches, ransomware attacks, and network vulnerabilities. Learn how advanced security solutions help organizations safeguard data and maintain uninterrupted operations.",
       imageUrl: SecurityImg,
       reverse: true // Image on left
     },
     {
-        title: "The Future of Business Communication Technology",
-        description:"Reliable connectivity drives productivity, improves collaboration, and strengthens every aspect of business communication.",
+        title: "The Future of Enterprise Communication Technology",
+        description:"Modern communication tools such as cloud collaboration platforms and smart office solutions help businesses improve teamwork, streamline workflows, and deliver better customer experiences.",
         imageUrl: Business_Communi,
         reverse: false
     }

@@ -12,35 +12,35 @@ const ItermList = [
   {
     CardImg: Conn,
     CardImgName: "CONNECTIVITY",
-    Title: "CONNECTIVITY",
+    Title: "Network Connectivity",
     Description: "Reliable high-speed connectivity ensuring smooth communication and consistent performance for all business operations.",
     Path: "/connectivity"
   },
   {
     CardImg: cyber,
     CardImgName: "CYBERSECURITY",
-    Title: "CYBERSECURITY",
+    Title: "Cybersecurity Solutions",
     Description: "Advanced security solutions protecting critical data, sensitive networks, digital platforms, and essential business assets.",
     Path: "/cybersecurity"
   },
   {
     CardImg: HS,
     CardImgName: "HARDWARE SOLUTION",
-    Title: "HARDWARE SOLUTION",
+    Title: "Enterprise Hardware Solutions",
     Description: "High-performance hardware systems delivering reliable speed, smooth operations, and efficient daily business performance.",
     Path: "/hardware-solution"
   },
   {
     CardImg: SC,
     CardImgName: "SMART COMMUNICATION",
-    Title: "SMART COMMUNICATION",
+    Title: "Smart Communication Systems",
     Description: "Cloud-based communication tools improving team engagement, workplace collaboration, and daily operational efficiency.",
     Path: "/smart-communication"
   },
   {
     CardImg: BPO,
     CardImgName: "BUSINESS PROCESS OUTSOURCING",
-    Title: "BUSINESS PROCESS OUTSOURCING",
+    Title: "Business Process Outsourcing",
     Description: "End-to-end outsourcing services enhancing productivity, reducing overall costs, and optimizing essential business workflows.",
     Path: "/business-process-outsourcing"
   }
@@ -58,8 +58,18 @@ const OurSolution = () => {
       />
 
       <h2 className="text-center my-6 text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">
-        Our Solutions
+        Technology solution
+
       </h2>
+      <div className='text-center font-bold mr-40 ml-40'>
+        <p>
+          TIBOS provides innovative technology solutions to support modern businesses. 
+          From secure network connectivity and advanced cybersecurity to smart communication systems and 
+          enterprise hardware, our solutions help organizations enhance productivity, protect critical data, 
+          and optimize daily operations.
+
+        </p>
+      </div>
 
       <div className="relative z-10 px-3 sm:px-5 md:px-6">
 

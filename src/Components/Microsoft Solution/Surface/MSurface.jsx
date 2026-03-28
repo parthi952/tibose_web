@@ -36,13 +36,13 @@ const MSurface = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 leading-snug">
-            We are Authorized <br className="hidden sm:block" />
-            Microsoft Surface Reseller
+            Microsoft Surface Pro & Surface Devices for Business | TIBOS
           </h2>
 
           <p className="text-gray-500 text-sm sm:text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
-            Your trusted partner for enterprise-grade Surface devices,
-            accessories, and deployment support.
+            Buy Microsoft Surface devices for business including Surface Pro,
+             Surface Laptop, and accessories. Trusted Microsoft Surface reseller with expert support.
+
           </p>
         </motion.div>
 

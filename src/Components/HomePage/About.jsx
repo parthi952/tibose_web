@@ -23,19 +23,18 @@ const About = () => {
         </h4>
 
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 leading-snug">
-          We assure you of our utmost satisfaction guarantee for the work we deliver.
+          Trusted Microsoft Solutions Partner for Businesses.
         </h2>
 
         <p className="text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0 text-sm sm:text-base">
-          We are a team of seasoned experts from various business sectors.
-          We partner with top-tier technology companies to offer our clients
-          relevant, reliable, and cost-effective solutions based on our
-          experience and understanding of markets.
+          TIBOS is a technology solutions provider helping businesses adopt Microsoft cloud services,
+           enterprise connectivity, and secure IT infrastructure. Our team works with organizations to
+            deploy modern workplace solutions that improve collaboration, productivity, and security.
         </p>
 
         <div className="flex justify-center lg:justify-start">
           <MotionButton
-            B_Name="Learn more"
+            B_Name="Explore Our Solutions"
             ActionToClick={() => alert("Learn more clicked!")}
           />
         </div>
@@ -53,7 +52,7 @@ const About = () => {
         <div className="relative rounded-3xl overflow-hidden shadow-2xl">
           <img
             src={AboutImg}
-            alt="Business team meeting"
+            alt="Business team collaborating in a corporate meeting with laptops"
             className="w-full max-h-[260px] sm:max-h-[320px] md:max-h-[400px] lg:max-h-none object-cover"
           />
         </div>
