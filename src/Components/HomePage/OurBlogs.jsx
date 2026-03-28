@@ -40,11 +40,11 @@ const OurBlogs = () => {
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
   transition={{ duration: 0.6 }}
-  className="text-blue-500 font-bold text-4xl uppercase tracking-wider mb-12"
+  className="text-blue-500  font-bold text-4xl uppercase tracking-wider mb-12"
 >
   Our Blogs
 </motion.h2>
-        <div className="space-y-16">
+        <div className="space-y-16 ">
         {blogs.map((blog, index) => (
           <BlogCard key={index} {...blog} />
         ))}

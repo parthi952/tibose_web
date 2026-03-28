@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MotionButton from "../../Common/MotionButton";
+import { useNavigate } from "react-router-dom";
 
 const BlogCard = ({ title, description, imageUrl, reverse }) => {
+  const navigate = useNavigate();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 80 }}
@@ -15,22 +18,22 @@ const BlogCard = ({ title, description, imageUrl, reverse }) => {
     >
       {/* Text Content */}
       <motion.div
+        className="flex-1  md:px-0"
+        initial={{ opacity: 0, x: reverse ? 60 : -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <h3 className="text-4xl font-bold text-slate-900 mb-4">{title}</h3>
+        <p className="text-slate-600 text-xl leading-relaxed mb-6">
+          {description}
+        </p>
 
-  className="flex-1  md:px-0  " 
-  initial={{ opacity: 0, x: reverse ? 60 : -60 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6 }}
->
-  <h3 className="text-4xl font-bold text-slate-900 mb-4">{title}</h3>
-  <p className="text-slate-600 text-xl leading-relaxed mb-6">{description}</p>
-  <MotionButton
-    B_Name="Read More"
-    ActionToClick={() => alert("Read more clicked!")}
-  />
-</motion.div>
-
-
+        <MotionButton
+          B_Name="Read More"
+          ActionToClick={() => navigate("/blog-details")}
+        />
+      </motion.div>
 
       {/* Image Content */}
       <motion.div
@@ -49,9 +52,6 @@ const BlogCard = ({ title, description, imageUrl, reverse }) => {
           transition={{ duration: 0.3 }}
         />
       </motion.div>
-
-
-
     </motion.div>
   );
 };

@@ -141,6 +141,10 @@ Our_Solution:{
     SmartBanner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/smartcommunication/Samartbanner.png",
     BPOBanners:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/BPO/BPObanner.png",
     Hardwarebanner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Our_Solution/Hardware/Hardware Banner .png"
+},
+Resouces:{
+    blogbanner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Resouces/Resources 1.png"
+
 }
 }
 

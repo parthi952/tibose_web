@@ -128,6 +128,10 @@ export const router = createBrowserRouter([
       {
         path:"/business-process-outsourcing",
         element:<Bpo/>
+      },
+      {
+        path:"/blog-details",
+        element:<Resouces/>
       }
 
 
