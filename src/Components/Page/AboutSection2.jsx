@@ -1,7 +1,7 @@
 import Certified from "../AboutPage/Certified";
 import WEare from "../AboutPage/WEare";
 import Growth from "../AboutPage/Growth";
-import WhyChoose from "../AboutPage/Whychoose";
+import WhyChoose from "../AboutPage/whychoose";
 import Careerbanner from "../AboutPage/Careerbanner";
 
 const AboutSection2 = () => {
