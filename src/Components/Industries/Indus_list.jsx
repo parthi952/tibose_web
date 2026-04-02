@@ -17,50 +17,62 @@ const industries = [
   {
     title: "Energy + utilities",
     img: EnergyUtilities,
+    alt:"Renewable energy power grid with solar panels and wind turbines at sunset",
   },
   {
     title: "Automotive",
     img: Automotive,
+    alt:"Automotive manufacturing robotic assembly line in a modern factory",
   },
   {
     title: "Financial Services",
     img: FinancialService,
+    alt:"Financial services investment growth chart with coins and analytics data",
   },
   {
     title: "Healthcare",
     img: Healthcare,
+    alt:"Healthcare professionals team in hospital providing medical services",
   },
   {
     title: "Insurance",
     img: Insurance,
+    aly:"Digital insurance protection concept with security icons and shield interface",
   },
   {
     title: "Life Science",
     img: LifeSciences,
+    alt:"Life science laboratory research with glass equipment and biotechnology experiments",
   },
   {
     title: "Consumer Goods",
     img: CMT,
+    alt:"Consumer goods digital shopping experience with online cart interface",
   },
   {
     title: "Manufacturing",
     img: Manufacturing,
+    alt:"Industrial manufacturing with robotic automation in production line",
   },
   {
     title: "Travel + Hospitality",
     img: TravelHospitality,
+    alt:"Business travelers at airport terminal with luggage in travel and hospitality industry",
   },
   {
     title: "Professional Services",
     img: ProfessionalServices,
+    alt:"Professional business consulting team working together on laptop",
   },
   {
     title: "Retail + Distribution",
     img: RetailDistribution,
+    alt:"Retail distribution warehouse logistics with workers managing inventory",
   },
   {
     title: "Transportation",
     img: TransportationLogistics,
+    alt:"Transportation and logistics container shipping at port with cranes",
   },
 ];
 

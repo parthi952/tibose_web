@@ -132,7 +132,28 @@ export const router = createBrowserRouter([
       {
         path:"/blog-details",
         element:<Resouces/>
+      },
+      {
+        path:"/company_culture",
+        element:<AboutSection/>
+      },
+      {
+        path:"/industries",
+        element:<Industries/>
+      },
+      {
+        path:"/blog",
+        element:<Resouces/>
+      },
+      {
+        path:"/careers",
+        element:<AboutSection2/>
+      },
+      {
+        path:"/contact",
+        element:<Contactpage/>
       }
+
 
 
     ],

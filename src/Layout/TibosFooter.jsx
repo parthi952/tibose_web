@@ -16,14 +16,14 @@ const TibosLogo = Logo.HomePage.TibosLogo;
 const TibosFooter = () => {
   const [hoveredLink, setHoveredLink] = useState(null);
 
+  // ✅ Only change: added external flag for Tata Tele Business
   const usefulLinks = [
-    "Company Culture",
-    "Tata Tele Business",
-    "Industries",
-    "Blog",
-    "Downloads",
-    "Careers",
-    "Contact Us",
+    { name: "Company Culture", path: "/company-culture" },
+    { name: "Tata Tele Business", path: "http://tibossolutionsandservices.in/services/cloud-saas-1", external: true },
+    { name: "Industries", path: "/industries" },
+    { name: "Blog", path: "/blog" },
+    { name: "Careers", path: "/careers" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   const SocialIcon =
@@ -55,17 +55,19 @@ const TibosFooter = () => {
 
           <ul className="space-y-2.5">
             {usefulLinks.map((link) => (
-              <li key={link}>
+              <li key={link.name}>
                 <a
-                  href="#"
-                  onMouseEnter={() => setHoveredLink(link)}
+                  href={link.path}
+                  target={link.external === true ? "_blank" : undefined} // ✅ FIXED
+                  rel={link.external === true ? "noopener noreferrer" : undefined}
+                  onMouseEnter={() => setHoveredLink(link.name)}
                   onMouseLeave={() => setHoveredLink(null)}
                   className="text-sm text-slate-400 hover:text-indigo-400 transition-all duration-200 inline-block"
                   style={{
-                    paddingLeft: hoveredLink === link ? "8px" : "0",
+                    paddingLeft: hoveredLink === link.name ? "8px" : "0",
                   }}
                 >
-                  {link}
+                  {link.name}
                 </a>
               </li>
             ))}
@@ -124,26 +126,26 @@ const TibosFooter = () => {
           </p>
 
           <div className="flex gap-4">
-            <a href="#" className={SocialIcon}>
+            <a href="https://www.facebook.com/p/TIBOS-Solutions-Services-Private-Limited-61577353675661/" target="_blank" rel="noopener noreferrer" className={SocialIcon}>
               <Facebook size={20} fill="currentColor" />
             </a>
 
-            <a href="#" className={SocialIcon}>
+            <a href="https://x.com/TibosSolutions" target="_blank" rel="noopener noreferrer" className={SocialIcon}>
               <Twitter size={20} fill="currentColor" />
             </a>
 
-            <a href="#" className={SocialIcon}>
+            <a href="https://www.instagram.com/tibossolutions_official" target="_blank" rel="noopener noreferrer" className={SocialIcon}>
               <Instagram size={20} />
             </a>
 
-            <a href="#" className={SocialIcon}>
+            <a href="https://www.linkedin.com/company/tibos-solutions-and-services-private-limited/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" className={SocialIcon}>
               <Linkedin size={20} fill="currentColor" />
             </a>
           </div>
         </div>
       </div>
 
-      {/* Bottom Copyright */}
+      {/* Bottom */}
       <div className="mt-16 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
         <p>Copyright © 2026 TIBOS Solutions. All Rights Reserved</p>
 

@@ -77,7 +77,7 @@ const Boost = () => {
                 <div key={index} className="flex items-start gap-6">
 
                   {/* Icon */}
-                  <div className="w-16 h-16 rounded-xl bg-blue-600 flex items-center justify-center flex-shrink-0">
+                  <div className="w-16 h-16 rounded-xl hover:scale-110 duration-300 transition bg-blue-600 flex items-center justify-center flex-shrink-0">
                     <Icon className="text-white" size={30} />
                   </div>
 
