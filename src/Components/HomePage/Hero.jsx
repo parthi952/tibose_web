@@ -46,7 +46,7 @@ const Hero = () => {
                 Microsoft 365 & Modern Workplace Solutions for Businesses.
               </p>
 
-              <ActionButton text="Contact Our Experts" />
+              <ActionButton text="Contact Our Experts"/>
             </div>
 
             {/* Image */}
@@ -79,7 +79,7 @@ const Hero = () => {
             {/* Text */}
             <div className="max-w-lg mb-15 text-center lg:text-left">
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
-                Microsoft 365 for Business – Authorized Microsoft Partner in Chennai
+                Microsoft 365 for Business - Authorized Microsoft Partner in Chennai
               </h1>
 
               <p className="text-gray-600 mt-3 text-sm sm:text-base">

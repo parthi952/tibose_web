@@ -50,7 +50,7 @@ const Boost = () => {
         <div className="max-w-7xl mx-auto px-10">
           
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Boost Business Productivity with Microsoft 365{" "}
+            Boost Business Productivity with{" "}
             <span className="text-blue-600">Microsoft 365</span>
           </h2>
 

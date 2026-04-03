@@ -117,7 +117,7 @@ const Navbar = () => {
 
             <button
               onClick={() => navigate("/contact")}
-              className="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-700 transition-all shadow-md active:scale-95"
+              className="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-900 cursor-pointer transition-all shadow-md active:scale-95"
             >
               Contact Us
             </button>
@@ -194,7 +194,7 @@ const Navbar = () => {
               onClick={() => { navigate("/contact"); setIsOpen(false); }}
               className="w-full bg-blue-600 text-white py-4 rounded-2xl font-extrabold text-base shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-transform"
             >
-              Get Expert Advice
+              Contact
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
