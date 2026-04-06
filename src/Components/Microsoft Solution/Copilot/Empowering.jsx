@@ -45,7 +45,9 @@ export default function Empowering() {
 
 
           {/* Button */}
-          <button className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-600 cursor-pointer text-white px-6 py-3 rounded-xl shadow-md transition duration-300">
+          <button
+          onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+          className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-600 cursor-pointer text-white px-6 py-3 rounded-xl shadow-md transition duration-300">
              Talk To Our Experts
            </button>
         </div>

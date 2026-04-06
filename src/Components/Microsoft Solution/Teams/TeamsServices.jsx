@@ -146,7 +146,9 @@ Get your Microsoft Teams environment ready in just 2–3 days with our accelerat
 
 </div>
 
-<button className="bg-blue-600 text-white px-6 py-2 cursor-pointer hover:bg-blue-400  rounded-full text-sm">
+<button 
+onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+className="bg-blue-600 text-white px-6 py-2 cursor-pointer hover:bg-blue-400  rounded-full text-sm">
 Talk To Our Experts
 </button>
 
@@ -213,7 +215,9 @@ We deliver 99.8% successful migrations across enterprise environments.
 
 </div>
 
-<button className="bg-blue-600 text-white px-6 py-2 hover:bg-blue-400 cursor-pointer rounded-full text-sm">
+<button 
+onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+className="bg-blue-600 text-white px-6 py-2 hover:bg-blue-400 cursor-pointer rounded-full text-sm">
 Talk To Our Experts
 </button>
 
@@ -283,7 +287,9 @@ We guarantee 85%+ user adoption within 60 days.
 
 </div>
 
-<button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-400 cursor-pointer  text-sm">
+<button 
+onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-400 cursor-pointer  text-sm">
 Talk To Our Experts
 </button>
 
@@ -350,7 +356,9 @@ Compliant with ISO 27001, SOC 2 Type II, and major industry regulations.
 
 </div>
 
-<button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-400 cursor-pointer text-sm">
+<button 
+onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-400 cursor-pointer text-sm">
 Talk To Our Experts
 </button>
 

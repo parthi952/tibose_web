@@ -230,7 +230,9 @@ function PlanCard({ title, price, desc, features, icons }) {
           </div>
         </div>
         
-        <button className="w-full mt-4 bg-blue-600 text-white hover:bg-blue-700 py-3.5 font-bold text-sm transition-all cursor-pointer rounded-full shadow-blue-100 shadow-lg active:scale-[0.98]">
+        <button 
+        onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+        className="w-full mt-4 bg-blue-600 text-white hover:bg-blue-700 py-3.5 font-bold text-sm transition-all cursor-pointer rounded-full shadow-blue-100 shadow-lg active:scale-[0.98]">
           Get Started
         </button>
       </div>

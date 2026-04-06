@@ -39,7 +39,9 @@ export default function AzureInfrastructure() {
           </p>
 
 
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-md cursor-pointer shadow-md hover:bg-blue-700 transition">
+          <button 
+          onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+          className="bg-blue-600 text-white px-6 py-2 rounded-md cursor-pointer shadow-md hover:bg-blue-700 transition">
             Talk To Our Experts
           </button>
 

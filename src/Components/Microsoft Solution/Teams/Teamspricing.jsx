@@ -78,7 +78,9 @@ Microsoft Teams Business Plans
 
 </ul>
 
-<button className="mt-8 bg-blue-600 text-white w-full py-2 rounded-full">
+<button 
+onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+className="mt-8 bg-blue-600 hover:bg-blue-700 cursor-pointer duration-300 transition text-white w-full py-2 rounded-full">
 Get Start
 </button>
 
@@ -108,7 +110,9 @@ Get Start
 
 </ul>
 
-<button className="mt-8 bg-blue-600 text-white w-full py-2 rounded-full">
+<button 
+onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+className="mt-8 bg-blue-600  hover:bg-blue-700 cursor-pointer duration-300 transition text-white w-full py-2 rounded-full">
 Get Start
 </button>
 
@@ -137,7 +141,9 @@ Get Start
 
 </ul>
 
-<button className="mt-8 bg-blue-600 text-white w-full py-2 rounded-full">
+<button 
+onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+className="mt-8 bg-blue-600 hover:bg-blue-700 duration-300 transition cursor-pointer text-white w-full py-2 rounded-full">
 Get Start
 </button>
 
@@ -170,7 +176,9 @@ Get Start
 
 </ul>
 
-<button className="mt-8 bg-blue-600 text-white w-full py-2 rounded-full">
+<button 
+onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+className="mt-8 bg-blue-600 text-white hover:bg-blue-700 duration-300 transition cursor-pointer w-full py-2 rounded-full">
 Get Start
 </button>
 

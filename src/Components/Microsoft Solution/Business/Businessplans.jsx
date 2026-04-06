@@ -87,7 +87,9 @@ export default function MicrosoftPlans() {
               {basicIcons.map((icon, i) => <ServiceIcon key={i} icon={icon} />)}
             </div>
           </div>
-          <button className="mt-10 bg-blue-600 text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
+          <button 
+          onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+          className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
             Get Started
           </button>
         </div>
@@ -112,7 +114,9 @@ export default function MicrosoftPlans() {
               {standardIcons.map((icon, i) => <ServiceIcon key={i} icon={icon} />)}
             </div>
           </div>
-          <button className="mt-10 bg-blue-600 text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
+          <button 
+          onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+          className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
             Get Started
           </button>
         </div>
@@ -137,7 +141,9 @@ export default function MicrosoftPlans() {
               {premiumIcons.map((icon, i) => <ServiceIcon key={i} icon={icon} />)}
             </div>
           </div>
-          <button className="mt-10 bg-blue-600 text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
+          <button 
+          onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+          className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
             Get Started
           </button>
         </div>
@@ -162,7 +168,9 @@ export default function MicrosoftPlans() {
               {appIcons.map((icon, i) => <ServiceIcon key={i} icon={icon} />)}
             </div>
           </div>
-          <button className="mt-10 bg-blue-600 text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
+          <button
+          onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+           className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
             Get Started
           </button>
         </div>

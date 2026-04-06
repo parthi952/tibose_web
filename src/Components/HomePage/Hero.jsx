@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Img from "../../Constents";
 import Helmet from "helmet";
+
 const Heroimg = Img.HomePage.HeroImg;
 const M356 = Img.HomePage.Ms365;
 
@@ -15,34 +16,39 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // ✅ ONLY CHANGE: chatbot trigger added
   const ActionButton = ({ text }) => (
-    <button className="px-5 sm:px-6 py-2.5 cursor-pointer bg-blue-600 text-white rounded-xl font-semibold transition-all hover:bg-transparent hover:text-blue-600 hover:shadow-xl border border-blue-600 active:scale-95 mt-4">
+    <button
+      onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+      className="px-5 sm:px-6 py-2.5 cursor-pointer bg-blue-600 text-white rounded-xl font-semibold transition-all hover:bg-transparent hover:text-blue-600 hover:shadow-xl border border-blue-600 active:scale-95 mt-4"
+    >
       {text}
     </button>
   );
 
   return (
     <section className="bg-blue-50 w-full h-130 mt-20 pt-16 sm:pt-20 lg:pt-24 flex flex-col justify-between overflow-hidden">
+      
       <Helmet>
-  <title>Microsoft 365 Solutions for Business | Tibos Chennai</title>
+        <title>Microsoft 365 Solutions for Business | Tibos Chennai</title>
 
-  <meta
-    name="description"
-    content="Boost productivity with Microsoft 365 solutions for business. Tibos provides licensing, deployment, Teams integration, and security services in Chennai."
-  />
+        <meta
+          name="description"
+          content="Boost productivity with Microsoft 365 solutions for business. Tibos provides licensing, deployment, Teams integration, and security services in Chennai."
+        />
 
-  <meta
-    name="keywords"
-    content="Microsoft 365 business Chennai, Microsoft 365 solutions India, Office 365 services, Microsoft Teams integration"
-  />
+        <meta
+          name="keywords"
+          content="Microsoft 365 business Chennai, Microsoft 365 solutions India, Office 365 services, Microsoft Teams integration"
+        />
 
-  <link rel="canonical" href="https://tibos.co.in" />
+        <link rel="canonical" href="https://tibos.co.in" />
 
-  <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="Microsoft 365 Solutions for Business | Tibos" />
-  <meta property="og:description" content="Improve productivity with Microsoft 365 deployment and support services." />
-</Helmet>
+        <meta property="og:title" content="Microsoft 365 Solutions for Business | Tibos" />
+        <meta property="og:description" content="Improve productivity with Microsoft 365 deployment and support services." />
+      </Helmet>
 
       <div className="relative flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-10">
 
@@ -62,11 +68,11 @@ const Hero = () => {
                 Microsoft 365 Solutions for Businesses
               </h1>
 
-              <p className="text-gray-600  text-sm sm:text-base mt-3">
+              <p className="text-gray-600 text-sm sm:text-base mt-3">
                 Microsoft 365 & Modern Workplace Solutions for Businesses.
               </p>
 
-              <ActionButton text="Contact Our Experts"/>
+              <ActionButton text="Contact Our Experts" />
             </div>
 
             {/* Image */}
@@ -107,7 +113,7 @@ const Hero = () => {
                 enterprise connectivity and cybersecurity solutions across India.
               </p>
 
-              <ActionButton  text="Contact Our Experts" />
+              <ActionButton text="Contact Our Experts" />
             </div>
 
           </div>
