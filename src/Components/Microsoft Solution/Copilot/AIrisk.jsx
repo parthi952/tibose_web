@@ -7,13 +7,14 @@ export default function AIrisk() {
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
-          The Risks of Uncontrolled AI Adoption
+          AI Security Risks for Businesses and How to Control Them
         </h2>
 
         <p className="text-gray-600 leading-relaxed">
-          As businesses explore the potential of AI, many face critical challenges around
-          security, compliance, and responsible usage. While employees are eager to leverage
-          AI for productivity, the lack of clear safeguards can put organizations at serious risk.
+          As businesses adopt AI tools for productivity, they face increasing risks related to data security, 
+          compliance, and governance. Without proper controls, AI usage can expose sensitive information and create 
+          serious enterprise vulnerabilities. TIBOS Solutions helps organizations implement secure and compliant AI strategies.
+
         </p>
       </div>
 
@@ -29,12 +30,13 @@ export default function AIrisk() {
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Unmanaged Growth
+            Unmanaged AI Usage in Organizations
           </h3>
 
           <p className="text-gray-600 text-sm leading-relaxed">
-            With nearly all professionals experimenting with AI tools, usage is spreading
-            faster than most companies can regulate.
+           Employees using AI tools without IT control can lead to unregulated growth,
+          increasing security and compliance risks for businesses.
+
           </p>
 
         </div>
@@ -48,12 +50,13 @@ export default function AIrisk() {
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Data Exposure Risks
+            AI Data Security and Exposure Risks
           </h3>
 
           <p className="text-gray-600 text-sm leading-relaxed">
-            Employees using public AI chat services may unintentionally share sensitive
-            corporate information, leading to data leaks.
+            Using public AI tools can expose confidential business data, 
+            leading to data leaks and cybersecurity threats.
+
           </p>
 
         </div>
@@ -67,12 +70,12 @@ export default function AIrisk() {
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Enterprise Concerns
+            Enterprise AI Compliance and Governance Challenges
           </h3>
 
           <p className="text-gray-600 text-sm leading-relaxed">
-            Leading organizations have restricted AI usage internally to prevent data
-            leakage and ensure strict compliance breaches are avoided.
+            Organizations must implement strict AI governance policies to 
+            meet compliance standards and prevent security breaches.
           </p>
 
         </div>

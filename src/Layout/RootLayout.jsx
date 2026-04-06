@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import TibosFooter from "./TibosFooter";
 import TopScroll from "./TopScroll";
 import ScrollToTopOnRouteChange from "./ScrollToTopOnRouteChange";
-import ChatBot from "./chatbot";
+import ChatBot from "./ChatBot";
 
 
 export default function RootLayout() {

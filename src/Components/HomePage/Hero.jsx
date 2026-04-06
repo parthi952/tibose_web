@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Img from "../../Constents";
-
+import Helmet from "helmet";
 const Heroimg = Img.HomePage.HeroImg;
 const M356 = Img.HomePage.Ms365;
 
@@ -23,6 +23,26 @@ const Hero = () => {
 
   return (
     <section className="bg-blue-50 w-full h-130 mt-20 pt-16 sm:pt-20 lg:pt-24 flex flex-col justify-between overflow-hidden">
+      <Helmet>
+  <title>Microsoft 365 Solutions for Business | Tibos Chennai</title>
+
+  <meta
+    name="description"
+    content="Boost productivity with Microsoft 365 solutions for business. Tibos provides licensing, deployment, Teams integration, and security services in Chennai."
+  />
+
+  <meta
+    name="keywords"
+    content="Microsoft 365 business Chennai, Microsoft 365 solutions India, Office 365 services, Microsoft Teams integration"
+  />
+
+  <link rel="canonical" href="https://tibos.co.in" />
+
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Microsoft 365 Solutions for Business | Tibos" />
+  <meta property="og:description" content="Improve productivity with Microsoft 365 deployment and support services." />
+</Helmet>
 
       <div className="relative flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-10">
 

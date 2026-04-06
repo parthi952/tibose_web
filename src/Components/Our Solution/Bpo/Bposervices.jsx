@@ -10,33 +10,33 @@ import {
 const services = [
   {
     icon: <CreditCard className="w-6 h-6 text-blue-500" />,
-    title: "Account Receivable Management",
-    desc: "Optimizing your cash flow through professional and systematic tracking of outstanding invoices.",
+    title: "Accounts Receivable Management Services",
+    desc: "Improve cash flow with professional accounts receivable management, invoice tracking, and payment follow-ups for businesses.",
   },
   {
     icon: <FileText className="w-6 h-6 text-blue-500" />,
-    title: "Debt Collections",
-    desc: "Ethical and effective recovery strategies to minimize bad debt and improve financial health.",
+    title: "Debt Collection Services for Businesses",
+    desc: "Ethical and compliant debt recovery solutions designed to reduce outstanding payments and improve financial stability.",
   },
   {
     icon: <Headphones className="w-6 h-6 text-blue-500" />,
-    title: "Back Office Support",
-    desc: "Comprehensive administrative assistance to streamline your core business operations efficiently.",
+    title: "Back Office Support Services",
+    desc: "Streamline operations with efficient back office support including data management, documentation, and administrative services.",
   },
   {
     icon: <PhoneCall className="w-6 h-6 text-blue-500" />,
-    title: "Outbound Calling Facilities",
-    desc: "Scalable telemarketing and outreach solutions to expand your global market presence.",
+    title: "Outbound Calling and Telemarketing Services",
+    desc: "Expand your reach with outbound calling solutions for lead generation, customer engagement, and market expansion.",
   },
   {
     icon: <Shield className="w-6 h-6 text-blue-500" />,
-    title: "Customer Retention Programs",
-    desc: "Strategic engagement initiatives designed to increase loyalty and reduce customer churn.",
+    title: "Customer Retention and Engagement Solutions",
+    desc: "Boost customer loyalty with strategic retention programs designed to reduce churn and improve lifetime value.",
   },
   {
     icon: <Star className="w-6 h-6 text-blue-500" />,
-    title: "High Value Customer Base Management",
-    desc: "Dedicated account management for your most significant and high-priority clients.",
+    title: "High-Value Customer Management Services",
+    desc: "Dedicated account management solutions for high-priority clients to ensure long-term business relationships.",
   },
 ];
 
@@ -45,12 +45,13 @@ const Bposervices = () => {
     <div className=" py-16 px-6 md:px-16">
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="text-gray-500 text-lg">
-          Tailored Teams and Workflows
-        </p>
         <h2 className="text-3xl md:text-4xl font-bold mt-2">
-          Our Core BPO Services
+          Business Process Outsourcing (BPO) Services for Enterprises
         </h2>
+        <br />
+        <p className="text-gray-500 text-lg">
+          We provide scalable BPO services to help businesses streamline operations, improve cash flow, and enhance customer engagement.
+        </p>
       </div>
 
       {/* Cards */}
