@@ -1,4 +1,5 @@
 import Img from "../../../Constents";
+import MotionButton from "../../Common/MotionButton";
 
 const AzureIaas = Img.Microsoft_Solution.Azure.AzureIaas;
 
@@ -39,12 +40,10 @@ export default function AzureInfrastructure() {
           </p>
 
 
-          <button 
-          onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
-          className="bg-blue-600 text-white px-6 py-2 rounded-md cursor-pointer shadow-md hover:bg-blue-700 transition">
-            Talk To Our Experts
-          </button>
-
+          <MotionButton
+          B_Name="Talk To Our Expects"
+          ActionToClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+          />
         </div>
 
       </div>

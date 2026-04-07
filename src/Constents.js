@@ -5,7 +5,7 @@ const Img = {
   HomePage: {
     TibosLogo: "https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Logo/tibos logo.png",
     HeroImg: "https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/Hero.png",
-    Ms365: "https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/Herom.png",
+    Ms365: "https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/Hero3.png",
     OurService: "https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/OurService/Ourservices.png",
     AboutImg: "https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/About/About us.png",
     Connectivity: "https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Blogs/1.png",
@@ -80,7 +80,8 @@ Microsoft_Solution:{
         Defender:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Microsoft_Solutions/Microsoft_Bussiness/Services/Defender.png",
         Eye:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Microsoft_Solutions/Microsoft_Bussiness/Services/Eye.png",
         Windows:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Microsoft_Solutions/Microsoft_Bussiness/Services/Windows 11.png",
-        Sentinel:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Microsoft_Solutions/Microsoft_Bussiness/Services/Sentinel.png"
+        Sentinel:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Microsoft_Solutions/Microsoft_Bussiness/Services/Sentinel.png",
+        powerbi:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Microsoft_Solutions/Microsoft_Bussiness/Services/powerbi.png"
     },
     
     Enterprise:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Microsoft_Solutions/Enterprise/Enterprise banner.png",

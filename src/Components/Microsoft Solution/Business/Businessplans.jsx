@@ -46,7 +46,7 @@ export default function MicrosoftPlans() {
   // Reusable Icon Component with Tooltip
   const ServiceIcon = ({ icon }) => (
     <div className="group relative flex items-center justify-center">
-      <div className="w-7 h-7 bg-white drop-shadow-sm rounded-md flex items-center justify-center cursor-help border border-gray-100">
+      <div className="w-7 h-7 bg-white drop-shadow-sm rounded-md flex items-center justify-center border border-gray-100">
         <img src={icon.img} alt={icon.name} className="w-4 h-4 object-contain" />
       </div>
       {/* Tooltip */}
