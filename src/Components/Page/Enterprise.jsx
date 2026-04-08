@@ -1,13 +1,14 @@
 import Boost from "../Microsoft Solution/Business/Boost";
-import Businessplans from "../Microsoft Solution/Business/Businessplans";
+import Enterpriceplans from "../Microsoft Solution/enterprise/Enterpriceplans";
 import EnterpriseBanner from "../Microsoft Solution/enterprise/EnterpriseBanner";
 
 const Enterprise = () => {
   return (
     <div>
         <EnterpriseBanner/>
+        <Enterpriceplans/>
         <Boost/>
-        <Businessplans/>
+        
     </div>
   )
 }

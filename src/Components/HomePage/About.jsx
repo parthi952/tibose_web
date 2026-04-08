@@ -35,7 +35,7 @@ const About = () => {
         <div className="flex justify-center lg:justify-start">
           <MotionButton
             B_Name="Explore Our Solutions"
-            ActionToClick={() => alert("Learn more clicked!")}
+            ActionToClick={() => window.dispatchEvent(new Event("open-chatbot"))}
           />
         </div>
 

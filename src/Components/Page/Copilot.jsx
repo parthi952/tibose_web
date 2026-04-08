@@ -1,5 +1,6 @@
 import Img from "../../Constents"
 import AIrisk from "../Microsoft Solution/Copilot/AIrisk";
+import Copilotpricing from "../Microsoft Solution/Copilot/Copilotpricing";
 import Empowering from "../Microsoft Solution/Copilot/Empowering";
 import FAQ from "../Microsoft Solution/Copilot/FAQ";
 import Whychoosecopilot from "../Microsoft Solution/Copilot/Whychoosecopilot";
@@ -56,8 +57,10 @@ const Copilot = () => {
   <meta name="robots" content="index, follow" />
 </Helmet>
         <img src={CBanner} alt="Microsoft 365 Copilot AI productivity tools for enterprise businesses" className="mt-20"/>
+        
         <AIrisk/>
         <Empowering/>
+          {/* <Copilotpricing/> */}
         <Whychoosecopilot/>
         <FAQ/>
     </div>

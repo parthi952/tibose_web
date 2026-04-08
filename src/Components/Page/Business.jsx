@@ -28,8 +28,9 @@ const Business = () => {
   <meta property="og:description" content="Improve productivity with Microsoft 365 deployment and support services." />
 </Helmet>
       <img src={BH} alt="Microsoft Business" className='mt-20' />
-        <Boost/>
         <Businessplans/>
+        <Boost/>
+        
     </div>
   )
 }

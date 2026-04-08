@@ -89,7 +89,9 @@ const SurfaceProducts = () => {
               battery for modern professionals.
             </p>
 
-            <button className="bg-gradient-to-r from-blue-600 to-blue-400 cursor-pointer hover:from-blue-700 hover:to-blue-700 text-white px-6 py-3 rounded-full shadow">
+            <button 
+            onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+            className="bg-gradient-to-r from-blue-600 to-blue-400 cursor-pointer hover:from-blue-700 hover:to-blue-700 text-white px-6 py-3 rounded-full shadow">
               Talk To Our Expects
             </button>
 
@@ -120,7 +122,9 @@ const SurfaceProducts = () => {
               battery designed for professionals.
             </p>
 
-            <button className="bg-gradient-to-r from-blue-600 to-blue-400 cursor-pointer hover:from-blue-700 hover:to-blue-700 text-white px-6 py-3 rounded-full shadow">
+            <button 
+            onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+            className="bg-gradient-to-r from-blue-600 to-blue-400 cursor-pointer hover:from-blue-700 hover:to-blue-700 text-white px-6 py-3 rounded-full shadow">
               Talk To Our Expects
             </button>
 
@@ -149,7 +153,9 @@ const SurfaceProducts = () => {
 
           </div>
 
-          <button className="bg-gradient-to-r from-blue-600 to-blue-400 cursor-pointer hover:from-blue-700 hover:to-blue-700 text-white px-8 py-3 rounded-full shadow mt-12">
+          <button 
+          onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+          className="bg-gradient-to-r from-blue-600 to-blue-400 cursor-pointer hover:from-blue-700 hover:to-blue-700 text-white px-8 py-3 rounded-full shadow mt-12">
             Talk To Our Expects
           </button>
 

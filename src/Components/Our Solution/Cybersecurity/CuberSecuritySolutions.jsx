@@ -11,43 +11,43 @@ import {
 
 const services = [
   {
-    title: "Identity and Access Management",
-    desc: "Secure user identities and enforce granular access controls across your entire infrastructure.",
+    title: "Identity and Access Management (IAM) Solutions",
+    desc: "Secure user identities with advanced access control, multi-factor authentication, and zero trust security models.",
     icon: <Fingerprint className="w-6 h-6 text-blue-600" />,
   },
   {
-    title: "Cloud Security",
-    desc: "End-to-end protection for hybrid and multi-cloud environments including CSPM and CWPP.",
+    title: "Cloud Security Solutions for Enterprises",
+    desc: "Protect cloud environments with CSPM, CWPP, and Microsoft cloud security tools across hybrid and multi-cloud systems.",
     icon: <Cloud className="w-6 h-6 text-blue-600" />,
   },
   {
-    title: "Network Security",
-    desc: "Intelligent threat detection and zero-trust architecture for perimeter-less organizations.",
+    title: "Network Security and Zero Trust Architecture",
+    desc: "Implement zero trust security frameworks with advanced threat detection and network protection strategies.",
     icon: <Network className="w-6 h-6 text-blue-600" />,
   },
   {
-    title: "End Point Security",
-    desc: "Advanced EDR and XDR solutions to protect every device connected to your corporate network.",
+    title: "Endpoint Security and EDR/XDR Solutions",
+    desc: "Secure devices with endpoint detection and response (EDR) and extended detection (XDR) solutions.",
     icon: <Monitor className="w-6 h-6 text-blue-600" />,
   },
   {
-    title: "Application / API Security",
-    desc: "Integrate security into the DevOps lifecycle with robust application and API shielding.",
+    title: "Application and API Security Services",
+    desc: "Protect applications with secure DevOps practices, API protection, and vulnerability management.",
     icon: <Code className="w-6 h-6 text-blue-600" />,
   },
   {
-    title: "Data Protection",
-    desc: "Advanced encryption, DLP, and data sovereignty controls for your most critical assets.",
+    title: "Data Protection and DLP Solutions",
+    desc: "Safeguard sensitive data with encryption, data loss prevention (DLP), and compliance controls.",
     icon: <Lock className="w-6 h-6 text-blue-600" />,
   },
   {
-    title: "Security Consulting",
-    desc: "Strategic guidance to align security investments with your core business objectives.",
+    title: "Cybersecurity Consulting Services",
+    desc: "Align your security strategy with business goals through expert risk assessment and compliance planning.",
     icon: <ShieldCheck className="w-6 h-6 text-blue-600" />,
   },
   {
-    title: "Managed Security Services",
-    desc: "24/7 proactive SOC monitoring and expert incident response orchestration.",
+    title: "Managed Security Services (SOC Monitoring)",
+    desc: "24/7 security monitoring, threat detection, and incident response through managed SOC services.",
     icon: <BarChart className="w-6 h-6 text-blue-600" />,
   },
 ];
@@ -59,14 +59,14 @@ const CyberSecuritySolutions = () => {
 
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
-          Our Cybersecurity Solutions
+          Enterprise Cybersecurity Solutions for Businesses
         </h2>
 
         {/* Description */}
         <p className="text-gray-500 mt-4 max-w-3xl mx-auto text-sm md:text-base">
-          In a rapidly evolving digital landscape, safeguarding your business
-          has never been more critical. TIBOS unites advanced technology and
-          deep expertise to keep your enterprise secure and resilient.
+          In today’s evolving threat landscape, businesses need advanced cybersecurity solutions 
+          to protect data, users, and infrastructure. TIBOS Solutions provides enterprise-grade security services 
+          including identity protection, cloud security, endpoint protection, and zero trust implementation across organizations in Chennai and India.
         </p>
 
         {/* Services Grid */}

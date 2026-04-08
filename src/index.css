@@ -5,3 +5,42 @@
 } */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* 🔥 Glass Icon Card */
+.glass-icon {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Glow */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  /* Animation */
+  animation: float 4s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
+}
+
+/* Slight delay for variation */
+.glass-icon:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.glass-icon:nth-child(3) {
+  animation-delay: 1s;
+}
+.glass-icon:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+/* Float */
+@keyframes float {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Glow */
+@keyframes glowPulse {
+  0%,100% { box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+  50% { box-shadow: 0 12px 40px rgba(59,130,246,0.6); }
+}

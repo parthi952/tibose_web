@@ -4,13 +4,13 @@ function SmartCommunication() {
       
       {/* Heading */}
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 text-center">
-        Smart Communication
+        Secure Business Communication Solutions for Enterprises
       </h2>
 
       <p className="text-sm sm:text-base md:text-lg text-gray-500 text-center max-w-xl sm:max-w-2xl md:max-w-3xl mb-10 md:mb-12 leading-relaxed">
-        In today's digital era, seamless and secure communication is key to business success. 
-        TIBOS delivers intelligent communication solutions that keep your teams connected, 
-        data protected, and operations running smoothly.
+        In today’s digital workplace, secure and efficient communication is critical for business success. 
+        TIBOS Solutions provides enterprise communication solutions including Microsoft Teams, VoIP, and secure
+         collaboration tools to keep your teams connected and protected.
       </p>
 
       {/* Grid */}
@@ -29,10 +29,10 @@ function SmartCommunication() {
             🔒
           </div>
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-            Secure Messaging
+            Secure Messaging Solutions for Businesses
           </h3>
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
-            Protect sensitive conversations with end-to-end encryption, ensuring only authorized participants can access your messages.
+            Protect business communications with encrypted messaging solutions that ensure data privacy and secure collaboration.
           </p>
           <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
         </div>
@@ -43,10 +43,10 @@ function SmartCommunication() {
             🔗
           </div>
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-            Unified Collaboration
+            Unified Communication and Collaboration Solutions
           </h3>
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
-            Streamline team communication across chat, calls, and video meetings, all while maintaining enterprise-grade security.
+            Enable seamless communication across chat, video, and calls using Microsoft Teams and enterprise collaboration tools.
           </p>
           <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
         </div>
@@ -57,10 +57,10 @@ function SmartCommunication() {
             📈
           </div>
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-            Intelligent Call Routing
+            AI-Powered Call Routing Solutions
           </h3>
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
-            Ensure your clients and teams are always connected to the right person with AI-driven call routing and analytics.
+            Improve customer experience with intelligent call routing systems that connect users to the right teams efficiently.
           </p>
           <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
         </div>
@@ -71,10 +71,10 @@ function SmartCommunication() {
             📧
           </div>
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-            Email Security
+            Enterprise Email Security Solutions
           </h3>
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
-            Protect your organization from phishing, spam, and malware with advanced email security solutions.
+            Protect your organization from phishing, malware, and spam with advanced email security powered by Microsoft solutions.
           </p>
           <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
         </div>
@@ -85,10 +85,10 @@ function SmartCommunication() {
             🎥
           </div>
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-            VoIP & Video Security
+            Secure VoIP and Video Communication Solutions
           </h3>
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
-            Enable crystal-clear voice and video communications with encryption and secure network protocols.
+            Enable secure voice and video communication with enterprise-grade encryption and network security.
           </p>
           <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
         </div>
@@ -99,10 +99,10 @@ function SmartCommunication() {
             📁
           </div>
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-            Secure File Sharing
+            Secure File Sharing and Collaboration Tools
           </h3>
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
-            Share documents and files safely across teams with encrypted channels and access controls.
+            Share business documents safely with encrypted file sharing and access control systems for teams.
           </p>
           <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
         </div>

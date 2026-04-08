@@ -43,7 +43,7 @@ const features = [
 const Boost = () => {
   return (
     <div>
-         <div className="w-full">
+         <div className="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 mt-20  w-full">
 
       {/* Top Header Section */}
       <div className=" py-16">
@@ -65,7 +65,7 @@ const Boost = () => {
       </div>
 
       {/* Features Section */}
-      <div className="bg-blue-100 py-20 mb-20">
+      <div className=" pb-20">
         <div className="max-w-7xl mx-auto px-10">
 
           <div className="grid md:grid-cols-2 gap-x-40 gap-y-16">
