@@ -7,18 +7,34 @@ const PLAN_DATA = {
     title: "Copilot for Business",
     price: "1,800",
     unit: "user/month",
-    description: "Empower your team with AI integrated directly into Microsoft 365 apps.",
-    features: ["AI in Word, Excel, PowerPoint", "Outlook & Teams integration", "Email & doc generation", "Microsoft Graph data access", "Standard security & support"],
-    buttonText: "Start Free Trial",
+    // description: "Empower your team with AI integrated directly into Microsoft 365 apps.",
+    features: ["AI in Word, Excel, PowerPoint, Outlook, Teams", 
+               " Generate documents, presentations & emails", 
+               "Microsoft Graph integration (emails, files, chats)", 
+               "Copilot Chat (business data + web data)", 
+               "Enterprise data protection (GDPR compliant)", 
+               "Works inside Microsoft 365 apps", 
+               "Automates daily business workflows", 
+               "Basic AI automation for SMB teams"],
+    buttonText: "Get Started",
     popular: false,
   },
   enterprise: {
     title: "Copilot for Enterprise",
     price: "2,500",
     unit: "user/month",
-    description: "Unleash full potential with advanced security, compliance, and custom AI.",
-    features: ["Everything in Business", "Enterprise-grade security", "Advanced Compliance tools", "Advanced Teams AI features", "Org-wide automation & insights"],
-    buttonText: "Contact Sales",
+    // description: "Unleash full potential with advanced security, compliance, and custom AI.",
+    features: ["Everything in Business ", 
+               "Advanced Microsoft Graph grounding", 
+               "Enterprise-grade security & compliance", 
+               "eDiscovery & legal compliance tools", 
+               "Advanced Teams AI (meeting recap, insights)",
+               "Organization-wide automation",
+               "Copilot Chat (enterprise secured)", 
+               "Works across entire organization data",
+               "Integration with Microsoft ecosystem (Loop, Viva)",
+               "AI insights from meetings, emails, files"],
+    buttonText: "Get Started",
     popular: true,
   },
   studio: [
@@ -27,15 +43,25 @@ const PLAN_DATA = {
       price: "16,640",
       unit: "25k credits/mo",
       description: "Scale your custom AI agents with high-volume message capacity.",
-      features: ["Build custom AI agents", "25,000 monthly credits", "Advanced workflow automation", "Custom App integrations"],
-      buttonText: "Purchase Credits",
+      features: [" Build custom AI copilots (chatbots)", 
+                 "Automate workflows & business processes", 
+                 "Integrate with Teams, websites, apps", 
+                 "Uses Copilot Credits (consumption-based)",
+                 "Deploy AI agents across organization",
+                 "Supports enterprise automation scenarios",
+                 " Centralized management of AI agents"],
+      buttonText: "Get Started",
     },
     {
-      title: "Studio (Flexible)",
+      title: "Studio (Pay-as-you-go)",
       price: "0.80",
       unit: "per message",
       description: "Flexible, usage-based billing for growing organizations.",
-      features: ["No monthly fixed costs", "Pay-as-you-go scaling", "Full Studio AI capabilities", "Priority message processing"],
+      features: ["No fixed cost (usage-based billing)", 
+                 "Ideal for testing & small deployments", 
+                 "Scale based on usage", 
+                 "Same features as capacity model",
+                 "Flexible AI agent development"],
       buttonText: "Get Started",
     }
   ]
@@ -49,8 +75,8 @@ export default function CopilotPlans() {
       <div className="max-w-6xl mx-auto">
         
         {/* Header Section */}
-        <div className="text-center mb-14">
-          <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-slate-900 ">
             Microsoft <span className="text-blue-600">Copilot</span> Pricing
           </h2>
           <p className="text-slate-500 mt-4 text-lg">
@@ -65,7 +91,7 @@ export default function CopilotPlans() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`relative px-10 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${
+                className={`relative px-10 py-3 rounded-xl cursor-pointer text-sm font-bold transition-all duration-300 ${
                   activeTab === tab ? "text-white" : "text-blue-700 hover:bg-blue-100"
                 }`}
               >
@@ -109,46 +135,41 @@ export default function CopilotPlans() {
 
 function PricingCard({ plan }) {
   return (
-    <div className={`relative bg-white border-2 rounded-[2rem] p-10 flex flex-col w-full max-w-[400px] transition-all hover:border-blue-300 hover:shadow-2xl hover:shadow-blue-100/50 ${
-      plan.popular ? 'border-blue-600 ring-4 ring-blue-50' : 'border-slate-100'
-    }`}>
+    <div className={"relative bg-white border border-gray-200 rounded-[2rem] p-10 flex flex-col w-full max-w-[400px] transition-all hover:shadow-2xl hover:shadow-blue-100/50"} >
       
-      {plan.popular && (
-        <div className="absolute -top-4 right-10 bg-blue-600 text-white px-5 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-lg shadow-blue-200">
-          Recommended
-        </div>
-      )}
 
-      <div className="mb-8">
+      <div className="mb-3">
         <h3 className="text-2xl font-bold text-slate-900 mb-3">{plan.title}</h3>
-        <p className="text-slate-500 text-sm font-medium leading-relaxed">{plan.description}</p>
+        <p className="text-slate-500 text-xs font-medium leading-relaxed">{plan.description}</p>
       </div>
 
-      <div className="mb-10">
+      <div className="mb-6">
         <div className="flex items-baseline gap-1">
-          <span className="text-5xl font-black text-slate-900">₹{plan.price}</span>
-          <span className="text-slate-400 font-semibold text-lg">/{plan.unit}</span>
+          <span className="text-3xl font-bold text-slate-900">₹{plan.price}</span>
+          <span className="text-slate-400 font-semibold text-sm">/{plan.unit}</span>
         </div>
       </div>
 
       <div className="space-y-5 mb-12 flex-1">
         {plan.features.map((feature, i) => (
           <div key={i} className="flex items-center gap-4">
-            <div className="bg-blue-600 rounded-full p-1 shadow-md shadow-blue-100">
-              <Check className="text-white" size={12} strokeWidth={4} />
+            <div>
+              <Check className="text-gray-500" size={10} strokeWidth={4} />
             </div>
-            <span className="text-slate-700 text-[15px] font-medium">{feature}</span>
+            <span className="text-slate-700 text-[12px] font-medium">{feature}</span>
           </div>
         ))}
       </div>
 
-      <button className={`w-full py-5 rounded-2xl font-bold flex items-center justify-center gap-2 transition-all active:scale-95 ${
+      <button 
+      onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
+      className={`w-full py-3 rounded-full font-bold cursor-pointer flex items-center justify-center gap-2 transition-all active:scale-95 ${
         plan.popular 
         ? "bg-blue-600 text-white hover:bg-blue-700 shadow-xl shadow-blue-200" 
-        : "bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50"
+        : "bg-blue-500 text-white hover:bg-blue-700 duration-300"
       }`}>
         {plan.buttonText}
-        <ArrowRight size={18} />
+        {/* <ArrowRight size={18} /> */}
       </button>
     </div>
   );

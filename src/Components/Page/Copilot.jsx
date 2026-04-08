@@ -60,7 +60,7 @@ const Copilot = () => {
         
         <AIrisk/>
         <Empowering/>
-          {/* <Copilotpricing/> */}
+          <Copilotpricing/>
         <Whychoosecopilot/>
         <FAQ/>
     </div>

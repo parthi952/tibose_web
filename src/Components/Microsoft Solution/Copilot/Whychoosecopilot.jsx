@@ -2,7 +2,7 @@ import { Zap, Pencil, Sun, Settings } from "lucide-react";
 
 export default function Whychoosecopilot() {
   return (
-    <section className=" py-5 px-6">
+    <section className=" py-20 px-6">
 
       {/* Heading */}
       <h2 className="text-center text-4xl font-bold text-gray-900 mb-16">

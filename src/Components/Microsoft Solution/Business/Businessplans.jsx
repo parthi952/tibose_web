@@ -89,7 +89,7 @@ export default function MicrosoftPlans() {
           </div>
           <button 
           onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
-          className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
+          className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 active:scale-95 duration-300 transition-all rounded-full transition-colors">
             Get Started
           </button>
         </div>
@@ -116,7 +116,7 @@ export default function MicrosoftPlans() {
           </div>
           <button 
           onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
-          className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
+          className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold active:scale-95 duration-300 transition-all hover:bg-blue-700 py-3 rounded-full transition-colors">
             Get Started
           </button>
         </div>
@@ -143,7 +143,7 @@ export default function MicrosoftPlans() {
           </div>
           <button 
           onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
-          className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
+          className="mt-10 bg-blue-600 cursor-pointer text-white active:scale-95 duration-300 transition-all font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
             Get Started
           </button>
         </div>
@@ -170,7 +170,7 @@ export default function MicrosoftPlans() {
           </div>
           <button
           onClick={() => window.dispatchEvent(new Event("open-chatbot"))}
-           className="mt-10 bg-blue-600 cursor-pointer text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
+           className="mt-10 bg-blue-600 cursor-pointer active:scale-95 duration-300 transition-all text-white font-semibold hover:bg-blue-700 py-3 rounded-full transition-colors">
             Get Started
           </button>
         </div>
