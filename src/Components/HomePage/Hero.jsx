@@ -14,18 +14,27 @@ const loop = Img.Microsoft_Solution.Sericeslogo.Loop;
 const outlook = Img.Microsoft_Solution.Sericeslogo.Outlook;
 const teams = Img.Microsoft_Solution.Sericeslogo.Teams;
 
+// Slide 3 solution partner images
+const modern=Img.Hero_solution.modern_logo;
+const infrastructure=Img.Hero_solution.infrastructure;
+const Security=Img.Hero_solution.Security;
+const Autherized_reseller=Img.Hero_solution.Autherized_reseller;
+const solution_partner=Img.Hero_solution.Solution_partner;
+const bussiness_application=Img.Hero_solution.Bussiness_Application;
+
+// slide 2 center logo 
+const center_logo=Img.SLide_2.center_logo
+
 // Slide 3 Badges - Left & Right Arc Alignment
 const leftBadges = [
-  { img: "2.png", customWidth: "w-24 sm:w-32", offset: "translate-x-4" }, 
-  { img: "1.png", customWidth: "w-28 sm:w-36", offset: "-translate-x-2" },
+  { img: modern, customWidth: "w-24 sm:w-32", offset: "translate-x-4" }, 
+  { img: infrastructure, customWidth: "w-28 sm:w-36", offset: "-translate-x-2" },
 ];
 
 const rightBadges = [
-  { img: "3.png", customWidth: "w-32 sm:w-40", offset: "translate-x-2" },
-  { img: "4.png", customWidth: "w-24 sm:w-32", offset: "-translate-x-4" }
+  { img: Security, customWidth: "w-32 sm:w-40", offset: "translate-x-2" },
+  { img: Autherized_reseller, customWidth: "w-24 sm:w-32", offset: "-translate-x-4" }
 ];
-
-const centerIcon = "solution.png";
 
 // --- UPDATED ICON ORDER FOR SLIDE 1 ---
 // Slide 1 first 4 icons-ai mattum dhaan display pannum (slice(0,4))
@@ -121,7 +130,7 @@ const Hero = () => {
           <div className="relative z-10 flex flex-col lg:flex-row items-center mt-9 justify-center w-full max-w-6xl gap-5 md:gap-20">
             <div className="relative w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] flex items-center justify-center mb-10 lg:mb-0">
               <div className="z-20 p-5 bg-white/20 backdrop-blur-xl rounded-3xl border border-white/30 shadow-2xl">
-                 <img src="powerbi 2.png" alt="MS Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
+                 <img src={center_logo} alt="MS Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
               </div>
               {appIcons.map((item, i) => {
                 const angle = (i * 36) * (Math.PI / 180);
@@ -163,7 +172,7 @@ const Hero = () => {
 
             {/* Center Content */}
             <div className="flex flex-col items-center text-center mb-10 max-w-2xl">
-              <img src={centerIcon} className="w-30 sm:w-35 rounded-[9px] h-auto mb-6 animate-subtle" alt="Partner Logo" />
+              <img src={solution_partner} className="w-30 sm:w-35 rounded-[9px] h-auto mb-6 animate-subtle" alt="Partner Logo" />
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
                 Microsoft Solution Partners
               </h1>
@@ -171,7 +180,7 @@ const Hero = () => {
                 Helping businesses deploy Microsoft 365, Azure cloud services, and cybersecurity solutions across India.
               </p>
               <ActionButton text="Contact Our Expert" />
-               <img src="image 73.png"className="w-30 sm:w-35 rounded-[9px] h-auto mt-10 animate-subtle" alt="Partner Logo" />
+               <img src={bussiness_application} className="w-30 sm:w-35 rounded-[9px] h-auto mt-10 animate-subtle" alt="Partner Logo" />
               
               {/* Mobile View Badges */}
               <div className="flex lg:hidden flex-wrap justify-center gap-4 mt-8">

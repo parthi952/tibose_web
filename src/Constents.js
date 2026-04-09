@@ -146,6 +146,17 @@ Our_Solution:{
 Resouces:{
     blogbanner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Resouces/Resources 1.png"
 
+},
+Hero_solution:{
+    modern_logo:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/solution_partner/Modern_logo.png",
+    infrastructure:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/solution_partner/Infrastructure.png",
+    Security:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/solution_partner/Security.png",
+    Autherized_reseller:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/solution_partner/Authorized_reseller.png",
+    Solution_partner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/solution_partner/solution.png",
+    Bussiness_Application:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/solution_partner/Bussiness application.png"
+},
+SLide_2:{
+    center_logo:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide2/microsoft_logo.png"
 }
 }
 
