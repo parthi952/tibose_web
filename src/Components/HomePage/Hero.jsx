@@ -100,7 +100,7 @@ const Hero = () => {
               <p className="text-gray-100 text-sm sm:text-base mt-3">Empowering your modern workplace with secure, scalable, and integrated Microsoft 365 solutions.</p>
               <ActionButton text="Contact Our Experts" />
             </div>
-            <div className="relative mb-20">
+            <div className="relative mb-15">
                <div className="w-[350px] h-[290px] rounded-3xl bg-white/30 backdrop-blur-xl border border-white/20 flex items-center justify-center">
                  <div className="grid grid-cols-2 gap-6">
                     {/* slice(0, 4) ippo array-la irukka first 4 icons (PPT, Excel, Intune, PowerBI)-ah edukum */}
@@ -118,7 +118,7 @@ const Hero = () => {
           index === 1 ? "opacity-100 translate-x-0 z-10" : "opacity-0 translate-x-8 pointer-events-none z-0"
         }`}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#020617] via-[#0a2540] to-[#0f766e]" />
-          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10 md:gap-20">
+          <div className="relative z-10 flex flex-col lg:flex-row items-center mt-9 justify-center w-full max-w-6xl gap-5 md:gap-20">
             <div className="relative w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] flex items-center justify-center mb-10 lg:mb-0">
               <div className="z-20 p-5 bg-white/20 backdrop-blur-xl rounded-3xl border border-white/30 shadow-2xl">
                  <img src="powerbi 2.png" alt="MS Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
