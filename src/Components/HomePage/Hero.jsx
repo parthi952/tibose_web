@@ -36,14 +36,12 @@ const rightBadges = [
   { img: Autherized_reseller, customWidth: "w-24 sm:w-32", offset: "-translate-x-4" }
 ];
 
-// --- UPDATED ICON ORDER FOR SLIDE 1 ---
-// Slide 1 first 4 icons-ai mattum dhaan display pannum (slice(0,4))
-// Adhanaala PPT, Excel, Intune, PowerBI-ah modhala vachurukaen
+// Slide 1 / Slide 2 icons 
 const appIcons = [
-  { img: PPT },      // 1st icon
-  { img: Excell },   // 2nd icon
-  { img: intune },   // 3rd icon (Loop-ku badhila)
-  { img: powerbi },  // 4th icon (OneDrive-ku badhila)
+  { img: PPT },     // Slide 1 // 1st icon
+  { img: Excell },  // Slide 1 // 2nd icon
+  { img: intune },  // Slide 1 // 3rd icon
+  { img: powerbi }, // Slide 1 // 4th icon
   { img: Onenote }, 
   { img: entraid }, 
   { img: loop }, 
@@ -76,21 +74,33 @@ const Hero = () => {
 
   return (
     <section className="w-full h-135 mt-20 flex flex-col justify-between overflow-hidden relative">
-      <style>
-        {`
-          @keyframes subtle-float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
-          }
-          .animate-subtle { animation: subtle-float 4s ease-in-out infinite; }
-          
-          @keyframes icon-sequence {
-            0%, 100% { transform: translate(var(--tw-translate-x), var(--tw-translate-y)) scale(1); opacity: 0.8; }
-            50% { transform: translate(var(--tw-translate-x), var(--tw-translate-y)) scale(1.1); opacity: 1; }
-          }
-          .animate-sequence { animation: icon-sequence 4s infinite ease-in-out; }
-        `}
-      </style>
+<style>
+{`
+  @keyframes subtle-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .animate-subtle {
+    animation: subtle-float 4s ease-in-out infinite;
+  }
+
+  @keyframes icon-sequence {
+    0%, 100% { 
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) scale(1); 
+      opacity: 0.8; 
+    }
+    50% { 
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) scale(1.1); 
+      opacity: 1; 
+    }
+  }
+
+  .animate-sequence {
+    animation: icon-sequence 4s infinite ease-in-out;
+  }
+`}
+</style>
 
       <Helmet>
         <title>Microsoft 365 Solutions for Business | Tibos Chennai</title>
@@ -173,12 +183,14 @@ const Hero = () => {
             {/* Center Content */}
             <div className="flex flex-col items-center text-center mb-10 max-w-2xl">
               <img src={solution_partner} className="w-30 sm:w-35 rounded-[9px] h-auto mb-6 animate-subtle" alt="Partner Logo" />
+              <div>
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
                 Microsoft Solution Partners
               </h1>
               <p className="text-gray-300 text-sm sm:text-base mt-4 max-w-md">
                 Helping businesses deploy Microsoft 365, Azure cloud services, and cybersecurity solutions across India.
               </p>
+              </div>
               <ActionButton text="Contact Our Expert" />
                <img src={bussiness_application} className="w-30 sm:w-35 rounded-[9px] h-auto mt-10 animate-subtle" alt="Partner Logo" />
               

@@ -21,6 +21,7 @@ import SmartCommunication from "./Components/Page/SmartCommunication";
 import Bpo from "./Components/Page/Bpo";
 import HardwareSolution from "./Components/Page/HardwareSolution";
 import Resouces from "./Components/Page/Resouces";
+import Smartflo_CCaaS from "./Components/Page/Smartflo_CCaaS";
 
 
 
@@ -152,6 +153,10 @@ export const router = createBrowserRouter([
       {
         path:"/contact",
         element:<Contactpage/>
+      },
+      {
+        path:"/CCaaS",
+        element:<Smartflo_CCaaS/>
       }
 
 
