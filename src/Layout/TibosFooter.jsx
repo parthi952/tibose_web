@@ -27,29 +27,36 @@ const TibosFooter = () => {
   ];
 
   const SocialIcon =
-    "bg-white/10 backdrop-blur-md border border-white/20 p-2 rounded-full text-white transition-all duration-300 hover:scale-110 hover:text-blue-600 hover:bg-white/30 hover:-translate-y-1 hover:shadow-lg";
+    "bg-blue-600 backdrop-blur-md border border-white/20 p-2 rounded-full text-white transition-all duration-300 hover:scale-110 hover:text-blue-600 hover:bg-white/30 hover:-translate-y-1 hover:shadow-lg";
 
   return (
-    <footer className="bg-[#1a1a4a] text-gray-300 py-12 px-6 md:px-16 font-sans">
+    <footer className="bg-gradient-to-br from-blue-50 via-blue-50 via-blue-200 via-blue-300 to-blue-400 text-gray-300 py-12 px-6 md:px-16 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Company Info */}
-        <div>
-          <div className="flex flex-col gap-3">
-            <img src={TibosLogo} alt="TIBOS Logo" className="w-28 h-auto" />
+{/* 1. Company Info */}
+          <div className="space-y-4">
+            <div>
+              <h1 className="text-3xl font-bold text-[#062C77]">
+                TIBOS Solution |
+                <br />
+                Private Limited
+              </h1>
+              <h3 className="font-bold text-[#062C77]">
+                Win Together
+              </h3>
 
-            <p className="text-sm leading-relaxed text-gray-400 max-w-xs">
+            </div>
+            <p className="text-[15px] leading-relaxed text-slate-700 font-normal max-w-xs">
               We are a team of seasoned experts from various business sectors.
               We partner with top-tier technology companies to offer our clients
-              relevant, reliable, and cost-effective solutions based on our
-              experience and understanding of markets.
+              reliable and cost-effective solutions.
             </p>
           </div>
-        </div>
 
         {/* Useful Links */}
         <div>
-          <h3 className="text-white font-bold mb-6 tracking-wider uppercase text-sm">
+          <h3 className="text-blue-950 font-bold mb-6 tracking-wider uppercase text-sm">
             Useful Links
           </h3>
 
@@ -62,7 +69,7 @@ const TibosFooter = () => {
                   rel={link.external === true ? "noopener noreferrer" : undefined}
                   onMouseEnter={() => setHoveredLink(link.name)}
                   onMouseLeave={() => setHoveredLink(null)}
-                  className="text-sm text-slate-400 hover:text-indigo-400 transition-all duration-200 inline-block"
+                  className="text-sm text-slate-700 hover:text-shadow-blue-950 hover:font-bold transition-all duration-200 inline-block"
                   style={{
                     paddingLeft: hoveredLink === link.name ? "8px" : "0",
                   }}
@@ -76,13 +83,13 @@ const TibosFooter = () => {
 
         {/* Contact Us */}
         <div>
-          <h3 className="text-white font-bold mb-6 tracking-wider uppercase text-sm">
+          <h3 className="text-blue-950 font-bold mb-6 tracking-wider uppercase text-sm">
             Contact Us
           </h3>
 
-          <ul className="space-y-4 text-sm">
+          <ul className="space-y-4 text-sm text-slate-700">
             <li className="flex items-start gap-3">
-              <MapPin size={18} className="text-blue-500 mt-1 shrink-0" />
+              <MapPin size={18} className="text-slate-700 mt-1 shrink-0" />
               <span>
                 TIBOS Solutions and Services Pvt Ltd,
                 <br />
@@ -95,17 +102,17 @@ const TibosFooter = () => {
             </li>
 
             <li className="flex items-center gap-3">
-              <Phone size={18} className="text-blue-500" />
+              <Phone size={18} className="text-slate-700" />
               <span>+91 9043099940</span>
             </li>
 
             <li className="flex items-center gap-3">
-              <Mail size={18} className="text-blue-500" />
+              <Mail size={18} className="text-slate-700" />
               <span>support@tibos.in</span>
             </li>
 
             <li className="flex items-start gap-3">
-              <Clock size={18} className="text-blue-500 mt-1 shrink-0" />
+              <Clock size={18} className="text-slate-700 mt-1 shrink-0" />
               <span>
                 Monday - Friday: 9.30 am - 6.30 pm
                 <br />
@@ -117,11 +124,11 @@ const TibosFooter = () => {
 
         {/* Follow Us */}
         <div className="space-y-6">
-          <h3 className="text-white font-bold tracking-wider uppercase text-sm">
+          <h3 className="text-blue-950 font-bold tracking-wider uppercase text-sm">
             Follow Us
           </h3>
 
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-slate-700">
             Connect with us on social media for daily updates and insights.
           </p>
 

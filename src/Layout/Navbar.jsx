@@ -4,8 +4,7 @@ import {
   Briefcase, Building2, Rocket, Users, 
   ShieldCheck, Cloud, MessageSquare, Cpu, 
   HardDrive, Monitor, Globe, Settings, 
-  Zap, Headphones, Layout,
-  Wifi 
+  Zap, Headphones, Layout 
 } from "lucide-react";
 import IMG from "../Constents";
 import { useNavigate } from "react-router-dom";
@@ -17,6 +16,7 @@ const Navbar = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
   const navigate = useNavigate();
 
+  // Updated List with Icons
   const ListOfContant = {
     "/about": [
       { Cont: "Company Culture", path: "/company-culture", icon: <Globe className="w-4 h-4" /> },
@@ -39,30 +39,10 @@ const Navbar = () => {
       { Cont: "Business Process Unit", path: "/bpu", icon: <Layout className="w-4 h-4" /> },
       { Cont: "Hardware Solution", path: "/hardware", icon: <Cpu className="w-4 h-4" /> },
     ],
-
-    "/tata-tele-bussiness":[
-  { 
-    Cont: "Smartflo", 
-    icon: <Cloud className="w-4 h-4" />,
-    subMenu: [
-      { Cont: "Smartflo CCaaS", path: "/CCaaS" },
-      { Cont: "Smartflo UCaas", path: "/UCaas" },
-      { Cont: "Smartflo WhatsApp Business Platform", path: "/SWBP" },
-    ]
-  },
-  { Cont: "SIP Trunk", path:"/Trunk", icon: <HardDrive className="w-4 h-4" /> },
-  { Cont: "SD-WAN iFLX", path:"/WAN-iFLX", icon: <Globe className="w-4 h-4" /> },
-  { Cont: "Security ILL", path: "/Secured-ILL", icon: <ShieldCheck className="w-4 h-4" /> },
-  { Cont: "Managed Wi-Fi", path: "/Manged_WiFi", icon: <Wifi className="w-4 h-4" /> },
-  { Cont: "Smart Managed Cloud Services", path: "smart_managed_cs", icon: <Cloud className="w-4 h-4" /> },
-  { Cont: "Cybersecrity Solutions", path: "Cybersecurity_solution_TTBS", icon: <ShieldCheck className="w-4 h-4" /> },
-  { Cont: "Vaultastic-Backup and Archival Solution", path: "Vaultastic-backup", icon: <HardDrive className="w-4 h-4" /> },
-  ],
   };
 
   const navLinks = [
     { name: "Home", path: "/", hasDropdown: false },
-    { name: "Tata Tele Business", path: "/tata-tele-bussiness", hasDropdown: true },
     { name: "Microsoft Solution", path: "/microsoft-solution", hasDropdown: true },
     {
       name: "Tata Tele Business",
@@ -94,13 +74,15 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
+          {/* Logo */}
           <div className="shrink-0 flex items-center cursor-pointer" onClick={() => navigate("/")}>
             <img src={TibosLogo} alt="Tibos Logo" className="w-28 sm:w-32 hover:scale-105 transition-transform" />
           </div>
 
+          {/* --- DESKTOP MENU --- */}
           <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {navLinks.map((link) => (
-              <div key={link.name} className="relative group flex items-center h-20 overflow-visible">
+              <div key={link.name} className="relative group flex items-center h-20">
                 <div
                   onClick={() => !link.hasDropdown && handleNavigation(link)}
                   className="cursor-pointer flex items-center font-poppins text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors py-2"
@@ -109,56 +91,24 @@ const Navbar = () => {
                   {link.hasDropdown && <ChevronDown className="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" />}
                 </div>
 
+                {/* Dropdown with Icons */}
                 {link.hasDropdown && ListOfContant[link.path] && (
                   <div className="absolute top-full left-0 pt-0.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
                     <div className="bg-white shadow-2xl rounded-xl border border-gray-100 w-72 py-3 ring-1 ring-black/5">
-
                       {ListOfContant[link.path].map((item) => (
-                        <div key={item.Cont} className="relative group/item">
-
-                          <div
-                            onClick={() => { navigate(item.path); setIsOpen(false); }}
-                            className="flex items-center gap-3 px-5 py-2.5 cursor-pointer hover:bg-blue-50 transition-colors group/item"
-                          >
-                            <span className="text-gray-400 group-hover/item:text-blue-600 transition-colors">
-                              {item.icon}
-                            </span>
-
-                            <div className="flex items-center justify-between w-full">
-                              <span className="font-poppins text-sm text-gray-600 group-hover/item:text-blue-600 transition-colors">
-                                {item.Cont}
-                              </span>
-
-                              {item.subMenu && (
-                                <ChevronDown className="w-4 h-4 rotate-[-90deg] text-gray-400 group-hover/item:text-blue-600 transition-colors" />
-                              )}
-                            </div>
-                          </div>
-
-                          {/* ✅ SIDE DROPDOWN WITH BRIDGE */}
-                          {item.subMenu && (
-                            <div className="absolute top-0 left-full ml-1 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible z-50">
-                              
-                              {/* 🔥 invisible bridge */}
-                              <div className="absolute left-[-8px] top-0 w-2 h-full"></div>
-
-                              <div className="bg-white shadow-2xl rounded-xl border border-gray-100 w-60 py-2">
-                                {item.subMenu.map((sub) => (
-                                  <div
-                                    key={sub.Cont}
-                                    onClick={() => navigate(sub.path)}
-                                    className="px-4 py-2 cursor-pointer hover:bg-blue-50 text-sm text-gray-600"
-                                  >
-                                    {sub.Cont}
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-
+                        <div
+                          key={item.Cont}
+                          onClick={() => { navigate(item.path); setIsOpen(false); }}
+                          className="flex items-center gap-3 px-5 py-2.5 cursor-pointer hover:bg-blue-50 transition-colors group/item"
+                        >
+                          <span className="text-gray-400 group-hover/item:text-blue-600 transition-colors">
+                            {item.icon}
+                          </span>
+                          <span className="font-poppins text-sm text-gray-600 group-hover/item:text-blue-600 transition-colors">
+                            {item.Cont}
+                          </span>
                         </div>
                       ))}
-
                     </div>
                   </div>
                 )}
@@ -173,9 +123,79 @@ const Navbar = () => {
             </button>
           </div>
 
+          {/* Mobile Toggle */}
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)}>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className={`p-2 rounded-xl transition-colors ${isOpen ? 'bg-blue-50 text-blue-600' : 'bg-gray-100 text-gray-700'}`}
+            >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* --- MOBILE MENU --- */}
+      <div
+        className={`md:hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-2xl transition-all duration-500 ease-in-out ${
+          isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+        }`}
+        style={{ maxHeight: isOpen ? 'calc(100vh - 80px)' : '0px', overflowY: 'auto' }}
+      >
+        <div className="px-5 py-6 space-y-2">
+          {navLinks.map((link) => (
+            <div key={link.name} className="flex flex-col border-b border-gray-50 last:border-none">
+              
+              {!link.hasDropdown ? (
+                <div
+                  onClick={() => handleNavigation(link)}
+                  className="flex items-center justify-between py-4 text-base font-bold text-gray-800 active:bg-blue-50 px-2 rounded-lg"
+                >
+                  {link.name}
+                  <ArrowRight className="w-4 h-4 text-gray-300" />
+                </div>
+              ) : (
+                <div className="flex flex-col">
+                  <div
+                    onClick={() => toggleAccordion(link.path)}
+                    className={`flex items-center justify-between py-4 px-2 text-base font-bold transition-colors rounded-lg ${
+                      activeAccordion === link.path ? "text-blue-600 bg-blue-50" : "text-gray-800"
+                    }`}
+                  >
+                    {link.name}
+                    <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${activeAccordion === link.path ? "rotate-180" : ""}`} />
+                  </div>
+
+                  <div
+                    className={`transition-all duration-300 ease-in-out ${
+                      activeAccordion === link.path ? "max-h-[600px] opacity-100 mb-4" : "max-h-0 opacity-0 overflow-hidden"
+                    }`}
+                  >
+                    <div className="pl-2 mt-2 space-y-1 border-l-2 border-blue-100 ml-3">
+                      {ListOfContant[link.path]?.map((item) => (
+                        <div
+                          key={item.Cont}
+                          onClick={() => { navigate(item.path); setIsOpen(false); }}
+                          className="flex items-center gap-3 py-3 px-4 text-sm font-semibold text-gray-600 active:text-blue-600 active:bg-gray-50 rounded-lg"
+                        >
+                          <span className="text-blue-500/70">{item.icon}</span>
+                          {item.Cont}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+
+          <div className="pt-6 pb-10">
+            <button
+              onClick={() => { navigate("/contact"); setIsOpen(false); }}
+              className="w-full bg-blue-600 text-white py-4 rounded-2xl font-extrabold text-base shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-transform"
+            >
+              Contact
+              <ArrowRight className="w-5 h-5" />
             </button>
           </div>
         </div>

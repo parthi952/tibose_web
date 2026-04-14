@@ -157,6 +157,17 @@ Hero_solution:{
 },
 SLide_2:{
     center_logo:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide2/microsoft_logo.png"
+},
+Slide_4:{
+    Azure:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide4/Azure.png",
+    AWS:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide4/Aws.png",
+    Zoom:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide4/zoom.png",
+    GoogleWorkspace:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide4/GoogleWorkspace.png"
+},
+Slide_5:{
+    Slide5_banner:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide5/slide5.png",
+    Tata_tele_business:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide5/TATA TELE logo.png",
+    Tatalogo:"https://tibosstaticassets.blob.core.windows.net/tibossiteassets/TIBOS_WEB/Home/Hero/slide5/TATA LOGO.png"
 }
 }
 
