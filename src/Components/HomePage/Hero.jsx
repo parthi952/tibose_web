@@ -213,44 +213,47 @@ const Hero = () => {
             </div>
           </div>
         </div>
+{/* ---------------- SLIDE 4 (Original Slide 5) ---------------- */}
+<div className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${index === 3 ? "opacity-100 translate-x-0 z-10" : "opacity-0 translate-x-8 pointer-events-none z-0"}`}>
+  <div className="absolute inset-0">
+    <img src={Slide5banner} className="w-full h-full object-cover" alt="Banner" />
+  </div>
+  <div className="absolute inset-0 bg-black/40" />
+  
+  {/* Logos */}
+  <div className="absolute top-2 left-5 sm:left-10 z-20">
+    <img src={Tata_tale_business} className="w-20 sm:w-32 object-contain" alt="Logo" />
+  </div>
+  <div className="absolute top-8 right-5 sm:right-10 z-20">
+    <img src={Tata_logo} className="w-16 sm:w-28 object-contain" alt="Logo" />
+  </div>
 
-        {/* ---------------- SLIDE 4 (Original Slide 5) ---------------- */}
-        <div className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${index === 3 ? "opacity-100 translate-x-0 z-10" : "opacity-0 translate-x-8 pointer-events-none z-0"}`}>
-          <div className="absolute inset-0">
-            <img src={Slide5banner} className="w-full h-full object-cover" alt="Banner" />
-          </div>
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="absolute top-2 left-5 sm:left-10 z-20">
-            <img src={Tata_tale_business} className="w-20 sm:w-32 object-contain" alt="Logo" />
-          </div>
-          <div className="absolute top-8 right-5 sm:right-10 z-20">
-            <img src={Tata_logo} className="w-16 sm:w-28 object-contain" alt="Logo" />
-          </div>
-          <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-6xl text-white px-4 text-center -mt-6 sm:-mt-10">
-            <h1 className="text-2xl sm:text-4xl font-bold mt-20 leading-tight">
-              Stay Connected. Stay Ahead. <br />With Reliable Enterprise Solutions
-            </h1>
-            <p className="mt-8 sm:mt-6 text-xs sm:text-sm text-blue-300 max-w-xl">
-              Empower your business with reliable, high-performance connectivity solutions from Tata Tele Business Services, ensuring seamless communication and 24/7 uninterrupted operations.
-            </p>
-            <button className="mt-8 sm:mt-8 bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-lg font-semibold shadow-lg hover:scale-105 transition">
-              Contact Our Experts
-            </button>
-            <div className="mt-6 sm:mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
-              {["🌐", "📞", "☁️", "🛡️"].map((icon, i) => (
-                <div key={i} className="bg-white/10 backdrop-blur-lg p-4 sm:p-6 rounded-xl text-center shadow-lg">
-                  <div className="text-xl sm:text-2xl">{icon}</div>
-                  <p className="mt-2 text-xs sm:text-sm">
-                    {["Network", "Voice", "Cloud", "Security"][i]}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+  <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-6xl text-white px-4 text-center -mt-6 sm:-mt-10">
+    <h1 className="text-2xl sm:text-4xl font-bold mt-20 leading-tight">
+      Stay Connected. Stay Ahead. <br />With Reliable Enterprise Solutions
+    </h1>
+    <p className="mt-8 sm:mt-6 text-xs sm:text-sm text-blue-300 max-w-xl">
+      Empower your business with reliable, high-performance connectivity solutions from Tata Tele Business Services, ensuring seamless communication and 24/7 uninterrupted operations.
+    </p>
+
+    {/* Indha idathula dhan Button change panniruken */}
+    <div className="mt-6 sm:mt-8">
+      <ActionButton text="Contact Our Experts" />
+    </div>
+
+    <div className="mt-6 sm:mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
+      {["🌐", "📞", "☁️", "🛡️"].map((icon, i) => (
+        <div key={i} className="bg-white/10 backdrop-blur-lg p-4 sm:p-6 rounded-xl text-center shadow-lg w-28 sm:w-36">
+          <div className="text-xl sm:text-2xl">{icon}</div>
+          <p className="mt-2 text-[10px] sm:text-xs font-semibold uppercase tracking-wider">
+            {["Network", "Voice", "Cloud", "Security"][i]}
+          </p>
         </div>
-
-      </div>
-
+      ))}
+    </div>
+  </div>
+</div>
+</div>
       {/* --- Controls --- */}
       <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/10 p-3 rounded-full text-white hover:bg-blue-600 transition-all cursor-pointer">❮</button>
       <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/10 p-3 rounded-full text-white hover:bg-blue-600 transition-all cursor-pointer">❯</button>

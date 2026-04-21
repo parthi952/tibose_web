@@ -29,7 +29,7 @@ const Navbar = () => {
       { Cont: "Microsoft Teams", path: "/teams", icon: <MessageSquare className="w-4 h-4" /> },
       { Cont: "Microsoft Security", path: "/security", icon: <ShieldCheck className="w-4 h-4" /> },
       { Cont: "Microsoft Azure", path: "/azure", icon: <Cloud className="w-4 h-4" /> },
-      { Cont: "Microsoft Dynamics 356", path: "/dynamics", icon: <Settings className="w-4 h-4" /> },
+      { Cont: "Microsoft Dynamics 365", path: "/dynamics", icon: <Settings className="w-4 h-4" /> },
       { Cont: "Microsoft Surface devices", path: "/surface", icon: <Monitor className="w-4 h-4" /> },
     ],
     "/our-solution": [
@@ -76,7 +76,7 @@ const Navbar = () => {
           
           {/* Logo */}
           <div className="shrink-0 flex items-center cursor-pointer" onClick={() => navigate("/")}>
-            <img src={TibosLogo} alt="Tibos Logo" className="w-28 sm:w-32 hover:scale-105 transition-transform" />
+            <img src={TibosLogo} alt="Tibos Logo" className="w-32 sm:w-36 hover:scale-105 transition-transform" />
           </div>
 
           {/* --- DESKTOP MENU --- */}

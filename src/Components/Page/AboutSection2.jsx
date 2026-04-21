@@ -3,6 +3,7 @@ import WEare from "../AboutPage/WEare";
 import Growth from "../AboutPage/Growth";
 import WhyChoose from "../AboutPage/whychoose";
 import Careerbanner from "../AboutPage/Careerbanner";
+import Applyjob from "../AboutPage/Applyjob";
 
 const AboutSection2 = () => {
   return (
@@ -12,6 +13,7 @@ const AboutSection2 = () => {
       <WhyChoose/>
       <Growth/>
       <WEare/>
+      <Applyjob/>
     </div>
     
      

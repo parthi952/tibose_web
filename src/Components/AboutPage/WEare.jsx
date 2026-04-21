@@ -29,7 +29,7 @@ const values = [
   },
   {
     title: "Pride",
-    icon: IMG.AboutPage.icons.Pride,
+    icon: "Pride.png",
     desc: "We’re proud of TIBOS. We pursue excellence on behalf of our clients, our colleagues and community."
   }
 ];

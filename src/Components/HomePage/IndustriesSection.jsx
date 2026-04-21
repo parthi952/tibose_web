@@ -1,80 +1,59 @@
-import Img from "../../Constents"
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Img from "../../Constents";
 import IndustryCard from './IndustriesSection/IndustryCard';
+import MotionButton from "../Common/MotionButton";
 
-const Automotive = Img.HomePage.Industry.Automotive;
-const CMT = Img.HomePage.Industry.CMT;
-const EnergyUtilities = Img.HomePage.Industry.EnergyUtilities;
-const FinancialService = Img.HomePage.Industry.FinancialService;
-const Healthcare = Img.HomePage.Industry.Healthcare;
-const Insurance = Img.HomePage.Industry.Insurance;
-const LifeSciences = Img.HomePage.Industry.LifeSciences;
-const Manufacturing = Img.HomePage.Industry.Manufacturing;
-const ProfessionalServices = Img.HomePage.Industry.ProfessionalServices;
-const RetailDistribution = Img.HomePage.Industry.RetailDistribution;
-const TransportationLogistics = Img.HomePage.Industry.TransportationLogistics;
-const TravelHospitality = Img.HomePage.Industry.TravelHospitality;
-
-
+// Icons Import
 import { 
   ShieldCheck, Beaker, MonitorPlay, Settings, Zap, 
-  ShoppingBag, Car, Landmark, Stethoscope, Briefcase, 
-  Truck, Plane 
+  ShoppingBag, Car, Landmark 
 } from 'lucide-react';
 
-
-
 const IndustriesSection = () => {
+
+  const navigate = useNavigate(); // 👈 important
+
   const industryList = [
-    { title: "Insurance", icon: <ShieldCheck size={24} />, image: Insurance }, // Replace null with imports
-    { title: "Life Sciences", icon: <Beaker size={24} />, image: LifeSciences },
-    { title: "Comms + Media + Tech", icon: <MonitorPlay size={24} />, image: CMT },
-    { title: "Manufacturing", icon: <Settings size={24} />, image: Manufacturing },
-    { title: "Energy", icon: <Zap size={24} />, image: EnergyUtilities },
-    { title: "Retail", icon: <ShoppingBag size={24} />, image: RetailDistribution },
-    { title: "Automotive", icon: <Car size={24} />, image: Automotive }, 
-    { title: "Financial Services", icon: <Landmark size={24} />, image: FinancialService },
-    { title: "Healthcare", icon: <Stethoscope size={24} />, image: Healthcare },
-    { title: "Professional Services", icon: <Briefcase size={24} />, image: ProfessionalServices },
-    { title: "Transportation & Logistics", icon: <Truck size={24} />, image: TransportationLogistics },
-    { title: "Travel + Hospitality", icon: <Plane size={24} />, image: TravelHospitality },
+    { title: "Insurance", icon: <ShieldCheck size={24} />, image: Img.HomePage.Industry.Insurance },
+    { title: "Life Sciences", icon: <Beaker size={24} />, image: Img.HomePage.Industry.LifeSciences },
+    { title: "Comms + Media + Tech", icon: <MonitorPlay size={24} />, image: Img.HomePage.Industry.CMT },
+    { title: "Manufacturing", icon: <Settings size={24} />, image: Img.HomePage.Industry.Manufacturing },
+    { title: "Energy", icon: <Zap size={24} />, image: Img.HomePage.Industry.EnergyUtilities },
+    { title: "Retail", icon: <ShoppingBag size={24} />, image: Img.HomePage.Industry.RetailDistribution },
+    { title: "Automotive", icon: <Car size={24} />, image: Img.HomePage.Industry.Automotive }, 
+    { title: "Financial Services", icon: <Landmark size={24} />, image: Img.HomePage.Industry.FinancialService },
   ];
-const duplicatedList = [...industryList, ...industryList];
+
+  const displayedIndustries = industryList.slice(0, 4);
+
   return (
-  <section className="bg-slate-50 py-16 overflow-hidden">
-      
-      {/* PLACE IT HERE - Inside the return, at the top of the section */}
-      <style>
-        {`
-          @keyframes infinite-scroll {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-          }
-          .animate-scroll {
-            display: flex;
-            width: max-content;
-            animation: infinite-scroll 40s linear infinite;
-          }
-          .animate-scroll:hover {
-            animation-play-state: paused;
-          }
-        `}
-      </style>
+    <section className="mb-20 px-4">
+      <div className="max-w-7xl mx-auto">
 
-      <div className="max-w-7xl mx-auto  mb-8 px-4">
-        <h2 className="text-4xl font-bold text-blue-600 text-center mb-16 uppercase tracking-widest">
-          Industry Insights
-        </h2>
-      </div>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-blue-600 uppercase tracking-widest mb-4">
+            Industry Insights
+          </h2>
+          <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
 
-      <div className="flex ">
-        {/* Use the 'animate-scroll' class we just defined above */}
-        <div className="flex flex-nowrap animate-scroll">
-          {duplicatedList.map((item, index) => (
-            <div key={index} className="flex-none w-75"> 
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {displayedIndustries.map((item, index) => (
+            <div key={index} className="transition-transform duration-300 hover:-translate-y-2">
               <IndustryCard {...item} />
             </div>
           ))}
         </div>
+
+        {/* 🔥 FIX HERE */}
+        <div className="flex justify-center mt-20">
+          <MotionButton
+            B_Name="View more industries"
+            ActionToClick={() => navigate('/industries')} // 👈 route change
+          />
+        </div>
+
       </div>
     </section>
   );
