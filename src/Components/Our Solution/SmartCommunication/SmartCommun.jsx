@@ -34,7 +34,7 @@ function SmartCommunication() {
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
             Protect business communications with encrypted messaging solutions that ensure data privacy and secure collaboration.
           </p>
-          <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
+          
         </div>
 
         {/* Card 2 */}
@@ -48,7 +48,7 @@ function SmartCommunication() {
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
             Enable seamless communication across chat, video, and calls using Microsoft Teams and enterprise collaboration tools.
           </p>
-          <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
+         
         </div>
 
         {/* Card 3 */}
@@ -62,7 +62,7 @@ function SmartCommunication() {
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
             Improve customer experience with intelligent call routing systems that connect users to the right teams efficiently.
           </p>
-          <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
+          
         </div>
 
         {/* Card 4 */}
@@ -76,7 +76,7 @@ function SmartCommunication() {
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
             Protect your organization from phishing, malware, and spam with advanced email security powered by Microsoft solutions.
           </p>
-          <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
+        
         </div>
 
         {/* Card 5 */}
@@ -90,7 +90,7 @@ function SmartCommunication() {
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
             Enable secure voice and video communication with enterprise-grade encryption and network security.
           </p>
-          <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
+         
         </div>
 
         {/* Card 6 */}
@@ -104,7 +104,7 @@ function SmartCommunication() {
           <p className="text-xs sm:text-sm text-gray-500 mb-4 leading-relaxed">
             Share business documents safely with encrypted file sharing and access control systems for teams.
           </p>
-          <p className="text-xs text-blue-600 cursor-pointer">Learn More →</p>
+         
         </div>
 
       </div>

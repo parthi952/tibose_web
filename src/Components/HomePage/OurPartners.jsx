@@ -103,8 +103,7 @@ const LogoItem = ({ logo, parentRef }) => {
         scale: scale, 
         opacity: opacity,
         filter: `blur(${blurValue}px)`,
-        // Grayscale: Color in center, B&W on sides
-        WebkitFilter: `grayscale(${Math.abs(position) * 100}%) blur(${blurValue}px)`
+    
       }}
       className="flex shrink-0 items-center justify-center w-[120px] h-[80px] sm:w-[160px] sm:h-[110px] md:w-[220px] md:h-[140px]"
     >

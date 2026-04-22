@@ -85,9 +85,9 @@ const ApplyJob = () => {
           <div className="absolute top-[-20%] right-[-10%] w-64 h-64 bg-blue-600/20 rounded-full blur-3xl"></div>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-10 space-y-8">
+        <form onSubmit={handleSubmit} className=" p-10 space-y-8">
           
-          <section className="space-y-6">
+          <section className="space-y-6 ">
             <h3 className="text-lg font-bold text-gray-800 border-b pb-2">Personal Information</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
