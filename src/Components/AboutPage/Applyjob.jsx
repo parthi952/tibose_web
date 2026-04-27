@@ -71,7 +71,7 @@ const ApplyJob = () => {
     <div className="min-h-screen mb-20 mt-5 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl shadow-blue-900/5 border border-white overflow-hidden">
       <h1
-      className='text-3xl text-center p-10 font-bold text-blue-600'
+      className='text-3xl text-center p-10 font-bold'
       >Apply Job</h1>
         
         {/* Modern Hero Header */}

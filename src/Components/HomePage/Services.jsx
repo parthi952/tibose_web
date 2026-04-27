@@ -62,16 +62,16 @@ const Services = () => {
           </h3>
 
           <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-            We provide secure, high-speed connectivity solutions for modern businesses.
-             Our services include Internet Leased Lines, Broadband connectivity, VPN solutions, 
-             Smart Office networking, and enterprise voice services such as Centrex and PRI.
+            We provide fast and secure internet and communication solutions for businesses. Our services include high-speed leased lines,
+             broadband, VPN for safe connections, smart office networking, and business voice services like Centrex and PRI.
+              These solutions help companies stay connected, communicate smoothly, and work more efficiently.
 
           </p>
 
           <div className="flex cursor-pointer justify-center lg:justify-start pt-2">
             <MotionButton
               B_Name="View Our Data Services"
-              ActionToClick={() => alert("Learn more clicked!")}
+              ActionToClick={() => window.dispatchEvent(new Event("open-chatbot"))}
             />
           </div>
 

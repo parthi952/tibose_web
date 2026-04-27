@@ -27,9 +27,9 @@ const About = () => {
         </h2>
 
         <p className="text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0 text-sm sm:text-base">
-          TIBOS is a technology solutions provider helping businesses adopt Microsoft cloud services,
-           enterprise connectivity, and secure IT infrastructure. Our team works with organizations to
-            deploy modern workplace solutions that improve collaboration, productivity, and security.
+         TIBOS is a technology company that helps businesses use Microsoft cloud services easily. 
+         They support companies in setting up secure IT systems, improving teamwork, and increasing productivity.
+          Their solutions make it easier for employees to work together, stay connected, and keep data safe.
         </p>
 
         <div className="flex justify-center lg:justify-start">
