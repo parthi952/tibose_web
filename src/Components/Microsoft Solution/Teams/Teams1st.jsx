@@ -38,11 +38,9 @@ export default function TeamsSection() {
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed">
-            Bring people, conversations, and projects together in one intelligent
-            workspace within Microsoft 365 built to help your teams thrive. In
-            today’s world of remote and hybrid work, Microsoft Teams bridges the
-            gaps, enabling real-time collaboration, faster responses, and safer
-            ways to work.
+            Microsoft Teams brings people, chats, and work together in one smart workspace in
+             Microsoft 365 to help teams work better. In today’s remote and hybrid work, it connects 
+             everyone easily, allowing quick communication, faster responses, and safer collaboration.
           </p>
         </motion.div>
 

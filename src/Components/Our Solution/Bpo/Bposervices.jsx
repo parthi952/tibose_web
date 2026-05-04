@@ -48,10 +48,6 @@ const Bposervices = () => {
         <h2 className="text-3xl md:text-4xl font-bold mt-2">
           Business Process Outsourcing (BPO) Services for Enterprises
         </h2>
-        <br />
-        <p className="text-gray-500 text-lg">
-          We provide scalable BPO services to help businesses streamline operations, improve cash flow, and enhance customer engagement.
-        </p>
       </div>
 
       {/* Cards */}

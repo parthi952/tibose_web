@@ -7,13 +7,13 @@ export default function AIrisk() {
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
-          AI Security Risks for Businesses and How to Control Them
+          AI Security Risks & Controls for Businesses
         </h2>
 
         <p className="text-gray-600 leading-relaxed">
-          As businesses adopt AI tools for productivity, they face increasing risks related to data security, 
-          compliance, and governance. Without proper controls, AI usage can expose sensitive information and create 
-          serious enterprise vulnerabilities. TIBOS Solutions helps organizations implement secure and compliant AI strategies.
+          As businesses adopt AI for productivity, they face growing risks in data security, 
+          compliance, and governance. Without proper controls, AI can expose sensitive data and create 
+          serious vulnerabilities. TIBOS Solutions helps organizations implement secure, compliant AI strategies.
 
         </p>
       </div>

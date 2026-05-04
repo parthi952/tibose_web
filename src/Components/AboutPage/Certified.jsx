@@ -43,7 +43,7 @@ const Certified = () => {
            and Azure Information Protection. 
           </p>
           <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0">
-            Our experts design, implement, and manage security solutions that protect enterprise infrastructure, data, and users from evolving cyber threats.( 
+            Our experts design, implement, and manage security solutions that protect enterprise infrastructure, data, and users from evolving cyber threats. 
           </p>
         </motion.div>
 

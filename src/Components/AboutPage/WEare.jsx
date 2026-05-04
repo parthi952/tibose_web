@@ -10,7 +10,7 @@ const values = [
   {
     title: "Innovation",
     icon: IMG.AboutPage.icons.Innovation,
-    desc: "We’re pragmatic adventurers and curious explorers. We strive for the new and drive on the proven."
+    desc: "We are practical thinkers and curious learners. We aim for innovation while building on proven methods."
   },
   {
     title: "Clients",
@@ -20,17 +20,17 @@ const values = [
   {
     title: "Collaboration",
     icon: IMG.AboutPage.icons.Colloboration,
-    desc: "We work cooperatively and confidently. Our commitment to greatness is best achieved together."
+    desc: "We work together with confidence. We achieve excellence best as a team."
   },
   {
     title: "People",
     icon: IMG.AboutPage.icons.People,
-    desc: "We treasure talent, embrace effort and reward results. We cultivate a culture that challenges great people."
+    desc: "We value talent, support hard work, and reward results. We build a culture that motivates and challenges skilled people."
   },
   {
     title: "Pride",
     icon: "Pride.png",
-    desc: "We’re proud of TIBOS. We pursue excellence on behalf of our clients, our colleagues and community."
+    desc: "We take pride in TIBOS. We strive for excellence for our clients, our team, and our community."
   }
 ];
 
