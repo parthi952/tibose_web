@@ -114,9 +114,9 @@ const TibosFooter = () => {
             <li className="flex items-start gap-3">
               <Clock size={18} className="text-slate-700 mt-1 shrink-0" />
               <span>
-                Monday - Friday: 9.30 am - 6.30 pm
+                Monday - Saturday: 9.30 am - 6.30 pm
                 <br />
-                Saturday - Sunday: Closed
+                Sunday: Closed
               </span>
             </li>
           </ul>
