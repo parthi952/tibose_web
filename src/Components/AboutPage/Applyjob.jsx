@@ -4,7 +4,7 @@ import { FormInput, FormSelect, FormTextArea } from '../Common/FormComponents';
 
 
 
-const api_url = import.meta.env.VITE_API_URL
+const api_url = "https://hrm-api.tibostech.in"
 
 
 const ApplyJob = () => {
