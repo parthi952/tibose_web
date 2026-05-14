@@ -2,6 +2,11 @@ import React, { useState, useRef } from 'react';
 import { Upload, Send, CheckCircle, FileText, X } from 'lucide-react';
 import { FormInput, FormSelect, FormTextArea } from '../Common/FormComponents';
 
+
+
+const api_url = import.meta.env.VITE_API_URL
+
+
 const ApplyJob = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -49,7 +54,7 @@ const ApplyJob = () => {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/candidates/Register", {
+      const response = await fetch(`${api_url}/candidates/Register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
