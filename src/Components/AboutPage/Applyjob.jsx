@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Upload, Send, CheckCircle, FileText, X } from 'lucide-react';
+import { FormInput, FormSelect, FormTextArea } from '../Common/FormComponents';
 
 const ApplyJob = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -35,15 +36,38 @@ const ApplyJob = () => {
     if (file) setFileName(file.name);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    
-    // Simulate API Call
-    setTimeout(() => {
-      setLoading(false);
+
+    const payload = {
+      Candidate_name: formData.name,
+      Job_title: formData.position,
+      Candidate_Email: formData.email,
+      Candidate_Phone: formData.phone,
+      Resume_path: fileName || "No resume uploaded"
+    };
+
+    try {
+      const response = await fetch("http://127.0.0.1:8000/candidates/Register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error: ${response.statusText}`);
+      }
+
       setSubmitted(true);
-    }, 1500);
+    } catch (error) {
+      console.error("Submission failed:", error);
+      alert("Failed to submit application. Please make sure the backend server is running.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -54,10 +78,10 @@ const ApplyJob = () => {
         </div>
         <h2 className="text-2xl font-bold text-gray-900">Application Received!</h2>
         <p className="text-gray-500 text-center mt-3 leading-relaxed">
-          Thanks for reaching out,! 
+          Thanks for reaching out,!
           We've sent a confirmation to <span className="text-blue-600">{formData.email}</span>.
         </p>
-        <button 
+        <button
           onClick={() => { setSubmitted(false); setFileName(""); }}
           className="mt-8 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 cursor-pointer transition-colors font-medium"
         >
@@ -70,10 +94,10 @@ const ApplyJob = () => {
   return (
     <div className="min-h-screen mb-20 mt-5 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl shadow-blue-900/5 border border-white overflow-hidden">
-      <h1
-      className='text-3xl text-center p-10 font-bold'
-      >Apply Job</h1>
-        
+        <h1
+          className='text-3xl text-center p-10 font-bold'
+        >Apply Job</h1>
+
         {/* Modern Hero Header */}
         <div className="bg-blue-800 p-10 text-white relative overflow-hidden">
           <div className="relative z-10">
@@ -86,80 +110,63 @@ const ApplyJob = () => {
         </div>
 
         <form onSubmit={handleSubmit} className=" p-10 space-y-8">
-          
+
           <section className="space-y-6 ">
             <h3 className="text-lg font-bold text-gray-800 border-b pb-2">Personal Information</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Full Name</label>
-                <input
-                  id="name"
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  placeholder="Enter your name"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition-all"
-                />
-              </div>
+              <FormInput
+                label="Full Name"
+                id="name"
+                required
+                value={formData.name}
+                onChange={handleInputChange}
+                placeholder="Enter your name"
+              />
 
-              <div>
-                <label htmlFor="email" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Email Address</label>
-                <input
-                  id="email"
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition-all"
-                />
-              </div>
+              <FormInput
+                label="Email Address"
+                id="email"
+                type="email"
+                required
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Enter your email"
+              />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="phone" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Phone Number</label>
-                <input
-                  id="phone"
-                  type="tel"
-                  required
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  placeholder="Enter mobile number"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition-all"
-                />
-              </div>
+              <FormInput
+                label="Phone Number"
+                id="phone"
+                type="tel"
+                required
+                value={formData.phone}
+                onChange={handleInputChange}
+                placeholder="Enter mobile number"
+              />
 
-              <div>
-                <label htmlFor="position" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Position</label>
-                <select
-                  id="position"
-                  required
-                  value={formData.position}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition-all appearance-none"
-                >
-                  <option value="">Select a role</option>
-                  {positions.map(role => (
-                    <option key={role} value={role}>{role}</option>
-                  ))}
-                </select>
-              </div>
+              <FormSelect
+                label="Position"
+                id="position"
+                required
+                value={formData.position}
+                onChange={handleInputChange}
+                options={positions}
+                placeholder="Select a role"
+              />
             </div>
           </section>
 
           <section className="space-y-6">
             <h3 className="text-lg font-bold text-gray-800 border-b pb-2">Documents</h3>
-            
+
             {/* Enhanced File Upload */}
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Resume / CV</label>
-              <div 
+              <div
                 onClick={() => fileInputRef.current.click()}
-                className={`relative border-2 border-dashed rounded-2xl p-8 transition-all text-center cursor-pointer ${
-                  fileName ? 'border-blue-500 bg-blue-50' : 'border-gray-300 hover:border-blue-400 hover:bg-gray-50'
-                }`}
+                className={`relative border-2 border-dashed rounded-2xl p-8 transition-all text-center cursor-pointer ${fileName ? 'border-blue-500 bg-blue-50' : 'border-gray-300 hover:border-blue-400 hover:bg-gray-50'
+                  }`}
               >
                 <input
                   type="file"
@@ -169,13 +176,13 @@ const ApplyJob = () => {
                   className="hidden"
                   required={!fileName}
                 />
-                
+
                 {fileName ? (
                   <div className="flex items-center justify-center space-x-3 text-blue-700 font-medium">
                     <FileText className="w-6 h-6" />
                     <span>{fileName}</span>
-                    <X 
-                      className="w-5 h-5 ml-2 text-gray-400 hover:text-red-500 transition-colors" 
+                    <X
+                      className="w-5 h-5 ml-2 text-gray-400 hover:text-red-500 transition-colors"
                       onClick={(e) => { e.stopPropagation(); setFileName(""); }}
                     />
                   </div>
@@ -189,17 +196,14 @@ const ApplyJob = () => {
               </div>
             </div>
 
-            <div>
-              <label htmlFor="coverLetter" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Cover Letter (Optional)</label>
-              <textarea
-                id="coverLetter"
-                rows="4"
-                value={formData.coverLetter}
-                onChange={handleInputChange}
-                placeholder="Briefly describe your experience..."
-                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition-all resize-none"
-              ></textarea>
-            </div>
+            <FormTextArea
+              label="Cover Letter (Optional)"
+              id="coverLetter"
+              rows="4"
+              value={formData.coverLetter}
+              onChange={handleInputChange}
+              placeholder="Briefly describe your experience..."
+            />
           </section>
 
           <button

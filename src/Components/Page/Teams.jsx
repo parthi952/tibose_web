@@ -3,7 +3,7 @@ import Teams1st from '../Microsoft Solution/Teams/Teams1st'
 import Microsoftteams from '../Microsoft Solution/Teams/Microsoftteams'
 import Teamspricing from '../Microsoft Solution/Teams/Teamspricing'
 import TeamsServices from '../Microsoft Solution/Teams/TeamsServices'
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 const Teams = () => {
   return (

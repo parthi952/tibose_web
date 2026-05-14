@@ -4,7 +4,7 @@ import Copilotpricing from "../Microsoft Solution/Copilot/Copilotpricing";
 import Empowering from "../Microsoft Solution/Copilot/Empowering";
 import FAQ from "../Microsoft Solution/Copilot/FAQ";
 import Whychoosecopilot from "../Microsoft Solution/Copilot/Whychoosecopilot";
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 const CBanner=Img.Microsoft_Solution.Copilot.CB
 const Copilot = () => {
   return (

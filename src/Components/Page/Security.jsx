@@ -2,7 +2,7 @@ import Img from "../../Constents"
 import Certifiedpartner from "../Microsoft Solution/MSecurity/Certifiedpartner"
 import Securepartner from "../Microsoft Solution/MSecurity/Securepartner"
 import Values from "../Microsoft Solution/MSecurity/Values"
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 const Secureban=Img.Microsoft_Solution.Security.Secureban
 const Security = () => {

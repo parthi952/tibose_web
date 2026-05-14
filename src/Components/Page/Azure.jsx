@@ -3,7 +3,7 @@ import AzureBan from '../Microsoft Solution/Azuree/AzureBan'
 import Whatiscloud from '../Microsoft Solution/Azuree/Whatiscloud'
 import AzureInfrastructure from '../Microsoft Solution/Azuree/AzureInfrastructure'
 import AzureFAQ from '../Microsoft Solution/Azuree/AzureFAQ'
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 const Azure = () => {
   return (

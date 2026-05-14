@@ -4,7 +4,7 @@ import ConnectivityServices from '../Our Solution/Connectivity/ConnectivityServi
 import ConnectivityServices2 from '../Our Solution/Connectivity/ConnectivityServices2'
 import WhyChoose from '../AboutPage/whychoose'
 import WEare from '../AboutPage/WEare'
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 const Connectivity = () => {
   return (

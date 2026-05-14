@@ -4,7 +4,7 @@ import AIrisk from '../Microsoft Solution/Copilot/AIrisk'
 import Empowering from '../Microsoft Solution/Copilot/Empowering'
 import Whychoosecopilot from '../Microsoft Solution/Copilot/Whychoosecopilot'
 import FAQ from '../Microsoft Solution/Copilot/FAQ'
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 const HardwareSolution = () => {
   return (

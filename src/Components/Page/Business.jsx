@@ -1,7 +1,7 @@
 import Img from '../../Constents'
 import Boost from '../Microsoft Solution/Business/Boost'
 import Businessplans from '../Microsoft Solution/Business/Businessplans'
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 const BH=Img.Microsoft_Solution.Bussiness.MBH
 const Business = () => {

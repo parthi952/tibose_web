@@ -1,6 +1,6 @@
 import Smartbanner from '../Our Solution/SmartCommunication/Smartbanner'
 import SmartCommun from '../Our Solution/SmartCommunication/SmartCommun'
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 const SmartCommunication = () => {
   return (

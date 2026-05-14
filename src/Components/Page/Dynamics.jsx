@@ -2,7 +2,7 @@ import Dynamicpartner from '../Microsoft Solution/Dynamics/Dynamicpartner'
 import Dynamics365 from '../Microsoft Solution/Dynamics/Dynamics365'
 import Dynamicsbanner from '../Microsoft Solution/Dynamics/Dynamicsbanner'
 import Microsoftteams from '../Microsoft Solution/Teams/Microsoftteams'
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 const Dynamics = () => {
   return (
     <div>

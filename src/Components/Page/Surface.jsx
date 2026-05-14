@@ -3,7 +3,7 @@ import MSurface from "../Microsoft Solution/Surface/MSurface"
 import SurfaceProducts from "../Microsoft Solution/Surface/SurfaceProducts"
 import Whychoosesurface from "../Microsoft Solution/Surface/whychoosesurface"
 import FAQ from "../Microsoft Solution/Copilot/FAQ"
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 const Surface = () => {
   return (

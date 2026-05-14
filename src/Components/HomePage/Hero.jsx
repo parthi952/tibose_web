@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Img from "../../Constents";
-import Helmet from "helmet";
+import { Helmet } from "react-helmet";
 
 // Microsoft 365 Slide Icons
 const PPT = Img.Microsoft_Solution.Sericeslogo.PPT;
