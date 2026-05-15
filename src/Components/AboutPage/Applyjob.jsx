@@ -4,7 +4,8 @@ import { FormInput, FormSelect, FormTextArea } from '../Common/FormComponents';
 
 
 
-const api_url = "https://hrm-api.tibostech.in"
+const api_url =  import.meta.env.VITE_API_URL
+console.log(api_url)
 
 
 const ApplyJob = () => {
@@ -13,14 +14,16 @@ const ApplyJob = () => {
   const [fileName, setFileName] = useState("");
   const fileInputRef = useRef(null);
 
-  // Manage all form data in one state object
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     position: '',
-    coverLetter: ''
+    resume_path: '',
   });
+  const [selectedFile, setSelectedFile] = useState(null);
+
+
 
   const positions = [
     "Software Developer",
@@ -38,28 +41,30 @@ const ApplyJob = () => {
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
-    if (file) setFileName(file.name);
+    if (file) {
+      setFileName(file.name);
+      setSelectedFile(file);
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    const payload = {
-      Candidate_name: formData.name,
-      Job_title: formData.position,
-      Candidate_Email: formData.email,
-      Candidate_Phone: formData.phone,
-      Resume_path: fileName || "No resume uploaded"
-    };
+    const formDataToSend = new FormData();
+    formDataToSend.append('Candidate_name', formData.name);
+    formDataToSend.append('Job_title', formData.position);
+    formDataToSend.append('Candidate_Email', formData.email);
+    formDataToSend.append('Candidate_Phone', formData.phone);
+    if (selectedFile) {
+      formDataToSend.append('Resume_path', selectedFile);
+    }
 
     try {
       const response = await fetch(`${api_url}/candidates/Register`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
+        body: formDataToSend,
+        // FormData sets content-type automatically
       });
 
       if (!response.ok) {
@@ -87,7 +92,7 @@ const ApplyJob = () => {
           We've sent a confirmation to <span className="text-blue-600">{formData.email}</span>.
         </p>
         <button
-          onClick={() => { setSubmitted(false); setFileName(""); }}
+          onClick={() => { setSubmitted(false); setFileName(""); setSelectedFile(null); }}
           className="mt-8 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-800 cursor-pointer transition-colors font-medium"
         >
           Return to Careers
@@ -188,7 +193,7 @@ const ApplyJob = () => {
                     <span>{fileName}</span>
                     <X
                       className="w-5 h-5 ml-2 text-gray-400 hover:text-red-500 transition-colors"
-                      onClick={(e) => { e.stopPropagation(); setFileName(""); }}
+                      onClick={(e) => { e.stopPropagation(); setFileName(""); setSelectedFile(null); }}
                     />
                   </div>
                 ) : (
