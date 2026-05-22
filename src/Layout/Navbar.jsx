@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { 
-  ChevronDown, Menu, X, ArrowRight, 
-  Briefcase, Building2, Rocket, Users, 
-  ShieldCheck, Cloud, MessageSquare, Cpu, 
-  HardDrive, Monitor, Globe, Settings, 
-  Zap, Headphones, Layout 
+import React, { useState, useEffect } from "react";
+import {
+  ChevronDown, Menu, X, ArrowRight,
+  Briefcase, Building2, Rocket, Users,
+  ShieldCheck, Cloud, MessageSquare, Cpu,
+  HardDrive, Monitor, Globe, Settings,
+  Zap, Headphones, Layout
 } from "lucide-react";
 import IMG from "../Constents";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +15,20 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeAccordion, setActiveAccordion] = useState(null);
   const navigate = useNavigate();
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Updated List with Icons
   const ListOfContant = {
@@ -70,10 +84,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <nav className={`fixed top-0 z-50 w-full transition-all duration-500 ${
+      isScrolled 
+        ? "bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100 py-0" 
+        : "bg-transparent border-b border-transparent py-2"
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          
+
           {/* Logo */}
           <div className="shrink-0 flex items-center cursor-pointer" onClick={() => navigate("/")}>
             <img src={TibosLogo} alt="Tibos Logo" className="w-32 sm:w-36 hover:scale-105 transition-transform" />
@@ -137,15 +155,14 @@ const Navbar = () => {
 
       {/* --- MOBILE MENU --- */}
       <div
-        className={`md:hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-2xl transition-all duration-500 ease-in-out ${
-          isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
-        }`}
+        className={`md:hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-2xl transition-all duration-500 ease-in-out ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+          }`}
         style={{ maxHeight: isOpen ? 'calc(100vh - 80px)' : '0px', overflowY: 'auto' }}
       >
         <div className="px-5 py-6 space-y-2">
           {navLinks.map((link) => (
             <div key={link.name} className="flex flex-col border-b border-gray-50 last:border-none">
-              
+
               {!link.hasDropdown ? (
                 <div
                   onClick={() => handleNavigation(link)}
@@ -158,18 +175,16 @@ const Navbar = () => {
                 <div className="flex flex-col">
                   <div
                     onClick={() => toggleAccordion(link.path)}
-                    className={`flex items-center justify-between py-4 px-2 text-base font-bold transition-colors rounded-lg ${
-                      activeAccordion === link.path ? "text-blue-600 bg-blue-50" : "text-gray-800"
-                    }`}
+                    className={`flex items-center justify-between py-4 px-2 text-base font-bold transition-colors rounded-lg ${activeAccordion === link.path ? "text-blue-600 bg-blue-50" : "text-gray-800"
+                      }`}
                   >
                     {link.name}
                     <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${activeAccordion === link.path ? "rotate-180" : ""}`} />
                   </div>
 
                   <div
-                    className={`transition-all duration-300 ease-in-out ${
-                      activeAccordion === link.path ? "max-h-[600px] opacity-100 mb-4" : "max-h-0 opacity-0 overflow-hidden"
-                    }`}
+                    className={`transition-all duration-300 ease-in-out ${activeAccordion === link.path ? "max-h-[600px] opacity-100 mb-4" : "max-h-0 opacity-0 overflow-hidden"
+                      }`}
                   >
                     <div className="pl-2 mt-2 space-y-1 border-l-2 border-blue-100 ml-3">
                       {ListOfContant[link.path]?.map((item) => (

@@ -16,6 +16,7 @@
     "@tailwindcss/vite": "^4.2.1",
     "framer-motion": "^12.35.2",
     "helmet": "^8.1.0",
+    "lenis": "^1.3.23",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.577.0",
     "motion": "^12.35.0",

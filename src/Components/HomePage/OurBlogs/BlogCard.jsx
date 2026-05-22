@@ -12,9 +12,8 @@ const BlogCard = ({ title, description, imageUrl, reverse }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`flex flex-col md:flex-row ${
-        reverse ? "md:flex-row-reverse" : ""
-      } items-center max-w-7xl mx-auto pb-10 gap-10 md:gap-26 font-sans`}
+      className={`flex flex-col md:flex-row ${reverse ? "md:flex-row-reverse" : ""
+        } items-center max-w-7xl mx-auto pb-10 gap-10 md:gap-26 font-sans`}
     >
       {/* Text Content */}
       <motion.div

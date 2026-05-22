@@ -34,25 +34,25 @@ const TibosFooter = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Company Info */}
-{/* 1. Company Info */}
-          <div className="space-y-4">
-            <div>
-              <h1 className="text-3xl font-bold text-[#062C77]">
-                TIBOS Solution |
-                <br />
-                Private Limited
-              </h1>
-              <h3 className="font-bold text-[#062C77]">
-                Win Together
-              </h3>
+        {/* 1. Company Info */}
+        <div className="space-y-4">
+          <div>
+            <h1 className="text-3xl font-bold text-[#062C77]">
+              TIBOS Solution |
+              <br />
+              Private Limited
+            </h1>
+            <h3 className="font-bold text-[#062C77]">
+              Win Together
+            </h3>
 
-            </div>
-            <p className="text-[15px] leading-relaxed text-slate-700 font-normal max-w-xs">
-              We are a team of seasoned experts from various business sectors.
-              We partner with top-tier technology companies to offer our clients
-              reliable and cost-effective solutions.
-            </p>
           </div>
+          <p className="text-[15px] leading-relaxed text-slate-700 font-normal max-w-xs">
+            We are a team of seasoned experts from various business sectors.
+            We partner with top-tier technology companies to offer our clients
+            reliable and cost-effective solutions.
+          </p>
+        </div>
 
         {/* Useful Links */}
         <div>

@@ -72,7 +72,7 @@ const Achievements = () => {
   return (
     <section ref={sectionRef} className="bg-blue-100 py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-        
+
         <div className="flex items-center gap-3 min-w-50">
           <div className="bg-blue-600 p-2 rounded-lg">
             <Trophy className="text-white w-10 h-10" />
@@ -93,8 +93,8 @@ const Achievements = () => {
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-blue-600">
                   {/* .toFixed() handles the decimal for 99.9% nicely */}
-                  {Number.isInteger(stat.value) 
-                    ? Math.floor(counts[index]) 
+                  {Number.isInteger(stat.value)
+                    ? Math.floor(counts[index])
                     : counts[index].toFixed(1)}
                   {stat.suffix}
                 </span>

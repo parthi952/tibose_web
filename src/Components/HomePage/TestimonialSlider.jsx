@@ -80,11 +80,10 @@ const TestimonialSlider = () => {
             <button
               key={index}
               aria-label={`Go to slide ${index + 1}`}
-              className={`h-2.5 sm:h-3 rounded-full transition-all duration-500 ${
-                activeIndex === index
-                  ? "bg-blue-600 w-7 sm:w-8"
-                  : "bg-gray-300 w-2.5 sm:w-3 hover:bg-gray-400"
-              }`}
+              className={`h-2.5 sm:h-3 rounded-full transition-all duration-500 ${activeIndex === index
+                ? "bg-blue-600 w-7 sm:w-8"
+                : "bg-gray-300 w-2.5 sm:w-3 hover:bg-gray-400"
+                }`}
               onClick={() => setActiveIndex(index)}
             />
           ))}

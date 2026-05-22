@@ -5,9 +5,9 @@ import IndustryCard from './IndustriesSection/IndustryCard';
 import MotionButton from "../Common/MotionButton";
 
 // Icons Import
-import { 
-  ShieldCheck, Beaker, MonitorPlay, Settings, Zap, 
-  ShoppingBag, Car, Landmark 
+import {
+  ShieldCheck, Beaker, MonitorPlay, Settings, Zap,
+  ShoppingBag, Car, Landmark
 } from 'lucide-react';
 
 const IndustriesSection = () => {
@@ -21,7 +21,7 @@ const IndustriesSection = () => {
     { title: "Manufacturing", icon: <Settings size={24} />, image: Img.HomePage.Industry.Manufacturing },
     { title: "Energy", icon: <Zap size={24} />, image: Img.HomePage.Industry.EnergyUtilities },
     { title: "Retail", icon: <ShoppingBag size={24} />, image: Img.HomePage.Industry.RetailDistribution },
-    { title: "Automotive", icon: <Car size={24} />, image: Img.HomePage.Industry.Automotive }, 
+    { title: "Automotive", icon: <Car size={24} />, image: Img.HomePage.Industry.Automotive },
     { title: "Financial Services", icon: <Landmark size={24} />, image: Img.HomePage.Industry.FinancialService },
   ];
 
@@ -51,8 +51,8 @@ const IndustriesSection = () => {
                  neat-ah scale down aana madhiri center-la irukkum.
                - lg:max-w-full: Laptop-la normal size-ku maaridum.
             */
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-full transition-transform duration-300 hover:-translate-y-2"
             >
               <IndustryCard {...item} />

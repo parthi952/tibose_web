@@ -5,13 +5,13 @@ const ContactForm = () => {
   return (
     <div className="flex items-center justify-center p-4 md:p-10 font-sans">
       <div className="relative max-w-6xl w-full rounded-[3rem] shadow-2xl overflow-hidden min-h-175 flex flex-col md:flex-row ">
-        
+
 
         <div className="absolute inset-0 z-0">
           <Animation />
         </div>
 
- 
+
         <div className="hidden md:flex md:w-5/12 pointer-events-none">
         </div>
 
@@ -42,9 +42,9 @@ const ContactForm = () => {
 
               <div className="relative">
                 <select className="w-full px-6 py-4 rounded-2xl border border-white/40 bg-white/50 backdrop-blur-sm focus:bg-white/90 outline-none appearance-none transition-all text-slate-500 shadow-sm">
-                    <option >Select Subject</option>
-                    <option >Sales Inquiry</option>
-                    <option >Technical Support</option>
+                  <option >Select Subject</option>
+                  <option >Sales Inquiry</option>
+                  <option >Technical Support</option>
                 </select>
                 <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,7 +53,7 @@ const ContactForm = () => {
                 </div>
               </div>
 
-              <textarea 
+              <textarea
                 placeholder="Message"
                 rows="4"
                 className="w-full px-6 py-4 rounded-2xl border border-white/40 bg-white/50 backdrop-blur-sm focus:bg-white/90 outline-none transition-all placeholder:text-slate-400 shadow-sm"

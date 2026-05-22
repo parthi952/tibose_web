@@ -8,7 +8,7 @@ import Img from "../../Constents";
 
 const ConnectivityImg = Img.HomePage.Connectivity;
 const SecurityImg = Img.HomePage.Cybersecurity;
-const Business_Communi= Img.HomePage.Business_communication;
+const Business_Communi = Img.HomePage.Business_communication;
 
 const OurBlogs = () => {
   const blogs = [
@@ -25,10 +25,10 @@ const OurBlogs = () => {
       reverse: true // Image on left
     },
     {
-        title: "The Future of Enterprise Communication Technology",
-        description:"Modern communication tools such as cloud collaboration platforms and smart office solutions help businesses improve teamwork, streamline workflows, and deliver better customer experiences.",
-        imageUrl: Business_Communi,
-        reverse: false
+      title: "The Future of Enterprise Communication Technology",
+      description: "Modern communication tools such as cloud collaboration platforms and smart office solutions help businesses improve teamwork, streamline workflows, and deliver better customer experiences.",
+      imageUrl: Business_Communi,
+      reverse: false
     }
   ];
 
@@ -36,19 +36,19 @@ const OurBlogs = () => {
     <section className="bg-blue-100 py-20 px-10">
       <div className="max-w-6xl mx-auto">
         <motion.h2
-  initial={{ opacity: 0, y: -40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6 }}
-  className="text-blue-500  font-bold text-4xl uppercase tracking-wider mb-12"
->
-  Our Blogs
-</motion.h2>
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-blue-500  font-bold text-4xl uppercase tracking-wider mb-12"
+        >
+          Our Blogs
+        </motion.h2>
         <div className="space-y-16 ">
-        {blogs.map((blog, index) => (
-          <BlogCard key={index} {...blog} />
-        ))}
-      </div>
+          {blogs.map((blog, index) => (
+            <BlogCard key={index} {...blog} />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -51,9 +51,9 @@ const OurSolution = () => {
   return (
     <div className="relative w-full rounded-xl shadow-lg overflow-hidden">
 
-      <FiberOpticBackground/>
+      <FiberOpticBackground />
 
-      <div 
+      <div
         className="absolute inset-0 bg-gradient-to-r from-blue-200 to-blue-300 pointer-events-none opacity-30"
       />
 
@@ -69,7 +69,7 @@ const OurSolution = () => {
         <div className="flex flex-row gap-6 sm:gap-8 overflow-x-auto py-8 sm:py-10 scrollbar-hide">
 
           {ItermList.map((item, index) => (
-            <Card 
+            <Card
               key={index}
               CardImg={item.CardImg}
               CardImgName={item.CardImgName}

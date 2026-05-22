@@ -16,20 +16,20 @@ const IndustryCard = ({ icon, image, title }) => (
         {icon}
       </div>
     </div>
-    
+
     {/* Industry Image Area */}
     <div className="w-[85%] h-[65%] overflow-hidden rounded-2xl mb-4 bg-gray-100 border border-gray-100">
       {image ? (
-        <img 
-          src={image} 
-          alt={title} 
+        <img
+          src={image}
+          alt={title}
           className="w-full h-full object-cover "
         />
       ) : (
         <div className="flex items-center justify-center h-full text-gray-300 text-xs">No Img</div>
       )}
     </div>
-    
+
     {/* Title Area */}
     <div className="mt-auto mb-8 px-4 w-full">
       <h3 className="text-md font-semibold text-gray-900 text-center uppercase tracking-wider leading-tight">

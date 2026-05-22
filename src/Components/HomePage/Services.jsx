@@ -63,8 +63,8 @@ const Services = () => {
 
           <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
             We provide fast and secure internet and communication solutions for businesses. Our services include high-speed leased lines,
-             broadband, VPN for safe connections, smart office networking, and business voice services like Centrex and PRI.
-              These solutions help companies stay connected, communicate smoothly, and work more efficiently.
+            broadband, VPN for safe connections, smart office networking, and business voice services like Centrex and PRI.
+            These solutions help companies stay connected, communicate smoothly, and work more efficiently.
 
           </p>
 
