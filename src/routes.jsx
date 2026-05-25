@@ -30,129 +30,133 @@ export const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />, // Navbar always visible
     children: [
-      
+
       {
         index: true,
         element: <Home />,
       },
       {
         path: "/company-culture",
-        element :<AboutSection/>
+        element: <AboutSection />
 
       },
       {
         path: "/team",
-        element:<AboutSection2/>
+        element: <AboutSection2 />
       },
       {
         path: "/business",
-        element: <Business/>
+        element: <Business />
       },
       {
-        path:"/enterprise",
-        element:<Enterprise/>
+        path: "/enterprise",
+        element: <Enterprise />
       },
       {
-        path:"/copilot",
-        element:<Copilot/>
+        path: "/copilot",
+        element: <Copilot />
       },
       {
-        path:"/teams",
-        element:<Teams/>
+        path: "/teams",
+        element: <Teams />
       },
       {
-        path:"/security",
-        element:<Security/>
+        path: "/security",
+        element: <Security />
       },
       {
-        path:"/azure",
-        element:<Azure/>
+        path: "/azure",
+        element: <Azure />
       },
       {
-        path:"/dynamics",
-        element:<Dynamics/>
+        path: "/dynamics",
+        element: <Dynamics />
       },
       {
-         path:"/surface",
-         element:<Surface/>
+        path: "/surface",
+        element: <Surface />
 
       },
       {
-        path:"/Contact",
-        element:<Contactpage/>
+        path: "/Contact",
+        element: <Contactpage />
       },
       {
-        path:"/industries",
-        element:<Industries/>
+        path: "/industries",
+        element: <Industries />
       },
       {
-        path:"/cloud",
-        element:<Connectivity/>
+        path: "/cloud",
+        element: <Connectivity />
       },
       {
-        path:"/cyber-security",
-        element:<CyberSecurity/>
+        path: "/cyber-security",
+        element: <CyberSecurity />
       },
       {
-        path:"/smart-communication",
-        element:<SmartCommunication/>
+        path: "/smart-communication",
+        element: <SmartCommunication />
       },
       {
-        path:"/bpu",
-        element:<Bpo/>
+        path: "/bpu",
+        element: <Bpo />
       },
       {
-        path:"/hardware",
-        element:<HardwareSolution/>
+        path: "/hardware",
+        element: <HardwareSolution />
       },
       {
-        path:"/resources",
-        element:<Resouces/>
+        path: "/resources",
+        element: <Resouces />
       },
       {
-        path:"/connectivity",
-        element:<Connectivity/>
+        path: "/connectivity",
+        element: <Connectivity />
       },
       {
-        path:"/cybersecurity",
-        element:<CyberSecurity/>
+        path: "/cybersecurity",
+        element: <CyberSecurity />
       },
       {
-       path:"/hardware-solution",
-       element:<HardwareSolution/>
+        path: "/hardware-solution",
+        element: <HardwareSolution />
       },
       {
-        path:"/smart-communication",
-        element:<SmartCommunication/>
+        path: "/smart-communication",
+        element: <SmartCommunication />
       },
       {
-        path:"/business-process-outsourcing",
-        element:<Bpo/>
+        path: "/business-process-outsourcing",
+        element: <Bpo />
       },
       {
-        path:"/blog-details",
-        element:<Resouces/>
+        path: "/blog-details",
+        element: <Resouces />
       },
       {
-        path:"/company_culture",
-        element:<AboutSection/>
+        path: "/company_culture",
+        element: <AboutSection />
       },
       {
-        path:"/industries",
-        element:<Industries/>
+        path: "/industries",
+        element: <Industries />
       },
       {
-        path:"/blog",
-        element:<Resouces/>
+        path: "/blog",
+        element: <Resouces />
       },
       {
-        path:"/careers",
-        element:<AboutSection2/>
+        path: "/careers",
+        element: <AboutSection2 />
       },
       {
-        path:"/contact",
-        element:<Contactpage/>
+        path: "/contact",
+        element: <Contactpage />
       },
+      {
+        path: "/EmployeeForm",
+        element: <EmployeeForm />
+      }
 
 
     ],
