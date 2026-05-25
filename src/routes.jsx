@@ -21,6 +21,7 @@ import SmartCommunication from "./Components/Page/SmartCommunication";
 import Bpo from "./Components/Page/Bpo";
 import HardwareSolution from "./Components/Page/HardwareSolution";
 import Resouces from "./Components/Page/Resouces";
+import { EmployeeForm } from "./EmployeeForm";
 
 
 
