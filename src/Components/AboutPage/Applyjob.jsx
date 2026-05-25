@@ -345,7 +345,7 @@ const ApplyJob = () => {
             <div>
               <h3 className="text-lg font-bold text-gray-800">No specific roles posted today</h3>
               <p className="text-gray-500 text-sm mt-1 max-w-sm mx-auto leading-relaxed">
-                We are always looking for exceptional talent! Feel free to submit a speculative application below for any role of your choice.
+                We are always looking for exceptional talent Feel free to submit a speculative application below for any role of your choice.
               </p>
             </div>
           </div>
