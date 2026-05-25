@@ -16,20 +16,6 @@ const Navbar = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
   const navigate = useNavigate();
 
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 80) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   // Updated List with Icons
   const ListOfContant = {
     "/about": [
@@ -84,11 +70,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 z-50 w-full transition-all duration-500 ${
-      isScrolled 
-        ? "bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100 py-0" 
-        : "bg-transparent border-b border-transparent py-2"
-    }`}>
+    <nav className="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-md shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
 
