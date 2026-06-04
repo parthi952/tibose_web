@@ -7,10 +7,10 @@ import CyberFAQ from '../Our Solution/Cybersecurity/CyberFAQ'
 const CyberSecurity = () => {
   return (
     <div>
-        <Securitybanner/>
-        <CyberSecuritySolutions/>
-        <CyberAssessment/>
-        <CyberFAQ/>
+      <Securitybanner />
+      <CyberSecuritySolutions />
+      <CyberAssessment />
+      <CyberFAQ />
     </div>
   )
 }

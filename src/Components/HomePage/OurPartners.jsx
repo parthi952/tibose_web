@@ -31,7 +31,7 @@ const OurPartners = () => {
   });
 
   return (
-    <section className="py-24 bg-slate-50 overflow-hidden relative">
+    <section className="py-24 overflow-hidden relative">
       <div className="container mx-auto px-4 relative z-0">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest text-blue-600 mb-8 sm:mb-10 uppercase text-center">
           Our Partners

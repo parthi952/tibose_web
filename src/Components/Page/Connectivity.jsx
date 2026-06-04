@@ -10,28 +10,28 @@ const Connectivity = () => {
   return (
     <div>
       <Helmet>
-  <title>Business Internet & Connectivity Solutions | Tibos</title>
+        <title>Business Internet & Connectivity Solutions | Tibos</title>
 
-  <meta
-    name="description"
-    content="High-speed business internet and connectivity solutions including leased lines, VPN, and enterprise voice services."
-  />
+        <meta
+          name="description"
+          content="High-speed business internet and connectivity solutions including leased lines, VPN, and enterprise voice services."
+        />
 
-  <meta
-    name="keywords"
-    content="business internet Chennai, leased line services India, enterprise connectivity solutions"
-  />
+        <meta
+          name="keywords"
+          content="business internet Chennai, leased line services India, enterprise connectivity solutions"
+        />
 
-  <link rel="canonical" href="https://tibos.co.in/cloud" />
+        <link rel="canonical" href="https://tibos.co.in/cloud" />
 
-  <meta name="robots" content="index, follow" />
-</Helmet>
-        <Connectivitybanner/>
-        <ConnectivityServices/>
-        <ConnectivityServices2/>
-        <WhyChoose/>
-        <WEare/>
-        
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      <Connectivitybanner />
+      <ConnectivityServices />
+      <ConnectivityServices2 />
+      <WhyChoose />
+      <WEare />
+
     </div>
   )
 }

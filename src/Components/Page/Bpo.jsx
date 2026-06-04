@@ -6,9 +6,9 @@ import Bposervices from '../Our Solution/Bpo/Bposervices'
 const Bpo = () => {
   return (
     <div>
-        <Bpobanner/>
-        <Bposervices/>
-        <WhyChoose/>
+      <Bpobanner />
+      <Bposervices />
+      <WhyChoose />
     </div>
   )
 }

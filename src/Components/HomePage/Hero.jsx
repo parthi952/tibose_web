@@ -84,7 +84,7 @@ const Hero = () => {
   );
 
   return (
-    <section className="w-full h-135 mt-20 flex flex-col justify-between overflow-hidden relative">
+    <section className="w-full h-177 mt-20 flex flex-col justify-between overflow-hidden relative">
       <style>
         {`
           @keyframes subtle-float {

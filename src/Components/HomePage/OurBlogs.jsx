@@ -35,15 +35,9 @@ const OurBlogs = () => {
   return (
     <section className="bg-blue-100 py-20 px-10">
       <div className="max-w-6xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-blue-500  font-bold text-4xl uppercase tracking-wider mb-12"
-        >
+        <h2 className="text-blue-500  font-bold text-4xl uppercase tracking-wider mb-12">
           Our Blogs
-        </motion.h2>
+        </h2>
         <div className="space-y-16 ">
           {blogs.map((blog, index) => (
             <BlogCard key={index} {...blog} />

@@ -7,7 +7,7 @@ const AboutImg = Img.HomePage.AboutImg;
 
 const About = () => {
   return (
-    <section className="flex items-center max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-12 md:py-16 flex-col lg:flex-row gap-10 md:gap-14 font-sans overflow-hidden">
+    <section className="flex items-center bg-white mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-12 md:py-16 flex-col lg:flex-row gap-10 md:gap-14 font-sans overflow-hidden">
 
       {/* Left Content */}
       <motion.div

@@ -28,15 +28,23 @@ const IndustriesSection = () => {
   const displayedIndustries = industryList.slice(0, 4);
 
   return (
-    <section className="mb-20 px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full py-20 relative overflow-hidden">
+      {/* Background Image - spans full screen width */}
+      <img className="absolute inset-0 w-full h-full object-cover -z-20" src="testimonials.png" alt="" />
+      
+      {/* Transparent Blue Overlays */}
+      <div className="absolute inset-0 bg-blue-900/60 mix-blend-multiply -z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-blue-900/65 to-indigo-950/80 -z-10 pointer-events-none" />
+
+      {/* Centered Content Container */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-blue-600 uppercase tracking-widest mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white uppercase tracking-widest mb-4 drop-shadow-md">
             Industry Insights
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-white mx-auto rounded-full"></div>
         </div>
 
         {/* GRID LOGIC:

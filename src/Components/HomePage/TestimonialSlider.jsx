@@ -34,10 +34,11 @@ const TestimonialSlider = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 flex flex-col items-center py-12 sm:py-14 md:py-16 px-4">
+    <div className="relative overflow-hidden flex flex-col items-center py-12 sm:py-14 md:py-16 px-4">
+      <img src="/Testimonials 2.png" alt="Testimonials Background" className="absolute inset-0 w-full h-full object-cover -z-10"/>
 
       {/* Title */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest text-blue-600 mb-8 sm:mb-10 uppercase text-center">
+      <h2 className="text-2xl z-0 sm:text-3xl md:text-4xl font-bold tracking-widest text-white mb-8 sm:mb-10 uppercase text-center">
         Client Testimonials
       </h2>
 
@@ -80,7 +81,7 @@ const TestimonialSlider = () => {
             <button
               key={index}
               aria-label={`Go to slide ${index + 1}`}
-              className={`h-2.5 sm:h-3 rounded-full transition-all duration-500 ${activeIndex === index
+              className={`h-2.5 sm:h-3 rounded-full transition-all duration-500 cursor-pointer ${activeIndex === index
                 ? "bg-blue-600 w-7 sm:w-8"
                 : "bg-gray-300 w-2.5 sm:w-3 hover:bg-gray-400"
                 }`}
