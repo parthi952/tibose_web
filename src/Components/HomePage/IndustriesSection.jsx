@@ -28,40 +28,40 @@ const IndustriesSection = () => {
   const displayedIndustries = industryList.slice(0, 4);
 
   return (
-    <section className="mb-20 px-4">
+    <section className="mb-20 px-4 sm:px-6 lg:px-8">
+      <style>
+        {`
+          @keyframes industryShine {
+            0% { transform: translateX(-120%) skewX(-15deg); }
+            18% { transform: translateX(420%) skewX(-15deg); }
+            100% { transform: translateX(420%) skewX(-15deg); }
+          }
+          .industry-shine { animation: industryShine 5s ease-in-out infinite; }
+        `}
+      </style>
+
       <div className="max-w-7xl mx-auto">
 
         {/* Section Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-blue-600 uppercase tracking-widest mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-600 uppercase tracking-widest mb-4">
             Industry Insights
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+          <p className="mt-5 text-gray-500 text-sm sm:text-base max-w-2xl mx-auto">
+            Tailored Microsoft and cloud solutions built for the unique needs of every industry we serve.
+          </p>
         </div>
 
-        {/* GRID LOGIC:
-           - grid-cols-1: Mobile-la cards stack aagum (One by one).
-           - lg:grid-cols-4: Laptop-la unga default 4 columns side-by-side.
-           - items-center justify-items-center: Content exact center-la irukka help pannum.
-        */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 justify-items-center">
+        {/* Full-width responsive grid — cards stretch to fill each column */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {displayedIndustries.map((item, index) => (
-            /* CARD WRAPPER:
-               - max-w-[320px]: Mobile-la card romba perusa screen full-ah varaama, 
-                 neat-ah scale down aana madhiri center-la irukkum.
-               - lg:max-w-full: Laptop-la normal size-ku maaridum.
-            */
-            <div
-              key={index}
-              className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-full transition-transform duration-300 hover:-translate-y-2"
-            >
-              <IndustryCard {...item} />
-            </div>
+            <IndustryCard key={index} {...item} shineDelay={`${index * 0.6}s`} />
           ))}
         </div>
 
         {/* Button Section */}
-        <div className="flex justify-center mt-16 md:mt-20">
+        <div className="flex justify-center mt-14 md:mt-16">
           <MotionButton
             B_Name="View more industries"
             ActionToClick={() => navigate('/industries')}

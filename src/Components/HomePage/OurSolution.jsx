@@ -66,11 +66,12 @@ const OurSolution = () => {
 
       <div className="relative z-10 px-3 sm:px-5 md:px-6">
 
-        <div className="flex flex-row gap-6 sm:gap-8 overflow-x-auto py-8 sm:py-10 scrollbar-hide">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-7 py-8 sm:py-10">
 
           {ItermList.map((item, index) => (
             <Card
               key={index}
+              index={index}
               CardImg={item.CardImg}
               CardImgName={item.CardImgName}
               Title={item.Title}
