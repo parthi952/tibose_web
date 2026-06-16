@@ -52,6 +52,7 @@ const securityAreas = [
 
 const About = () => {
   return (
+    <>
     <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-12 md:py-16 font-sans overflow-hidden">
       {/* Top: text + image */}
       <div className="flex items-center flex-col lg:flex-row gap-10 md:gap-14">
@@ -132,21 +133,30 @@ const About = () => {
           ))}
         </div>
 
-        {/* Reassurance: trained experts manage everything */}
-        <div className="mt-10 sm:mt-12 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-8 sm:px-10 sm:py-10 text-center text-white shadow-lg">
-          <ShieldCheck className="mx-auto w-9 h-9 mb-3 opacity-90" />
-          <h4 className="text-lg sm:text-2xl font-bold">
-            Don&apos;t worry about managing Microsoft 365 — leave it to us.
-          </h4>
-          <p className="mt-3 text-blue-100 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            Our trained, certified experts handle everything end-to-end — setup, security,
-            compliance, and day-to-day management. You relax and focus on your business,
-            while we keep your Microsoft 365 environment secure and running smoothly.
-          </p>
-        </div>
       </motion.div>
-
     </section>
+
+    {/* Full-width reassurance band — with gap before the next section */}
+    <section className="w-full px-4 sm:px-6 lg:px-10 pt-2 pb-16 md:pb-24">
+      <motion.div
+        className="mx-auto max-w-[1500px] rounded-3xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-10 sm:px-12 sm:py-12 text-center text-white shadow-xl"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <ShieldCheck className="mx-auto w-9 h-9 mb-3 opacity-90" />
+        <h4 className="text-xl sm:text-3xl font-bold">
+          Don&apos;t worry about managing Microsoft 365 — leave it to us.
+        </h4>
+        <p className="mt-3 text-blue-100 text-sm sm:text-lg max-w-3xl mx-auto leading-relaxed">
+          Our trained, certified experts handle everything end-to-end — setup, security,
+          compliance, and day-to-day management. You relax and focus on your business,
+          while we keep your Microsoft 365 environment secure and running smoothly.
+        </p>
+      </motion.div>
+    </section>
+    </>
   );
 };
 

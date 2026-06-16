@@ -70,50 +70,48 @@ const Achievements = () => {
   }, [hasStarted]);
 
   return (
-    <section ref={sectionRef} className="relative min-h-[60vh] md:min-h-[80vh] bg-slate-900 flex items-center justify-center overflow-hidden py-24 px-6 border-y border-slate-800">
-      
+    <section ref={sectionRef} className="relative bg-slate-900 overflow-hidden py-6 md:py-8 px-4 sm:px-8 border-y border-slate-800">
+
       {/* Cinematic background elements */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
-        <div className="absolute top-[20%] left-[10%] w-[40%] h-[40%] bg-blue-500 blur-[120px] rounded-full mix-blend-screen" />
-        <div className="absolute bottom-[20%] right-[10%] w-[30%] h-[30%] bg-purple-500 blur-[100px] rounded-full mix-blend-screen" />
+        <div className="absolute top-0 left-[10%] w-[40%] h-full bg-blue-500 blur-[120px] rounded-full mix-blend-screen" />
+        <div className="absolute bottom-0 right-[10%] w-[30%] h-full bg-purple-500 blur-[100px] rounded-full mix-blend-screen" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center">
-        
+      <div className="relative z-10 w-full max-w-[1500px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10">
+
         {/* Title */}
-        <div className="text-center mb-20 md:mb-28">
-          <h2 className="text-sm md:text-base font-bold tracking-[0.4em] text-blue-400 uppercase mb-4">
+        <div className="text-center lg:text-left shrink-0">
+          <h2 className="text-[10px] md:text-xs font-bold tracking-[0.35em] text-cyan-400 uppercase mb-1">
             Tibos Impact
           </h2>
-          <h3 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight">
+          <h3 className="text-xl md:text-2xl font-extrabold text-white tracking-tight">
             Delivering <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Excellence</span>
           </h3>
         </div>
 
-        {/* Massive Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 w-full mt-8">
+        {/* Compact stats row — all in one wide line */}
+        <div className="grid grid-cols-3 w-full lg:w-auto lg:flex-1 lg:max-w-3xl divide-x divide-white/10">
           {stats.map((stat, index) => (
-            <div key={stat.id} className="relative flex flex-col items-center justify-center text-center group p-8 rounded-3xl transition-all duration-500 hover:bg-slate-800/30 ring-1 ring-transparent hover:ring-white/10">
-              
-              {/* Icon Container */}
-              <div className="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/50 mb-8 shadow-lg group-hover:bg-blue-600/20 group-hover:border-blue-500/50 transition-all duration-500 group-hover:scale-110">
-                {React.cloneElement(stat.icon, { className: "w-10 h-10 text-blue-400 group-hover:text-blue-300" })}
+            <div key={stat.id} className="flex flex-col items-center text-center px-2 sm:px-4">
+
+              {/* Number + icon inline */}
+              <div className="flex items-center justify-center gap-2">
+                {React.cloneElement(stat.icon, { className: "w-5 h-5 sm:w-6 sm:h-6 text-cyan-400 shrink-0" })}
+                <div className="flex items-start gap-0.5">
+                  <span className="text-3xl sm:text-4xl lg:text-5xl leading-none font-black text-white tracking-tight tabular-nums">
+                    {Number.isInteger(stat.value)
+                      ? Math.floor(counts[index])
+                      : counts[index].toFixed(1)}
+                  </span>
+                  <span className="text-base sm:text-lg font-bold text-cyan-400">
+                    {stat.suffix}
+                  </span>
+                </div>
               </div>
-              
-              {/* Number Animation */}
-              <div className="flex items-start justify-center gap-1 mb-4">
-                <span className="text-7xl lg:text-[8rem] leading-none font-black text-white tracking-tighter tabular-nums drop-shadow-2xl">
-                  {Number.isInteger(stat.value)
-                    ? Math.floor(counts[index])
-                    : counts[index].toFixed(1)}
-                </span>
-                <span className="text-4xl lg:text-5xl font-bold text-blue-500 mt-2 lg:mt-4 drop-shadow-lg">
-                  {stat.suffix}
-                </span>
-              </div>
-              
+
               {/* Label */}
-              <span className="text-slate-400 text-lg md:text-xl font-semibold tracking-widest uppercase mt-2">
+              <span className="mt-1.5 text-[10px] sm:text-xs font-semibold tracking-wider uppercase text-slate-200">
                 {stat.label}
               </span>
 

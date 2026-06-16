@@ -155,7 +155,7 @@ const TestimonialSlider = () => {
 
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-b from-indigo-50/60 via-white to-white py-16 sm:py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-10">
         {/* Heading */}
         <h2 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
           <span className="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">

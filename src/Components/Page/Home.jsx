@@ -6,9 +6,8 @@ import Services from "../HomePage/Services";
 import OurSolution from "../HomePage/OurSolution";
 import TestimonialSlider from "../HomePage/TestimonialSlider";
 import OurPartners from "../HomePage/OurPartners";
-import IndustriesSection from "../HomePage/IndustriesSection";
+import IndustriesShowcase from "../HomePage/IndustriesShowcase";
 import OurBlogs from "../HomePage/OurBlogs";
-import ContactForm from "../HomePage/ContactUs";
 import { Helmet } from "react-helmet";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -25,9 +24,9 @@ const ParallaxLayer = ({ children, index, isFirst }) => {
 
   // As we scroll past, the section moves down slower than the scroll, fades, and shrinks.
   // This creates the massive depth effect as the next section slides over it.
-  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "30vh"]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.2]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.95]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "12vh"]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1]);
 
   // Using z-index hierarchy: early elements have lower z-index so later elements cover them naturally.
   // Actually, standard DOM flow already does this (later elements sit on top), but we add z-index to be perfectly safe.
@@ -70,7 +69,7 @@ const Home = () => {
       </Helmet>
 
       {/* Global Background Layer */}
-      <div className="fixed inset-0 bg-slate-900 -z-50" />
+      <div className="fixed inset-0 bg-slate-50 -z-50" />
 
       <div className="relative min-h-screen text-slate-800 font-sans">
         
@@ -96,9 +95,8 @@ const Home = () => {
           <ParallaxLayer index={4}><OurSolution /></ParallaxLayer>
           <ParallaxLayer index={5}><TestimonialSlider /></ParallaxLayer>
           <ParallaxLayer index={6}><OurPartners /></ParallaxLayer>
-          <ParallaxLayer index={7}><IndustriesSection /></ParallaxLayer>
+          <ParallaxLayer index={7}><IndustriesShowcase /></ParallaxLayer>
           <ParallaxLayer index={8}><OurBlogs /></ParallaxLayer>
-          <ParallaxLayer index={9}><ContactForm /></ParallaxLayer>
         </div>
       </div>
     </div>
