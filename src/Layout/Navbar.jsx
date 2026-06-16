@@ -72,17 +72,17 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-md shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16">
 
           {/* Logo */}
           <div className="shrink-0 flex items-center cursor-pointer" onClick={() => navigate("/")}>
-            <img src={TibosLogo} alt="Tibos Logo" className="w-32 sm:w-36 hover:scale-105 transition-transform" />
+            <img src={TibosLogo} alt="Tibos Logo" className="w-28 sm:w-32 hover:scale-105 transition-transform" />
           </div>
 
           {/* --- DESKTOP MENU --- */}
           <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {navLinks.map((link) => (
-              <div key={link.name} className="relative group flex items-center h-20">
+              <div key={link.name} className="relative group flex items-center h-16">
                 <div
                   onClick={() => !link.hasDropdown && handleNavigation(link)}
                   className="cursor-pointer flex items-center font-poppins text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors py-2"
@@ -117,7 +117,7 @@ const Navbar = () => {
 
             <button
               onClick={() => navigate("/contact")}
-              className="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-900 cursor-pointer transition-all shadow-md active:scale-95"
+              className="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-900 cursor-pointer transition-all shadow-md active:scale-95"
             >
               Contact Us
             </button>
@@ -129,7 +129,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 rounded-xl transition-colors ${isOpen ? 'bg-blue-50 text-blue-600' : 'bg-gray-100 text-gray-700'}`}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -137,9 +137,9 @@ const Navbar = () => {
 
       {/* --- MOBILE MENU --- */}
       <div
-        className={`md:hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-2xl transition-all duration-500 ease-in-out ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+        className={`md:hidden absolute top-16 left-0 w-full bg-white border-t border-gray-100 shadow-2xl transition-all duration-500 ease-in-out ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
           }`}
-        style={{ maxHeight: isOpen ? 'calc(100vh - 80px)' : '0px', overflowY: 'auto' }}
+        style={{ maxHeight: isOpen ? 'calc(100vh - 64px)' : '0px', overflowY: 'auto' }}
       >
         <div className="px-5 py-6 space-y-2">
           {navLinks.map((link) => (

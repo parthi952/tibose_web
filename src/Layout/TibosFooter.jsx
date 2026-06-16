@@ -30,7 +30,7 @@ const TibosFooter = () => {
     "bg-blue-600 backdrop-blur-md border border-white/20 p-2 rounded-full text-white transition-all duration-300 hover:scale-110 hover:text-blue-600 hover:bg-white/30 hover:-translate-y-1 hover:shadow-lg";
 
   return (
-    <footer className="bg-gradient-to-br from-blue-50 via-blue-50 via-blue-200 via-blue-300 to-blue-400 text-gray-300 py-12 px-6 md:px-16 font-sans">
+    <footer className="relative z-50 bg-gradient-to-br from-blue-50 via-blue-50 via-blue-200 via-blue-300 to-blue-400 text-gray-300 py-12 px-6 md:px-16 font-sans rounded-t-[2rem] sm:rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.05)] mt-[-20px]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Company Info */}

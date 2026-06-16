@@ -15,61 +15,57 @@ const IndustriesSection = () => {
   const navigate = useNavigate();
 
   const industryList = [
-    { title: "Insurance", icon: <ShieldCheck size={24} />, image: Img.HomePage.Industry.Insurance },
-    { title: "Life Sciences", icon: <Beaker size={24} />, image: Img.HomePage.Industry.LifeSciences },
-    { title: "Comms + Media + Tech", icon: <MonitorPlay size={24} />, image: Img.HomePage.Industry.CMT },
-    { title: "Manufacturing", icon: <Settings size={24} />, image: Img.HomePage.Industry.Manufacturing },
-    { title: "Energy", icon: <Zap size={24} />, image: Img.HomePage.Industry.EnergyUtilities },
-    { title: "Retail", icon: <ShoppingBag size={24} />, image: Img.HomePage.Industry.RetailDistribution },
-    { title: "Automotive", icon: <Car size={24} />, image: Img.HomePage.Industry.Automotive },
-    { title: "Financial Services", icon: <Landmark size={24} />, image: Img.HomePage.Industry.FinancialService },
+    { title: "Insurance", icon: <ShieldCheck size={24} />, image: Img.HomePage.Industry.Insurance, description: "Secure core systems and modernize claims processing with cloud solutions." },
+    { title: "Life Sciences", icon: <Beaker size={24} />, image: Img.HomePage.Industry.LifeSciences, description: "Accelerate R&D and ensure compliance with secure data environments." },
+    { title: "Comms + Media + Tech", icon: <MonitorPlay size={24} />, image: Img.HomePage.Industry.CMT, description: "Deliver exceptional digital experiences with scalable infrastructure." },
+    { title: "Manufacturing", icon: <Settings size={24} />, image: Img.HomePage.Industry.Manufacturing, description: "Optimize supply chains and smart factories using IoT and AI." },
+    { title: "Energy", icon: <Zap size={24} />, image: Img.HomePage.Industry.EnergyUtilities, description: "Transform grid operations and improve sustainability management." },
+    { title: "Retail", icon: <ShoppingBag size={24} />, image: Img.HomePage.Industry.RetailDistribution, description: "Enhance omnichannel commerce and personalized customer journeys." },
+    { title: "Automotive", icon: <Car size={24} />, image: Img.HomePage.Industry.Automotive, description: "Innovate connected vehicles and streamline production." },
+    { title: "Financial Services", icon: <Landmark size={24} />, image: Img.HomePage.Industry.FinancialService, description: "Enable secure banking and rapid fintech innovations." },
   ];
 
   const displayedIndustries = industryList.slice(0, 4);
 
   return (
-    <section className="w-full py-20 relative overflow-hidden">
-      {/* Background Image - spans full screen width */}
-      <img className="absolute inset-0 w-full h-full object-cover -z-20" src="testimonials.png" alt="" />
-      
-      {/* Transparent Blue Overlays */}
-      <div className="absolute inset-0 bg-blue-900/60 mix-blend-multiply -z-10 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-blue-900/65 to-indigo-950/80 -z-10 pointer-events-none" />
-
-      {/* Centered Content Container */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="mb-0 px-4 sm:px-6 lg:px-8 bg-slate-50 py-24 md:py-32">
+      <div className="max-w-7xl mx-auto">
 
         {/* Section Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white uppercase tracking-widest mb-4 drop-shadow-md">
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="text-sm font-bold text-blue-600 uppercase tracking-[0.3em] mb-4">
             Industry Insights
           </h2>
-          <div className="w-24 h-1 bg-white mx-auto rounded-full"></div>
+          <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+            Tailored Cloud Solutions
+          </h3>
+          <p className="text-slate-600 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+            Built specifically for the unique regulatory, operational, and performance needs of every industry we serve.
+          </p>
         </div>
 
-        {/* GRID LOGIC:
-           - grid-cols-1: Mobile-la cards stack aagum (One by one).
-           - lg:grid-cols-4: Laptop-la unga default 4 columns side-by-side.
-           - items-center justify-items-center: Content exact center-la irukka help pannum.
-        */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 justify-items-center">
-          {displayedIndustries.map((item, index) => (
-            /* CARD WRAPPER:
-               - max-w-[320px]: Mobile-la card romba perusa screen full-ah varaama, 
-                 neat-ah scale down aana madhiri center-la irukkum.
-               - lg:max-w-full: Laptop-la normal size-ku maaridum.
-            */
-            <div
-              key={index}
-              className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-full transition-transform duration-300 hover:-translate-y-2"
-            >
-              <IndustryCard {...item} />
-            </div>
-          ))}
+        {/* Structured Bento Box Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[300px] md:auto-rows-[320px]">
+          {displayedIndustries.map((item, index) => {
+            // Determine Bento Box layout based on index
+            let bentoClass = "";
+            if (index === 0) bentoClass = "md:col-span-2 md:row-span-2"; // Large feature block
+            else if (index === 1) bentoClass = "md:col-span-2 md:row-span-1"; // Wide block
+            else bentoClass = "md:col-span-1 md:row-span-1"; // Small square blocks
+
+            return (
+              <IndustryCard 
+                key={index} 
+                {...item} 
+                index={index} 
+                className={bentoClass} 
+              />
+            );
+          })}
         </div>
 
         {/* Button Section */}
-        <div className="flex justify-center mt-16 md:mt-20">
+        <div className="flex justify-center mt-14 md:mt-16">
           <MotionButton
             B_Name="View more industries"
             ActionToClick={() => navigate('/industries')}

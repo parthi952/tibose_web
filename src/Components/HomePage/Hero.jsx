@@ -114,7 +114,7 @@ const Hero = () => {
       <div className="relative flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-10">
 
         {/* ---------------- SLIDE 1 (Original Slide 2) ---------------- */}
-        <div className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${index === 1 ? "opacity-100 translate-x-0 z-10" : "opacity-0 translate-x-8 pointer-events-none z-0"}`}>
+        <div className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${index === 0 ? "opacity-100 translate-x-0 z-10" : "opacity-0 translate-x-8 pointer-events-none z-0"}`}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#020617] via-[#0a2540] to-[#0f766e]" />
           <div className="relative z-10 flex flex-col lg:flex-row items-center mt-9 justify-center w-full max-w-6xl gap-5 md:gap-20">
             <div className="relative w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] flex items-center justify-center mb-10 lg:mb-0">
@@ -143,7 +143,7 @@ const Hero = () => {
         </div>
 
         {/* ---------------- SLIDE 2 (Original Slide 3) ---------------- */}
-        <div className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${index === 0 ? "opacity-100 translate-x-0 z-10" : "opacity-0 translate-x-8 pointer-events-none z-0"}`}>
+        <div className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${index === 1 ? "opacity-100 translate-x-0 z-10" : "opacity-0 translate-x-8 pointer-events-none z-0"}`}>
           <div className="absolute inset-0 bg-gradient-to-br bg-gradient-to-br from-blue-400 via-blue-300 to-blue-200" />
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full max-w-6xl px-4">
             <div className="hidden lg:flex flex-col gap-14 items-center">

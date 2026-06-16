@@ -1,37 +1,60 @@
-import React from 'react';
+import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
-const IndustryCard = ({ image, title }) => {
-  return (
-    <div className="group shrink-0 flex flex-col items-center p-3 rounded-2xl bg-white border border-slate-100/90 shadow-[0_10px_25px_rgba(0,0,0,0.08)] hover:shadow-[0_15px_35px_rgba(59,130,246,0.15)] hover:border-blue-200/50 hover:-translate-y-2 transition-all duration-500 w-64 h-84 mx-2 cursor-pointer relative overflow-hidden">
-      {/* Subtle blue accent bar on top of the card that expands on hover */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
+const IndustryCard = ({ icon, image, title, description, index, className = "" }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-50px" }}
+    transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+    className={`group relative h-full w-full overflow-hidden rounded-[2.5rem] bg-slate-950 cursor-pointer ring-1 ring-white/10 hover:ring-blue-500/50 transition-all duration-500 shadow-2xl ${className}`}
+  >
+    {/* Background Image - stays subtle until hover */}
+    {image ? (
+      <img
+        src={image}
+        alt={title}
+        className="absolute inset-0 h-full w-full object-cover opacity-40 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-60 transition-all duration-700 ease-in-out group-hover:scale-110"
+      />
+    ) : (
+      <div className="absolute inset-0 bg-slate-800" />
+    )}
 
-      {/* Enhanced Industry Image Container with zoom effect */}
-      <div className="w-full h-[70%] overflow-hidden rounded-xl bg-slate-50 relative shadow-[inset_0_2px_8px_rgba(0,0,0,0.02)]">
-        {image ? (
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-            loading="lazy"
-          />
-        ) : (
-          <div className="flex items-center justify-center h-full text-slate-300 text-xs">
-            No Image
-          </div>
-        )}
-        {/* Soft overlay gradient that highlights the image on card hover */}
-        <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/5 transition-colors duration-500 pointer-events-none" />
-      </div>
+    {/* Dual Gradient Overlay for rich depth */}
+    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-500" />
+    <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent mix-blend-overlay" />
 
-      {/* Enhanced Title Area */}
-      <div className="flex-1 flex items-center justify-center w-full px-3 py-4">
-        <h3 className="text-sm font-semibold text-slate-700 group-hover:text-blue-600 text-center uppercase tracking-wider leading-snug transition-colors duration-300">
-          {title}
-        </h3>
-      </div>
+    {/* Top Icon Badge - Always visible, subtle glow on hover */}
+    <div className="absolute top-8 left-8 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-white backdrop-blur-md border border-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-blue-600 group-hover:border-blue-400 group-hover:shadow-[0_0_30px_rgba(37,99,235,0.4)]">
+      {icon}
     </div>
-  );
-};
+
+    {/* Content Container - Bottom aligned, Title always visible */}
+    <div className="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
+      
+      {/* Title - Always visible, crisp typography */}
+      <h3 className="text-2xl font-bold text-white leading-tight mb-2 group-hover:text-blue-300 transition-colors duration-300 drop-shadow-md">
+        {title}
+      </h3>
+      
+      {/* Description & Button Wrapper - Expands on hover */}
+      <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
+        <div className="overflow-hidden">
+          
+          <p className="text-slate-300 text-sm leading-relaxed pt-2 pb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+            {description}
+          </p>
+
+          <div className="flex items-center gap-2 text-sm font-bold text-blue-400 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 transform translate-y-2 group-hover:translate-y-0">
+            <span className="tracking-wide uppercase text-xs">Explore Solutions</span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </motion.div>
+);
 
 export default IndustryCard;

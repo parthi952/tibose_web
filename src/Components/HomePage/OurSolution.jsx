@@ -1,5 +1,5 @@
+import Wave from 'react-wavify';
 import Card from './OurSolution/Card'
-import FiberOpticBackground from './OurSolution/FiberOpticBackground';
 import Img from "../../Constents"
 
 const SC = Img.HomePage.OurSolution.SC;
@@ -49,28 +49,53 @@ const ItermList = [
 const OurSolution = () => {
 
   return (
-    <div className="relative w-full rounded-xl shadow-lg overflow-hidden">
+    <div className="relative w-full rounded-2xl shadow-xl overflow-hidden bg-white border border-gray-100">
 
-      <FiberOpticBackground />
+      {/* Subtle Wave Background Effect */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-40">
+        <div className="absolute bottom-0 w-full h-1/2">
+          <Wave
+            fill="rgba(59, 130, 246, 0.15)"
+            paused={false}
+            options={{
+              height: 20,
+              amplitude: 30,
+              speed: 0.15,
+              points: 4
+            }}
+            className="absolute bottom-0 w-full"
+            style={{ display: 'flex', transform: 'translateY(10px)' }}
+          />
+          <Wave
+            fill="rgba(59, 130, 246, 0.08)"
+            paused={false}
+            options={{
+              height: 40,
+              amplitude: 40,
+              speed: 0.2,
+              points: 3
+            }}
+            className="absolute bottom-0 w-full"
+            style={{ display: 'flex', transform: 'scaleX(-1)' }}
+          />
+        </div>
+      </div>
 
-      <div
-        className="absolute inset-0 bg-gradient-to-r from-blue-200 to-blue-300 pointer-events-none opacity-30"
-      />
-
-      <h2 className="text-center my-6 text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">
-        Technology solution
-
-      </h2>
-      <div className='text-center font-bold mr-40 ml-40'>
+      <div className="relative z-10 pt-10">
+        <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-blue-600 uppercase tracking-widest drop-shadow-sm mb-4">
+          Technology Solution
+        </h2>
+        <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full mb-8"></div>
       </div>
 
       <div className="relative z-10 px-3 sm:px-5 md:px-6">
 
-        <div className="flex flex-row gap-6 sm:gap-8 overflow-x-auto py-8 sm:py-10 scrollbar-hide">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-7 py-8 sm:py-10">
 
           {ItermList.map((item, index) => (
             <Card
               key={index}
+              index={index}
               CardImg={item.CardImg}
               CardImgName={item.CardImgName}
               Title={item.Title}
